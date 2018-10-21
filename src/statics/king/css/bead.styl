@@ -1,0 +1,224 @@
+/**
+ * 备注：彩种id变数群组、球号变数群组，在最底层var.styl档里
+ */
+
+/**
+ * 时时彩、11选5
+ */
+for ssc in $bead-ssc
+    .bead-lottery-{ssc}
+        for i in (0..11)
+            &.num_{i}
+            &.num_0{i}
+                background-image $imgUrl('images/bead/round.png')
+                background-size 100% 100%
+                color $bead-round
+                .active &
+                .isActive &
+                [active=true] &
+                .bead-pastview &
+                .lobby-bead &
+                    background-image $imgUrl('images/bead/round-active.png')
+                    color $white
+
+/**
+ * 快乐8
+ */
+for kl8 in $bead-kl8
+    .bead-lottery-{kl8}
+        for i in (0..80)
+            &.num_{i}
+            &.num_0{i}
+                background-image $imgUrl('images/bead/round.png')
+                background-size 100% 100%
+                color $bead-round
+                .active &
+                .isActive &
+                [active=true] &
+                .bead-pastview &
+                .lobby-bead &
+                    background-image $imgUrl('images/bead/round-active.png')
+                    color $white
+
+/**
+ * 快十
+ */
+for k10 in $bead-k10
+    .bead-lottery-{k10}
+        for i in (0..21)
+            &.num_{i}
+            &.num_0{i}
+                background-image $imgUrl('images/bead/round.png')
+                background-size 100% 100%
+                color $bead-round
+                .active &
+                .isActive &
+                [active=true] &
+                .bead-pastview &
+                .lobby-bead &
+                    background-image $imgUrl('images/bead/round-active.png')
+                    color $white
+
+/**
+ * 广西快十
+ */
+for gxk10 in $bead-gxk10
+    .bead-lottery-{gxk10}
+        for i in (0..21)
+            &.num_{i}
+            &.num_0{i}
+                background-image $imgUrl('images/bead/round.png')
+                background-size 100% 100%
+                color $bead-round
+                .active &
+                .isActive &
+                [active=true] &
+                .bead-pastview &
+                .lobby-bead &
+                    background-image $imgUrl('images/bead/round-active.png')
+                    color $white
+
+/**
+ * 快3
+ */
+for k3 in $bead-k3
+    .bead-lottery-{k3}
+        for i in (1..6)
+            &.num_{i}
+                background-image $imgUrl('images/bead/dice-1.png')
+                background-size 100% 100%
+                color transparent
+                for i in (1..6)
+                    &.num_{i}
+                        background-image $imgUrl('images/bead/dice-'+ i +'.png')
+
+
+/**
+ * PK10
+ */
+for pk10 in $bead-pk10
+    .bead-lottery-{pk10}
+        for i in (1..10)
+            &.num_{i}
+            &.num_0{i}
+                background-image $imgUrl('images/bead/pk10-1.png')
+                background-size 100% 100%
+                color $white
+                for i in (1..10)
+                    &.num_{i}
+                    &.num_0{i}
+                        background-image $imgUrl('images/bead/pk10-'+ i +'.png')
+
+/**
+ * 六合彩
+ */
+for lhc in $bead-lhc
+    .bead-lottery-{lhc}
+        background-size 100% 100%
+        for lhc-red in $bead-lhc-red
+            &.num_{lhc-red}
+                background-image $imgUrl('images/bead/red.png')
+                color $bead-red
+                .active &
+                .isActive &
+                [active=true] &
+                .bead-pastview &
+                .lobby-bead &
+                    background-image $imgUrl('images/bead/red-active.png')
+                    color $white
+        for lhc-blue in $bead-lhc-blue
+            &.num_{lhc-blue}
+                background-image $imgUrl('images/bead/blue.png')
+                color $bead-blue
+                .active &
+                .isActive &
+                [active=true] &
+                .bead-pastview &
+                .lobby-bead &
+                    background-image $imgUrl('images/bead/blue-active.png')
+                    color $white
+        for lhc-green in $bead-lhc-green
+            &.num_{lhc-green}
+                background-image $imgUrl('images/bead/green.png')
+                color $bead-green
+                .active &
+                .isActive &
+                [active=true] &
+                .bead-pastview &
+                .lobby-bead &
+                    background-image $imgUrl('images/bead/green-active.png')
+                    color $white
+
+/**
+ * 幸运28
+ */
+for xy28 in $bead-xy28
+    .bead-lottery-{xy28}
+        background-size 100% 100%
+        for xy28-gray in $bead-xy28-gray
+            &.num_{xy28-gray}
+                background-image $imgUrl('images/bead/gray.png')
+                color $bead-gray
+                .active &
+                .isActive &
+                [active=true] &
+                .bead-pastview &
+                .lobby-bead &
+                    background-image $imgUrl('images/bead/gray-active.png')
+                    color $white
+        for xy28-green in $bead-xy28-green
+            &.num_{xy28-green}
+                background-image $imgUrl('images/bead/green.png')
+                color $bead-green
+                .active &
+                .isActive &
+                [active=true] &
+                .bead-pastview &
+                .lobby-bead &
+                    background-image $imgUrl('images/bead/green-active.png')
+                    color $white
+        for xy28-red in $bead-xy28-red
+            &.num_{xy28-red}
+                background-image $imgUrl('images/bead/red.png')
+                color $bead-red
+                .active &
+                .isActive &
+                [active=true] &
+                .bead-pastview &
+                .lobby-bead &
+                    background-image $imgUrl('images/bead/red-active.png')
+                    color $white
+        for xy28-blue in $bead-xy28-blue
+            &.num_{xy28-blue}
+                background-image $imgUrl('images/bead/blue.png')
+                color $bead-blue
+                .active &
+                .isActive &
+                [active=true] &
+                .bead-pastview &
+                .lobby-bead &
+                    background-image $imgUrl('images/bead/blue-active.png')
+                    color $white
+
+/**
+ * 路珠
+ */
+.bead-road
+    color $white
+    font-size 16px
+    &--big
+    &--odd
+    &--dragon
+    &--top
+        background-image $imgUrl('images/bead/road-big.png')
+        background-size 100% 100%
+    &--small
+    &--even
+    &--tiger
+    &--bottom
+        background-image $imgUrl('images/bead/road-small.png')
+        background-size 100% 100%
+    &--mid
+    &--middle
+        background-image $imgUrl('images/bead/road-mid.png')
+        background-size 100% 100%

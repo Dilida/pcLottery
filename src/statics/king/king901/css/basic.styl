@@ -1,0 +1,308 @@
+/**
+ * king/reset.styl
+ * 重置
+ */
+body
+    color $tertiary
+    background $styleUrl('images/bg.jpg') #ede6dc
+    background-size 1920px
+.bg-toolbar
+    background $styleUrl('images/toolbar.jpg')
+    background-size auto 100%
+.icon-avatar
+    background $styleUrl('images/avatar.png')
+    background-size 100% 100%
+.icon-money
+    background $styleUrl('images/icon-money.png')
+    background-size 100% 100%
+    color transparent
+/**
+ * 小元件样式
+ */
+/* 钱钱钱！ */
+.user-purse
+    &__balance
+        background-color rgba(#000, 0.5)
+        box-shadow 0 2px 1px rgba(#000, 0.5) inset
+        color $primary
+        span
+            color $primary
+            &.balance-hide
+                color $primary
+
+/**
+ * king/basic.styl
+ * 内页左侧选单（个人中心、帮助中心）
+ */
+.sub-nav
+    &__child-link
+        &.router-link-active
+            background-color $primary
+            color $white
+
+/**
+ * header-1.styl
+ * nav 导航列
+ */
+.nav
+    background-color #F5F5F5
+.btn-nav-group
+    .q-btn
+        border-left-color #FFF3E3
+        color $secondary
+        &:hover
+        &.active
+            color $secondary
+
+/**
+ * lobby.styl
+ * 推荐彩种
+ */
+.jackpot-money
+    color #BA041A
+
+/**
+ * lobby.styl
+ * 推荐彩种
+ */
+.promo-primary
+.promo-secondary
+    &__label
+        right auto
+        left 0
+        text-align left
+        padding-left 20px
+.promo-primary
+    background-image $styleUrl('images/lobby-crowdfunding.png')
+
+/**
+ * lobby.styl
+ * 大厅全部彩种
+ */
+.collapsible
+    &__header
+        color $primary
+        .icon-lottery
+            color $primary
+
+/**
+ * king/lobby.styl
+ * 右側面板
+ * NOTE:待与投注页右侧面版整合
+ */
+.panel
+    &__header
+        background $styleUrl('images/side-panel.png') 0 0 no-repeat
+        background-size 100% 100%
+/**
+ * king/page.styl
+ * page共用
+ * 页码
+ */
+/* 自订页码 */
+.pagination
+    .pager-btn
+        .q-btn
+            &.active
+                color $secondary
+/**
+ * page.styl
+ * page
+ * 优惠活动
+ */
+.activity-item
+    &__header
+        color $secondary
+
+/**
+ * king/page.styl
+ * page accountManage
+ * 个人中心-个人资料
+ */
+.account-manage
+    &-header
+        $bgGradient(#EFE4D6,transparent)
+
+/**
+ * 个人中心tabs背景图（此业主特有）
+ */
+.tabs
+    background $styleUrl('images/bg-block.jpg') fixed
+    > .q-tabs-head
+        background-color rgba(#000,0.06)
+    .q-tabs-head
+        .text-primary
+            color $secondary !important
+    &__tab
+        color #000 !important
+        &.active
+            background none
+            color $secondary !important
+            background $styleUrl('images/bg-block.jpg') fixed
+/**
+ * page deposit
+ * 个人中心-我要充值
+ */
+.deposit-wrap-bg
+    background-color rgba($white,0.3)
+
+/**
+ * page
+ * 手机投注
+ */
+.app-download
+    &-content
+        &__mobile-phone
+            display none
+        &__brand-logo
+            display none
+        &__qr-code-ios
+        &__qr-code-android
+            width 134px
+            height 134px
+            top 110px
+            background $styleUrl('images/bg-qrcode.png')
+            background-size 100% 100%
+            padding $smallGap
+        button
+            width 150px
+            height 50px
+            color transparent
+            bottom 120px
+        &__ios-link
+            left 52%
+        &__android-link
+            left 72%
+
+/**
+ * lottery.styl
+ * 投注页右侧选单
+ */
+.site-panel
+    &__header
+        background $styleUrl('images/side-panel.png')
+        background-size 100% 100%
+
+/**
+ * button
+ */
+/* 通用型 */
+.btn-primary
+    // background-color $secondary
+    background-image $styleUrl('images/btn/normal-left.png'), $styleUrl('images/btn/normal-right.png'), $styleUrl('images/btn/normal-center.png')
+    background-repeat no-repeat, no-repeat, repeat-x
+    background-position left, right, center
+    background-size auto 100%
+    border-radius 20px
+    color $secondary
+.btn-secondary
+    color $secondary
+    border 1px solid $secondary
+    &.active
+        background-color $secondary
+/**
+ * btn.styl
+ * 按钮组
+ */
+/* 底色按钮组 */
+.btn-group-flat
+    background-color $secondary
+    > .q-btn-item
+        color #C99269
+        &.active
+        &[active=true]
+            background-color transparent
+            border-bottom 3px solid $primary
+            color #FCC988
+            padding-bottom 1px
+    > .q-btn
+        &.text-primary
+            background-color transparent
+/**
+ * btn.styl
+ * 特殊型：特殊型独立使用，不适合再加其他效果
+ */
+/* 用在表格标题 */
+.btn-table-filter
+    &.active
+        color $secondary
+        border 1px solid transparent
+        background-color rgba($white,0.5)
+/* 首页立即投注-普通 */
+.btn-action
+    width 102px
+    height 30px
+    background $styleUrl('images/btn-normal.png')
+    background-size 100% 100%
+    color $secondary
+    &:hover
+        background $styleUrl('images/btn-normal-.png')
+        background-size 100% 100%
+
+/* 首页立即投注-强调 */
+.btn-strong
+    width 102px
+    height 30px
+    background $styleUrl('images/btn-strong.png')
+    background-size 100% 100%
+    &:hover
+        background $styleUrl('images/btn-strong.png')
+        background-size 100% 100%
+/* 下注 */
+.btn-bet
+    width 210px
+    height 55px
+    color $secondary
+    background $styleUrl('images/btn-bet.png') no-repeat
+    background-size 100% 100%
+    box-shadow 0 2px 2px rgba(#492803,0.36)
+    border-radius 30px
+    // .icon-bet
+
+
+/* 重置 */
+.btn-reset
+    width 96px
+    height 42px
+    color rgba($secondary,0.3)
+    background-color transparent
+    border 2px solid rgba($secondary,0.3)
+
+/* 复制 */
+.btn-copy
+    color #B58549
+
+/* 支付 */
+.btn-pay
+    &.active
+        background-color rgba(#000, 0.06)
+        color $secondary
+
+/**
+ * 下注input
+ */
+.bet-input
+    box-shadow 0 0 1px 1px #E6CFAC inset
+    input
+        color $primary
+
+/**
+ * 众筹假tab列
+ */
+.crowdfunding-tabs
+    &__btn
+        &.active
+            color $secondary
+            border-color $secondary
+
+
+/**
+ * lobby.styl
+ * 大厅平台公告
+ */
+.lobby-post
+    .modal-content
+        padding 13px 0
+    .modal__body
+        background-color transparent
+        padding-right 10px

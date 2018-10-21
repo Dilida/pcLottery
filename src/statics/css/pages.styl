@@ -1,0 +1,339 @@
+/**
+ * page共用
+ */
+.page-header
+    display flex
+    flex 0 0 100%
+    flex-direction row
+    max-width 100%
+    margin-bottom 20px
+    .icon-page
+        display flex
+        flex 0 0 10%
+        max-width 10%
+        color $secondary
+    .page-title
+        display flex
+        flex 0 0 90%
+        max-width 90%
+        color $secondary
+        line-height 48px
+        font-size $text-lg
+        margin-bottom 2px
+        border-bottom 1px solid $gray-white-2
+
+/**
+ * page共用
+ * 页码
+ */
+/* 自订页码 */
+.pagination
+    text-align right
+    margin-top $basicGap
+    font-size $text-xsm
+    .pager-count
+        color $secondary
+        margin-right 5px
+    .pager-btn
+        display inline-block
+        vertical-align middle
+        border-radius 4px
+        .q-btn
+            min-width 25px
+            padding 0 5px
+            line-height 25px
+            font-size $text-xsm
+            // .pager-num
+
+/* quasar 内建页码 */
+.pagination-q
+    text-align right
+    font-size $text-xsm
+    border 1px solid $gray-light-2
+    border-radius 4px
+    box-shadow 0 1px 3px $gray-white-2 inset
+    .q-btn
+        min-width 25px
+        padding 0 5px
+        line-height 25px
+        border-right 1px solid $gray-light-2
+        font-size $text-xsm
+    .q-pagination
+        .q-btn
+            &.bg-primary
+                background-color $white !important
+                color $primary !important
+
+/**
+ * page reg
+ * 注册
+ */
+.reg
+    padding 50px 0
+    width 660px
+    margin 0 auto
+    // &-header
+    &-wrap
+        align-items flex-start
+    &__btn
+    &__msg
+        margin-top $basicGap
+        width 100%
+        justify-content center
+        text-align center
+    &-desc
+        width 100%
+        margin auto
+
+/**
+ * page
+ * 优惠活动
+ */
+.activity-list
+    padding $basicGap
+.activity-item
+    margin-bottom $basicGap
+    &__wrap
+        width 100%
+        padding 20px 60px
+        background-color $gray-white-1
+        box-shadow 0 2px 4px $gray-light-2
+    &__header
+        margin-bottom $basicGap
+        line-height 40px
+        $bgGradient($white,transparent)
+        color $primary
+        padding-left 10px
+        border-left 5px solid $secondary
+        letter-spacing 2px
+    &__img
+        margin-bottom $basicGap
+        img
+            width 100%
+    &__btn-bar
+        justify-content flex-end
+    &__content
+        display block
+        width 100% //IE11兼容
+        word-break break-all //避免qa測一些連續無空格英文數字
+        table
+            border-collapse collapse //cms內容表格去掉間距
+
+/**
+ * page accountManage
+ * 个人中心-个人资料
+ */
+.account-manage
+    &-info
+        margin $smallGap 0 20px
+        font-size $text-lg
+        &__item
+            display flex
+            position relative
+            align-items center
+            height 36px
+            .q-btn
+                position absolute
+                right 0
+            &--strong
+                color $warning
+                .account-manage-label
+                    color $warning
+    &-label
+        color $secondary
+    &-header
+        $bgGradient($gray-white-1,transparent)
+        color $secondary
+        padding 7px 10px
+        letter-spacing 2px
+    &-content
+        .field-normal
+            &.editable
+                .q-input
+                    // box-shadow none
+            &.disable
+                .q-input
+                    box-shadow none
+                    input
+                        color $primary
+                        opacity 1!important
+    &__list
+        padding $basicGap
+    &__item
+        margin-bottom $basicGap
+
+/**
+ * page
+ * 个人中心-密码管理
+ */
+.reset-password
+    padding $basicGap
+    &__btn
+        margin-top 20px
+        text-align center
+
+/**
+ * page withdrawals, withdrawalsBind
+ * 个人中心-我要提款
+ */
+.withdrawals-tip
+    line-height 28px
+
+/**
+ * page deposit
+ * 个人中心-我要充值
+ */
+.deposit-wrap
+    padding 0 30px
+.deposit-wrap-bg
+    width 100%
+    background-color $white
+    padding $basicGap
+.deposit-pay-item
+    padding $smallGap
+    text-align center
+.deposit-full-input
+    padding $basicGap 0
+.deposit-msg
+    margin-top 10px
+    font-size $text-xsm
+.deposit-list
+    padding $basicGap
+    &__title
+        margin $smallGap 0
+    // &__block
+    &__item
+        min-height 36px
+    /* 改成跟 q-field-label 一样 */
+    .q-item-side
+        text-align right
+        flex 0 0 100px
+        max-width 100px
+        color $tertiary
+        padding-right 5px
+    .q-item-main
+        color $secondary
+.qr-code
+    width 192px
+    height 192px
+    display block
+    margin 0 auto $basicGap
+.deposit-qrcode
+    padding 15px
+    text-align center
+    justify-content center
+
+/**
+ * page agent
+ * 帮助中心、代理加盟
+ */
+.agent-check
+.agent-btn
+    margin-top $basicGap
+    text-align center
+.agent-agreement
+    width 700px
+    padding 0 30px
+//CMS强制断行
+.help-block
+    word-break break-all
+
+/**
+ * page history
+ * 往期开奖
+ */
+.history-bar
+    justify-content space-between
+    padding-right $basicGap
+    $bgGradient($white,$gray-white-2)
+    margin-bottom $basicGap
+    &__name
+        display flex
+        align-items center
+        margin-right $basicGap
+        min-width 200px
+        color $secondary
+        font-size $text-lg
+        letter-spacing 2px
+        img
+            width 50px
+            margin-right $basicGap
+    &__filter
+        display flex
+        align-items center
+    &__select
+        display flex
+        align-items center
+        margin-right $basicGap
+        min-width 150px
+    &__btns
+        .q-btn
+            margin-right 5px
+
+/**
+ * page
+ * 手机投注
+ */
+.app-download
+    .bread-crumbs
+        display none
+    &-content
+        background-size 100%
+        height 385px
+        margin 30px
+        position relative
+    &-elements
+        position absolute
+        display inline-flex
+        flex-direction column
+        align-items center
+        right 99px
+        top 100px
+        width 330px
+        &__brand-logo
+            width 150px
+        &__qrcode
+            display inline-flex
+            justify-content space-between
+            width 82%
+            img
+                height 117px
+        &__buttons
+            display inline-flex
+            justify-content space-between
+            width 100%
+            .q-btn
+                width 50%
+                height 50px
+                padding 0
+                &:first-child
+                    margin-right 8px
+                font-size .4rem
+                text-indent 39px
+                color $white
+            &--ios
+                background-size 100%
+            &--android
+                background-size 100%
+
+/**
+* 维护页、404页面、ip限制页
+*/
+.page-plus
+    height 100vh
+/* 维护页 */
+.maintained
+    text-align center
+    padding-top 175px
+    &__img
+        background $styleUrl('images/maintain.png') no-repeat center center
+        background-size 100%
+        margin 0 auto
+    &__title
+        margin-top 30px
+        color $primary
+        font-size 20px
+    &__text
+        margin-top 10px
+        font-size 16px
+        line-height 1.8em

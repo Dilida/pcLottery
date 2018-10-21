@@ -1,0 +1,72 @@
+/**
+ * 预设modal
+ */
+.modal
+    .modal-content
+        border-radius 6px
+        padding 10px 0
+        background-image $styleUrl('images/popup/top.png'), $styleUrl('images/popup/bottom.png'), $styleUrl('images/popup/center.png')
+        background-size 100%
+        background-repeat no-repeat, no-repeat, repeat-y
+        background-clip border-box, border-box, content-box
+        background-position center top, center bottom, center center
+        background-color transparent
+        box-shadow none
+        overflow visible
+    &__header
+        height 67px
+        padding $basicGap
+        background $styleUrl('images/popup/title.png') no-repeat center center
+        background-size 307px 67px
+        &-title
+            color $secondary
+            font-size 18px
+            text-align center
+            line-height 30px
+    &__close
+        position absolute
+        padding 0
+        background $styleUrl('images/popup/close.png')
+        background-size 100% 100%
+        color transparent
+        top -5px
+        right -5px
+        width w = 40px
+        height w
+    &__body
+        padding $basicGap
+        word-break break-all
+    &__footer
+        padding $basicGap
+        text-align center
+        .q-btn + .q-btn
+            margin-left 10px
+    &.modal-bet
+        .modal__body
+            min-width 300px
+
+/**
+ * 登入弹窗
+ */
+.login
+    .login-wrap
+        padding 10px 50px
+    &__check-item
+        justify-content center
+        margin-bottom $basicGap
+        margin-top $basicGap
+    &__btn
+        justify-content center
+        margin-bottom 20px
+    &__btn-group
+        .q-btn
+            font-size $text-xsm
+            line-height $text-xsm
+            padding 0 20px
+            border-right 1px solid $tertiary
+            &:hover
+                color $primary
+                .q-focus-helper
+                    display none
+            &:last-child
+                border-right none

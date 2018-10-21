@@ -1,0 +1,360 @@
+/**
+ * page共用
+ * 页码
+ */
+/* 自订页码 */
+.pagination
+    // .pager-count
+    .pager-btn
+        border none
+        .q-btn
+            background-color #F3F3F3
+            margin 2px
+            // .pager-num
+            &.active
+                background $secondary
+                color $white
+
+/**
+ * 个人中心、幫助中心 頁面整體一起調
+ */
+.account-manage
+.account-passward-manage
+.bet-record
+.account-info
+.deposit
+.withdrawals
+.account-notification
+.withdrawals-bind
+.agent
+    padding-top 10px
+    padding-bottom 10px
+    .bread-crumbs
+        border 1px solid #D8D8D8
+        background-color #fbfbfb
+        margin-bottom 10px
+        padding 5px 10px
+    .layout-page-content
+        border 1px solid #D8D8D8
+        background-color $white
+
+/**
+ * page accountManage
+ * 个人中心-个人资料
+ */
+.account-manage
+    &-header
+        border-left 5px solid $secondary
+        line-height 1.5em
+.account-manage-info
+    &__item
+        height auto
+        font-size 12px
+
+/**
+ * page
+ * 个人中心-密码管理
+ */
+.reset-password
+    width 400px
+    margin 0 auto
+/**
+ * page bet-record
+ * 个人中心-投注记录
+ */
+.bet-record
+    .account-manage-info
+        margin -15px -15px 10px
+        padding 20px 10px
+        background-color #F3F3F3
+        border-bottom 1px solid #E3E3E3
+        &__item
+            font-size 14px
+/* 个人中心的表格，tag:巫术、tag:只用在个人中心 */
+.bet-record
+.account-info
+    .table
+        border none
+        th
+        td
+            padding 7px 5px
+        thead
+            border-bottom 1px solid #E3E3E3
+            th
+                color $tertiary
+                font-size 12px
+        tbody
+            tr
+                border-bottom 1px dashed #E3E3E3
+                &:nth-child(even)
+                    background-color transparent
+        tfoot
+            background-color #F3F3F3
+
+/**
+ * page account-info
+ * 个人中心-帐户明细
+ */
+.account-info
+    .table-group
+        margin-top -15px
+        .table-header
+            border-top none
+
+/**
+ * page withdrawals-bind
+ * 个人中心-充值
+ */
+.withdrawals-bind
+    .account-manage-header
+        margin -16px -16px 0 -16px
+        height 46px
+        font-size 12px
+        padding 13px 15px
+        border 1px solid #F8E3B9
+        background #FFFDEB
+        color #F57104
+
+/**
+ * page account-notification
+ * 个人中心-个人消息
+ */
+.account-notification
+    .table-normal
+        margin -15px -15px 0
+        width calc(100% + 30px)
+        border-radius 0
+        border 0
+        th
+        td
+            height auto
+            font-size 12px
+            padding 7px 10px
+        thead
+            background-color #F3F3F3
+            border-bottom 1px solid #E5E5E5
+            tr
+                th
+                    color $tertiary
+        tbody
+            border none
+            tr
+                border-bottom 1px dashed #E5E5E5
+                &:nth-child(odd)
+                    background-color transparent
+
+/**
+ * page agent
+ * 帮助中心、代理加盟
+ */
+.help-block
+    padding $basicGap 20px
+
+// 個人中心 btn 也整合進來
+.agent-btn
+.reset-password__btn
+    margin-left 6.2rem
+.withdrawals-bind
+    button
+        margin-left 6.2rem
+
+/**
+ * page
+ * 表單
+ */
+.account-passward-manage .tabs__content
+.withdrawals-bind .account-manage__list
+.help-block.form-content
+    width 56%
+    margin auto
+    .form-content
+        max-width 100%!important
+        flex 0 0 100%
+.reg .reg-wrap
+    width 36%
+    margin auto
+    .form-content
+        max-width 100%!important
+        flex 0 0 100%
+.withdrawals
+    .form-content
+        max-width 50%!important
+        flex 0 0 100%
+
+/**
+ * page
+ * 手机投注
+ */
+.app-download
+    background-color $white
+    margin-top 15px
+    border 1px solid #E3E3E3
+    &-content
+        background $imgUrl('images/app-download-content-bg.png') 0 0 no-repeat
+        background-size 100%
+    &-elements
+        right 99px
+        top 100px
+        width 330px
+        &__brand-logo
+            display none
+        &__qrcode
+            width 82%
+            img
+                height 117px
+        &__buttons
+            .q-btn
+                text-indent 31px
+                color $white
+            &--ios
+                background $imgUrl('images/app-download-btn-ios.png') 0 6px no-repeat
+                background-size 100%
+            &--android
+                background $imgUrl('images/app-download-btn-android.png') 0 6px no-repeat
+                background-size 100%
+
+/**
+ * page
+ * 优惠活动 (style901主要)
+ */
+.activity-page
+    background-color $white
+    border 1px solid #E3E3E3
+    padding 20px
+    margin-top 15px
+    .bread-crumbs
+        display none
+.activity-list
+    padding $basicGap
+.activity-item
+    margin-bottom 0
+    background $styleUrl('images/bg-block.jpg')
+    background-size cover
+    &__wrap
+        width 100%
+        padding 20px 15px
+        background-color transparent
+        box-shadow none
+        border-bottom 1px dashed #D6D6D6
+        // display flex
+        // &.detail
+        //     flex-direction column
+    &__info
+        // width 40%
+        // float right
+        color #4a4a4a
+        flex-direction column
+        align-items start
+        padding-left 20px
+        .detail &
+            padding 10px 20px
+            width 100%
+    &__header
+        font-size 1.25rem
+        margin-bottom $basicGap
+        line-height 40px
+        border none
+        padding-left 0px
+        background none
+        color #4a4a4a
+        letter-spacing 2px
+    &__img
+        // margin-bottom $basicGap
+        // width 60%
+        // .detail &
+            // width 100%
+        img
+            width 100%
+    &__btn-bar
+        justify-content flex-end
+        width 100%
+        button
+            border 1px solid #979797
+            padding 5px 50px 5px 38px
+            &:not(.disabled):not(.q-btn-flat):not(.q-btn-outline):not(.q-btn-push):before
+            &:after
+                content ''
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 5px 0 5px 5px;
+                border-color: transparent transparent transparent #4a4a4a!important
+                position absolute
+                right 29px
+                top 50%
+                left unset
+                transform translateY(-50%)
+                z-index 1
+            &:not(.disabled):not(.q-btn-flat):not(.q-btn-outline):not(.q-btn-push):before
+                right 38px
+
+/**
+ * page reg
+ * 注册
+ */
+.reg
+    background-color $white
+    border 1px solid #E3E3E3
+    padding 20px
+    margin-top 15px
+    width 100%
+    .page-header
+        max-width 83%
+        margin auto
+        margin-bottom 20px
+        margin-top 20px
+    &-desc
+        width 340px // 老板要求：注册cms内容宽度对齐下面表单并且可以折行
+        word-break break-all // 老板要求：注册cms内容宽度对齐下面表单并且可以折行
+    &__btn
+        button
+            width 100% // 老板要求：注册页表单标签刚好四字宽
+            margin-left 70px // 老板要求：注册页表单标签刚好四字宽
+    &__msg
+        text-align left // 老板要求：注册页表单标签刚好四字宽
+        margin-left 70px // 老板要求：注册页表单标签刚好四字宽
+    // 老板要求：注册页表单标签刚好四字宽
+    .field-normal
+        .q-field-label
+            flex 0 0 70px
+        .q-field-content
+            max-width calc(100% - 70px)
+
+/**
+ * page history
+ * 往期開獎
+ */
+.history
+    margin-top 15px
+    padding 0 0 10px 0
+    .history-bar
+        margin 0
+        background $white
+        border 1px solid #e9e9e9
+        border-bottom 0
+        &__name
+            color inherit
+            margin 0 15px
+            img
+                display none
+        &__btns
+            button
+                background-color transparent
+                color inherit
+                border none
+                &.active
+                    color $primary
+                    text-decoration underline
+
+/**
+* 维护页、404页面、ip限制页
+*/
+.page-plus
+    background $imgUrl('images/plus-bg.jpg') fixed no-repeat center center
+    background-size 100% 100%
+/* 维护页 */
+.maintained
+    padding-top 175px
+    &__img
+        width 339px
+        height 162px

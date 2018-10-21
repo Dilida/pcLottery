@@ -1,0 +1,163 @@
+/**
+ * 投注页header
+ * 对应components/lottery/lotteryLogo.vue
+ */
+.lottery
+    background $styleUrl('/images/lottery-bg-1.png')
+    background-size 20px 20px
+    .page-bg
+        background-color #F2F3F7
+        position relative
+        &:before
+            content ''
+            display block
+            position absolute
+            top -5px
+            left 0
+            width 100%
+            height 5px
+            background $styleUrl('/images/lottery-bg.png') no-repeat
+            background-size 100%
+.lottery-toolbar
+    background-color $primary
+/* 在线客服按钮要还回去 */
+.top-btns-account
+    .layout-btn-group
+        &:nth-child(2)
+        &:last-child
+            .q-btn
+                background-color $white
+                color $tertiary
+
+.lottery-header
+    border-bottom 1px dashed #D5D5D5
+.lottery-logo
+.lottery-countdown
+    position relative
+    &:after
+        content ''
+        position absolute
+        right 0
+        top 0
+        height 110px
+        width 1px
+        border-right 1px dashed #D5D5D5
+.lottery-logo
+    .lottery-title
+        &__name
+            color $secondary
+
+/**
+ * 玩法选单
+ */
+// .lottery-bet-tags
+.btn-group-flat
+    &.swiper-container
+        padding-top 3px
+    .swiper-slide
+    .q-btn
+        border 1px solid #E4E4E4
+        background-color #F6F6F6
+        color #9B9B9B
+        &[active=true]
+        &.active
+            background-color $white
+            border none
+            color $primary
+            box-shadow 1px 0 3px rgba(#3E3E3E, 0.5)
+            &:after
+                content ''
+                position absolute
+                top 0
+                right 0
+                left 0
+                height 3px
+                background-color $primary
+.bet-play-tab
+    .btn-group-flat
+        .q-btn
+            border 0
+            background-color transparent
+            color $tertiary
+        .text-primary
+            color $white !important
+            background-color $primary
+
+/**
+ * 玩法说明按钮列
+ */
+.lottery-button-area
+    .q-btn
+        color transparent
+        background-color transparent
+        background-size 100% 100%
+        border none
+        &:first-child
+            background-image $styleUrl('images/btn-trend-lottery.png')
+        &:last-child
+            background-image $styleUrl('images/btn-playintro.png')
+
+/**
+ * 生肖
+ */
+.sheng-xiao
+    background-color transparent
+    border-radius 0
+    border-top 1px solid #F0F0F0
+    border-bottom 1px solid #F0F0F0
+
+
+/**
+ * 投注区块
+ */
+.lottery-bet-area
+    background-color $white
+
+/**
+ * 投注项目群组，一个玩法区块
+ * .bet-item-group > .bet-item-wrap > .bet-item
+ */
+
+/* 投注项目 */
+.bet-item
+    background-color #F6F6F6
+    border-radius 3px
+    border 1px solid #E4E4E4
+    [active=true] &
+    .isActive &
+    &[active=true]
+    &.active
+        background-color $primary
+        color $white
+        border-color $primary
+        input
+            border-color #CECECE
+    /* 自选不中 */
+    &.bet-item-round
+        [active=true] &
+        .isActive &
+        &[active=true]
+        &.active
+            background-color transparent
+            color $white
+    &.disable-item
+        opacity 0.3
+    &__input
+        input
+            color $primary
+            border 1px solid #E4E4E4
+            box-shadow 0 1px 3px rgba(#ccc, 0.5) inset
+
+/**
+ * 投注资讯与按钮
+ */
+.play-bet
+    &__count
+        background-color #F6F6F6
+
+/**
+ * 路珠
+ */
+.road-content
+    margin-top 0
+    background-color $white

@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option java_outer_classname = "MessageInfoVO";
+message MessageVO{
+	int32 eventId=1;
+	string content=2;
+}

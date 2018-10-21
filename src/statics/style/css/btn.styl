@@ -1,0 +1,199 @@
+/**
+ * button
+ */
+/* 通用型 */
+.btn-primary
+.btn-secondary
+.btn-logout
+.btn-reg
+    min-height 30px
+    border-radius 4px
+// .btn-cancel
+//     color $gray-medium
+//     border 1px solid $gray-medium
+//     border-radius $btn-border-radius
+//     min-height 36px
+.btn-secondary
+    border 1px solid $primary
+    color $primary
+    border-radius 4px
+    &.active
+        background-color $primary
+        color $white
+.btn-warning
+    color $white
+    background-color $warning
+    border-radius $btn-border-radius
+
+.btn-more
+    height 26px
+    line-height 26px
+    padding 0 5px
+    color $white
+    border-radius $btn-border-radius
+.bbtn-demoplay
+    padding 4px 5px
+
+/**
+ * size
+ */
+.btn-lg
+    min-height 40px
+    min-width 200px
+.btn-md
+    min-width 120px
+.btn-sm
+    min-height 30px
+
+// /**
+//  * 按钮组
+//  */
+// /* 底色按钮组 */
+// .btn-group-flat
+//     background-color $gray-white-1
+//     width 100%
+//     border-radius $btn-border-radius
+//     overflow hidden
+//     &.no-wrap
+//         flex-wrap wrap
+//     > .q-btn-item
+//         min-height 44px
+//         &.active
+//         &[active=true]
+//             background-color $primary
+//             color $white
+//     > .q-btn
+//         min-height 44px
+//         &.text-primary
+//             background-color $primary !important
+//             color $white !important
+// /* 线条钮组 */
+// .btn-group-tab
+//     width 100%
+//     overflow hidden
+//     > .q-btn-item
+//         min-height 44px
+//         border-bottom 3px solid transparent
+//         &.active
+//         &[active=true]
+//             border-bottom-color $primary
+//             color $primary
+
+/**
+ * 特殊型：特殊型独立使用，不适合再加其他效果
+ */
+/* 余额显示隐藏 */
+.btn-balance-show
+    color #8d8d8d
+    border 1px solid currentColor
+    border-radius 3px
+    font-size 12px
+    line-height 12px
+    padding 2px 3px
+    margin-left 5px
+/* 大厅号码走势 */
+.btn-go-bet
+    width 103px
+    height 36px
+    min-height auto
+    .q-btn-inner
+        display none
+/* 大厅立即投注 */
+.btn-trend
+    width 103px
+    height 36px
+    min-height auto
+    .q-btn-inner
+        display none
+/* 向右滚动箭头 */
+.btn-right
+    width 16px
+    height 16px
+    padding 0
+    background-image $styleUrl('images/btn-right.png')
+    background-size 100% 100%
+/* 向左滚动箭头 */
+.btn-left
+    width 16px
+    height 16px
+    padding 0
+    background-image $styleUrl('images/btn-left.png')
+    background-size 100% 100%
+
+/* 用在表格标题 */
+.btn-table-filter
+    height 25px
+    padding 0 10px
+    color $tertiary
+    border 1px solid #E3E3E3
+    background-color $white
+    font-size 12px
+    min-height 25px
+    margin-right 5px
+
+// /* 首页立即投注-普通 */
+// .btn-action
+//     width 88px
+//     height 30px
+//     color $white
+//     background $imgUrl('images/btn_normal.png')
+//     background-size 100% 100%
+//     border-radius $btn-border-radius
+//     &:hover
+//         background $imgUrl('images/btn_normal-hover.png')
+//         background-size 100% 100%
+
+// /* 首页立即投注-强调 */
+// .btn-strong
+//     width 88px
+//     height 30px
+//     color $white
+//     background $imgUrl('images/btn_strong.png')
+//     background-size 100% 100%
+//     border-radius $btn-border-radius
+//     &:hover
+//         background $imgUrl('images/btn_strong-hover.png')
+//         background-size 100% 100%
+
+/* 下注 */
+.btn-bet
+    width 120px
+    height 30px
+    font-size 14px
+    color $white
+    background $styleUrl('images/btn-bet.png')
+    background-size 120px 30px
+    .q-icon
+        margin-right 5px
+
+// /* 重置 */
+// .btn-reset
+//     width 125px
+//     height 48px
+//     font-size 20px
+//     color $white
+//     background-color $gray-light-3
+//     border-radius $btn-border-radius
+
+/* 复制 */
+.btn-copy
+    padding 0 5px
+    color $primary
+    border 1px solid currentColor
+    border-radius 3px
+    min-height 22px
+    font-size $text-xsm
+
+/* 支付 */
+.btn-pay
+    width 150px
+    padding $smallGap
+    color $gray-medium
+    border 1px solid currentColor
+    border-radius 4px
+    background-color $white
+    .q-btn-inner
+        justify-content flex-start
+    &.active
+        background-color rgba($primary, 0.2)
+        color $primary

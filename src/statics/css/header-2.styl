@@ -1,0 +1,156 @@
+/**
+ * header
+ * 参考 default 版导航，nav在logo下面，盖到page
+ */
+
+/**
+ * 顶部 toolbar
+ */
+.q-toolbar
+    font-size 12px
+.top-slogan
+    height 30px
+    line-height 30px
+
+/**
+ * header 导航列
+ */
+// .nav
+//     height 130px
+//     @media only screen and (max-width $notebook)
+//         height 90px
+//     .nav-account
+//         .q-focus-helper
+//         .q-hoverable:active .q-focus-helper
+//             opacity 0
+
+//         .q-btn
+//             position relative
+//             padding 0
+
+//             &.text-primary
+//             &:hover
+//             &:active
+//                 color $primary !important
+//                 background transparent
+//                 .q-btn-inner
+//                     &:before
+//                         border-color transparent transparent transparent $primary
+//             .q-btn-inner
+//                 &:before
+//                     content ''
+//                     width 0
+//                     height 0
+//                     border-style solid
+//                     border-width 5px 0 5px 6px
+//                     border-color transparent transparent transparent #666
+//                     margin-right 10px
+//     .fa-caret-down
+//         display none
+
+//     .nav-main
+//         position absolute
+//         bottom -36px
+//         left 50%
+//         margin-left -495px
+//         background-color $white
+//         border-bottom 3px solid $primary
+//         box-shadow 0 4px 6px rgba(#CFCFCF,0.5)
+//         @media only screen and (max-width $notebook)
+//             bottom -30px
+//         .q-btn
+//             width 165px
+//             height 64px
+//             font-size 16px
+//             @media only screen and (max-width $notebook)
+//                 height 50px
+//             &.active
+//                 color $white
+//                 $bgGradient-v4($color1,$color2,$color3,$color4)
+//             .q-icon
+//                 font-size 34px
+//                 margin-right 5px
+//             .q-btn-inner.row
+//                 flex-direction row
+
+/**
+ * 登入列
+ */
+.login-bar
+    display flex
+    align-items center
+.login-bar-wrap
+    > .q-item
+        margin-right 5px
+        .q-btn:not(.btn-alink)
+            margin-right 5px
+.login-bar-loged
+    > .q-item
+        margin-left 10px
+    .q-icon
+        margin-right 3px
+    .user-name
+        .q-btn
+            padding 0px 10px
+            .q-btn-inner
+                > div:after
+                    content '的帐户'
+                    color $tertiary
+                    margin-right 10px
+    .icon-mail
+        color $primary
+
+/**
+ * nav
+ */
+.btn-nav-group
+    .q-btn-dropdown-arrow
+        display none
+    .q-btn
+        width auto
+        height 40px
+        padding 4px 13px
+        max-width 170px
+        position relative
+        .q-icon
+            margin-right 5px
+            font-size 24px
+        .q-chip
+            border none
+            position absolute
+            transform scale(0.8)
+            animation jump-chip 1s infinite
+            &:after
+                content " "
+                border-style solid
+                border-width 4px 4px 0 0
+                height 0
+                width 0
+                left 4px
+                bottom -4px
+                position absolute
+        &:after
+            content ''
+            width 1px
+            height 20px
+            display block
+            position absolute
+            top 10px
+            left -1px
+        &.active:after
+            display none
+.all-game-title
+    width 230px
+    padding 8px 10px 5px
+    .q-icon
+        font-size 24px
+
+@keyframes jump-chip
+    0%
+        top -10px
+    40%
+        top -12px
+    80%
+        top -10px
+    100%
+        top -10px

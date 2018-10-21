@@ -1,0 +1,77 @@
+/**
+ * header
+ * 参考 king 版导航，nav在logo旁边
+ */
+
+/**
+ * 顶部 toolbar
+ */
+.header
+    .q-btn
+        min-height 36px
+    .q-toolbar
+        .q-btn
+            padding-left 10px
+            padding-right 10px
+        .icon-avatar
+            margin-right 5px
+            & + div
+                max-width 120px
+                overflow hidden
+                text-overflow ellipsis
+
+/**
+ * 顶部按钮
+ */
+.top-btns-help
+    .q-btn
+        position relative
+        &:after
+            content ''
+            position absolute
+            right 0
+            top 10px
+            width 1px
+            height 16px
+            background-color $white
+        &.text-primary
+            color $white !important
+    .layout-btn-group
+        &:last-child
+            .q-btn:after
+                display none
+.top-btns-account
+    .q-btn
+        min-width 88px
+        &.text-primary
+            color $white !important
+    .layout-btn-group
+        &:nth-child(1)
+            background-color $primary-bright
+        &:nth-child(2)
+            background-color $primary-strong
+        &:nth-child(3)
+            background-color $primary-deep
+
+/**
+ * nav 导航列
+ */
+.nav
+    .q-btn-inner.row
+        flex-direction column
+    .fa-caret-down
+        display none
+.btn-nav-group
+    border-right 1px solid $gray-white-2
+    .q-btn
+        border-left 1px solid $gray-white-2
+        .q-focus-helper
+            display none
+        &.text-primary
+        &:hover
+        &.active
+            color $primary
+            background-color $primary-pale
+        .icon-nav
+            font-size 36px
+            margin-right 0

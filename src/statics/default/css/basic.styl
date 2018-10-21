@@ -1,0 +1,369 @@
+
+
+/**
+ * 共用独立样式
+ */
+
+
+/* 大厅奖池标签 */
+.jackpot-label
+    font-size 14px
+/* 大厅奖池强调颜色 */
+.lobby-primary-text
+    color $warning
+/* 面包屑 */
+.bread-crumbs
+    display none
+/* 通知小点点 */
+.icon-tool
+    &.active:after
+        top 4px
+        left 16px
+/* 钱钱钱！ */
+.user-purse
+    &__balance
+        padding 0
+        padding-left 2px
+        border 1px solid $primary
+        border-radius 3px
+        font-size 12px
+        .q-icon
+            display none
+        .user-purse__label
+            vertical-align middle
+            color $primary
+            line-height 12px
+            &:after
+                content '：'
+        .user-purse-amt
+            min-width auto
+            vertical-align middle
+            color $warning
+            line-height 12px
+/* 短文字颜色变换 */
+.text-strong
+    color $primary
+
+/*
+ * 倒计时底框
+ */
+.countdown-number
+    background $imgUrl('images/time.png') no-repeat center center
+    background-size 100%
+
+/**
+ * header 导航列
+ */
+.nav-full
+    $bgGradient($toolbar1,$toolbar2)
+    .btn-nav-group
+        .q-btn
+            color $white
+            &.active
+                background-color rgba(#fff,0.95)
+                color $primary
+            &:after
+                background-color $white
+    .all-game-title
+        color $white
+        display none
+// 只有在首页才显示“全部彩票” all-game-title
+.page-index
+    .all-game-title
+        display block
+
+/**
+ * 底部导航列
+ */
+.footer-nav
+    &__wrap
+        background $imgUrl('images/footer/line.png') no-repeat center center
+        background-size 100%
+
+
+
+/**
+ * 内页左侧选单（个人中心、帮助中心）
+ */
+.sub-nav
+    &__item
+        border-bottom 1px solid #ECECEC
+        padding 10px 0
+        &:last-child
+            border-bottom none
+        &-tilte
+            border-bottom none
+            color initial
+            font-weight bold
+            font-size $text-md
+            padding-left 25px
+            .q-icon
+                font-size 22px
+                margin-top -2px
+                margin-right 10px
+    &__item-tilte
+        color $black
+    &__child
+        height 30px
+        &-link
+            border-bottom none
+            padding-left 62px
+            padding-top 0px
+            padding-bottom 0
+            min-height auto
+            height 30px
+            line-height 30px
+            .q-icon
+                display none
+            &.router-link-active
+                background-color transparent
+                background $styleUrl('images/personal-active-icon.png') no-repeat
+                background-position 87% center
+                background-size 6px
+
+
+/**
+ * TABLE组件
+ */
+/* table（表格不含标题列）*/
+.table-header
+    background-color transparent
+    color $tertiary
+    margin-bottom 10px
+    justify-content space-between
+.table
+    // border none
+    // thead
+    //     th
+    //         background-color $primary
+    //         color $white
+    // tfoot
+    //     td
+    //         background-color rgba($primary, 0.1)
+    /* 首页排行 */
+    &.winner-scroll //獲獎名單
+        td:nth-child(2)
+            color $primary
+        td:nth-child(3)
+            color $warning
+    &.winner-list //榜單
+        th
+        td
+            text-align left
+            &:first-child
+                text-align center
+        td:nth-child(3)
+                color $warning
+        thead
+            th
+                background-color #F8F8F8
+                color $primary
+                text-align center
+                border-right 1px solid $white
+                &:last-child
+                    border none
+        tbody
+            tr
+                &:nth-child(1)
+                &:nth-child(2)
+                &:nth-child(3)
+                    td:first-child
+                        color $money
+                        background-repeat no-repeat
+                        background-size 40%
+                        background-position 5% center
+                        padding-left 25px
+                        background-size 30%
+                        background-position 9px center
+                &:nth-child(1)
+                    td:first-child
+                        background-image $imgUrl('images/ranking-icon1.png')
+                &:nth-child(2)
+                    td:first-child
+                        background-image $imgUrl('images/ranking-icon2.png')
+                &:nth-child(3)
+                    td:first-child
+                        background-image $imgUrl('images/ranking-icon3.png')
+                td:first-child
+                    span:before
+                        content 'NO.'
+
+/* table-normal 用在个人消息、往期开奖 */
+.table-normal
+    thead
+        background-color $primary
+    tbody
+        border none
+        td
+            padding 10px 5px
+
+/**
+ * 复盖倒计时翻牌
+ */
+.flip-clock__card
+    box-shadow 0 3px 7px rgba(#000,0.2)
+    border-radius 6px
+    background $imgUrl('images/time.png') no-repeat top center
+    background-size 100% 200%
+.card__top,
+.card__bottom
+    box-shadow none
+.card__top,
+.card__bottom,
+.card__back::before,
+.card__back::after
+    color $tertiary
+    background transparent
+    background $imgUrl('images/time.png') no-repeat top center
+    background-size 100% 200%
+.card__bottom
+    color $tertiary
+    background-position bottom center
+    border-top-color rgba(#000,0.1)
+
+/**
+ * common.styl
+ * 内页右侧横向选单tab
+ */
+.tabs
+    background-color transparent
+    &.q-tabs-position-top
+        >.q-tabs-panes
+            border-top 1px solid $gray-light-2
+    > .q-tabs-head
+        padding 0 20px
+        background-color transparent
+        margin-bottom -1px
+        min-height 40px
+        .q-tabs-global-bar-container
+            display none
+    &__tab
+        color $gray-medium !important
+        border 1px solid $gray-white-2
+        border-bottom-color $gray-light-2
+        border-radius 4px 4px 0 0
+        margin 0 3px
+        min-height auto
+        .q-ripple-container
+            display none
+        >.q-tabs-bar
+            display none
+        &.active
+            color $primary !important
+            background-color transparent
+            border-color $gray-light-2
+            border-bottom-color $white
+    // &__content
+.tabs-sub
+    &.q-tabs-position-top
+        > .q-tabs-panes
+            border-top none
+    > .q-tabs-head
+        background-color transparent
+    &__tab
+        color $gray-medium !important
+        > .q-tabs-bar
+            top auto
+            bottom 0
+        &.active
+            color $primary !important
+
+/**
+ * 首頁、投注页sidebar
+ */
+.site-panel
+    margin-bottom $basicGap
+    &__header
+        color $white
+        height 50px
+        display flex
+        justify-content space-between
+        align-content center
+        padding 0 $smallGap
+        .q-icon
+            font-size 36px
+    &__header-title
+        align-self center
+        font-size $text-xsm
+    &__header-btn
+        align-self center
+    &__body
+        background-color $white
+    &__list
+        border 1px solid $gray-light
+    &__item
+        padding 5px $smallGap 7px
+        border-bottom 1px solid $gray-light
+        justify-content space-between
+        &:nth-child(even)
+            background-color $gray-white-2
+        &:last-child
+            border-bottom none
+        &-date
+            display flex
+            flex 0 0 100%
+            width 100%
+            justify-content space-between
+            flex-flow row-reverse
+            margin-bottom 5px
+            font-size $text-xsm
+            .text-strong
+                color $tertiary
+        &-bead
+            width 100%
+            text-align center
+            span
+                margin 0 2px
+    &__tag
+        &-item
+            height 50px
+            line-height 50px
+            color $tertiary
+            text-align center
+            background-color $gray-light
+            &:first-child
+                border-right 1px solid $gray-light
+    &__record-play
+        color $tertiary
+    &__record-date
+        font-size $text-xsm
+    &__record-amount
+        font-size $text-xsm
+        color $primary
+
+/* 右上角(登入區)調整 */
+.layout-width
+    .login-bar-loged
+        .q-item
+            margin 0
+    .icon-mail
+        padding-right 20px
+    .user-purse__balance
+        margin 0
+
+/* input & button 並置時設定 */
+    .deposit
+        .inputAndButton
+            .deposit-list__item
+                min-height 36px
+                display block
+                vertical-align top
+                .layout-page-btn
+                    margin 0 0 10px 0
+                    button
+                        min-height 36px
+
+/* 投注頁封盤/未開盤樣式 */
+.noTouch
+    color $toolbar2
+    border-radius 50%
+    padding 38px
+    font-size 30px
+    border 1px solid $toolbar2
+    width 200px
+    height 200px
+    text-align center
+    line-height 1.5em
+    i
+        font-size 72px
+        display block

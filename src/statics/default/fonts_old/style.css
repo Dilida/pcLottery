@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?9ftv77');
+  src:  url('fonts/icomoon.eot?9ftv77#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9ftv77') format('truetype'),
+    url('fonts/icomoon.woff?9ftv77') format('woff'),
+    url('fonts/icomoon.svg?9ftv77#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-account-detail:before {
+  content: "\e900";
+}
+.icon-account-info:before {
+  content: "\e901";
+}
+.icon-account-save:before {
+  content: "\e902";
+}
+.icon-arrow-down:before {
+  content: "\e903";
+}
+.icon-arrow-left:before {
+  content: "\e904";
+}
+.icon-arrow-right:before {
+  content: "\e905";
+}
+.icon-arrow-up:before {
+  content: "\e906";
+}
+.icon-badge:before {
+  content: "\e907";
+}
+.icon-bet-label1:before {
+  content: "\e908";
+}
+.icon-bet-label2:before {
+  content: "\e909";
+}
+.icon-bet-label3:before {
+  content: "\e90a";
+}
+.icon-bet-record:before {
+  content: "\e90b";
+}
+.icon-bet:before {
+  content: "\e90c";
+}
+.icon-bind-card:before {
+  content: "\e90d";
+}
+.icon-close:before {
+  content: "\e90e";
+}
+.icon-confirm:before {
+  content: "\e90f";
+}
+.icon-deposit-light:before {
+  content: "\e910";
+}
+.icon-deposit:before {
+  content: "\e911";
+}
+.icon-dice:before {
+  content: "\e912";
+}
+.icon-dot:before {
+  content: "\e913";
+}
+.icon-edit-pw:before {
+  content: "\e914";
+}
+.icon-equal:before {
+  content: "\e915";
+}
+.icon-error:before {
+  content: "\e916";
+}
+.icon-eye:before {
+  content: "\e917";
+}
+.icon-game:before {
+  content: "\e918";
+}
+.icon-help-1:before {
+  content: "\e919";
+}
+.icon-help-2:before {
+  content: "\e91a";
+}
+.icon-help-3:before {
+  content: "\e91b";
+}
+.icon-help-4:before {
+  content: "\e91c";
+}
+.icon-help-5:before {
+  content: "\e91d";
+}
+.icon-info:before {
+  content: "\e91e";
+}
+.icon-leftnav-aboutus:before {
+  content: "\e91f";
+}
+.icon-leftnav-account:before {
+  content: "\e920";
+}
+.icon-leftnav-bet:before {
+  content: "\e921";
+}
+.icon-leftnav-funding:before {
+  content: "\e922";
+}
+.icon-leftnav-help:before {
+  content: "\e923";
+}
+.icon-leftnav-message:before {
+  content: "\e924";
+}
+.icon-list:before {
+  content: "\e925";
+}
+.icon-logout:before {
+  content: "\e926";
+}
+.icon-lottery:before {
+  content: "\e927";
+}
+.icon-louder:before {
+  content: "\e928";
+}
+.icon-mail:before {
+  content: "\e929";
+}
+.icon-money:before {
+  content: "\e92a";
+}
+.icon-nav-dice:before {
+  content: "\e92b";
+}
+.icon-nav-home:before {
+  content: "\e92c";
+}
+.icon-nav-personal:before {
+  content: "\e92d";
+}
+.icon-nav-tag:before {
+  content: "\e92e";
+}
+.icon-news:before {
+  content: "\e92f";
+}
+.icon-not-support:before {
+  content: "\e930";
+}
+.icon-page-reg:before {
+  content: "\e931";
+}
+.icon-pastview:before {
+  content: "\e932";
+}
+.icon-pay-alipay-code:before {
+  content: "\e933";
+}
+.icon-pay-alipay:before {
+  content: "\e934";
+}
+.icon-pay-card:before {
+  content: "\e935";
+}
+.icon-pay-qq:before {
+  content: "\e936";
+}
+.icon-pay-tokyo:before {
+  content: "\e937";
+}
+.icon-pay-wechat-code:before {
+  content: "\e938";
+}
+.icon-pay-wechat:before {
+  content: "\e939";
+}
+.icon-personal:before {
+  content: "\e93a";
+}
+.icon-plus:before {
+  content: "\e93b";
+}
+.icon-record:before {
+  content: "\e93c";
+}
+.icon-service:before {
+  content: "\e93d";
+}
+.icon-trend:before {
+  content: "\e93e";
+}
+.icon-waiting:before {
+  content: "\e93f";
+}
+.icon-withdrawals:before {
+  content: "\e940";
+}

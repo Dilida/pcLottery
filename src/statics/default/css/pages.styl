@@ -1,0 +1,178 @@
+/**
+ * page共用
+ * 页码
+ */
+.page-header
+    .icon-page
+        color $primary
+    .page-title
+        color $primary
+
+/* 自订页码 */
+.pagination
+    // .pager-count
+    .pager-btn
+        .q-btn
+            $btnCut()
+            $btnShadow()
+            margin-left 3px
+            border-radius 1px
+            &.active
+                color $primary
+    .pager-count
+        color $primary
+/**
+ * page accountManage
+ * 个人中心-个人资料
+ */
+
+.account-manage
+    &-info
+        &__item
+            font-size $text-xsm
+            margin-bottom 15px
+            span
+                font-size $text-xsm
+    &__item
+        font-size $text-xsm
+        margin-bottom 15px
+        span
+            font-size $text-xsm
+            min-width 80px
+            display inline-block
+    &-header
+        line-height 2em
+        margin-left -15px
+        font-size $text-lg
+        padding-left 15px
+        color initial
+        .q-icon
+            font-size 24px
+            color $primary
+    &-label
+        color $tertiary
+        .q-icon
+            font-size 21px
+            margin-top -4px
+        & + span
+            color $primary
+    .icon-deposit-light
+        display none
+.form-content
+    width 100%
+
+/**
+ * page accountManage
+ * 个人中心-我要充值
+ */
+.deposit-pay-item.col-3
+    max-width 14.2%
+.deposit-list
+    .q-item-main
+        color $primary
+/**
+ * page
+ * 表單
+ */
+.account-passward-manage .tabs__content
+.withdrawals-bind .account-manage__list
+.help-block.form-content
+    width 50%
+    margin auto
+    .form-content
+        max-width 100%!important
+        flex 0 0 100%
+.reg .reg-wrap
+    width 60%
+    margin auto
+    .form-content
+        max-width 100%!important
+        flex 0 0 100%
+.withdrawals
+    .form-content
+        max-width 50%!important
+        flex 0 0 100%
+
+/**
+ * page activity
+ * 优惠活动
+ */
+.activity-list
+    padding $basicGap 0
+    margin-bottom $basicGap
+    background-color $white
+    box-shadow 0 0px 10px $gray-light-2
+.activity-item
+    margin-bottom $basicGap
+    &__wrap
+        width 100%
+        background-color $white
+        border 1px solid #EDEDED
+        margin 10px 25px
+        padding 10px
+        box-shadow 0 0 0 $white
+    &__header
+        margin-bottom $basicGap
+        line-height 40px
+        $bgGradient(#F2F2F2,transparent)
+        color #373A3C
+        padding-left 10px
+        border-left 0
+        letter-spacing 2px
+        .icon-tag-reverse
+            font-size 24px
+            color $primary
+    &__img
+        margin-bottom $basicGap
+        img
+            width 100%
+    &__btn-bar
+        justify-content flex-end
+    &__content
+        display block
+
+/**
+ * page
+ * 手机投注
+ */
+.app-download
+    &-content
+        background $imgUrl('images/app/app-download-content-bg.png') 0 0 no-repeat
+        background-size 100%
+    &-elements
+        right 99px
+        top 65px
+        width 270px
+        &__qrcode
+            width 95%
+            margin-bottom 10px
+            img
+                height 115px
+        &__buttons
+            .q-btn
+                color transparent
+            &--ios
+                background $imgUrl('images/app/app-download-btn-ios.png') 0 0px no-repeat
+                background-size 100%
+            &--android
+                background $imgUrl('images/app/app-download-btn-android.png') 0 0px no-repeat
+                background-size 100%
+
+/**
+ * page history
+ * 往期开奖
+ */
+.history-bar
+    &__name
+        color $primary
+
+/**
+* 维护页、404页面、ip限制页
+*/
+/* 维护页 */
+.maintained
+    &__img
+        width 305px
+        height 333px
+    &__title
+        color $secondary

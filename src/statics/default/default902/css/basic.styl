@@ -1,0 +1,74 @@
+/**
+ * lobby.styl
+ * 大厅全部彩种
+ */
+.lobby-game-item
+    .q-btn
+        &:active
+        &:hover
+            $bgGradient-v($toolbar2,$toolbar1)
+            background-origin border-box
+            border-color transparent
+
+/**
+ * default/btn.styl
+ * button
+ */
+/* 通用型 */
+.btn-primary
+    $bgGradient-v($toolbar2,$toolbar1)
+
+/* 底色按钮组 */
+// .btn-group-flat
+//     > .q-btn-item
+//         &.active
+//         &[active=true]
+//             $bgGradient-v($toolbar2,$toolbar1)
+//             color $white
+//     > .q-btn
+//         &.text-primary
+//             $bgGradient-v($toolbar2,$toolbar1) !important
+//             color $white
+
+/* 下注 */
+.btn-bet
+    $bgGradient-v($toolbar2,$toolbar1)
+
+/**
+ * table.styl
+ * TABLE组件
+ */
+/* table（表格不含标题列）*/
+.table
+    thead
+        th
+            $bgGradient-v($toolbar2,$toolbar1)
+/* table-normal 用在个人消息、往期开奖 */
+.table-normal
+    thead
+        $bgGradient-v($toolbar2,$toolbar1)
+
+
+/**
+ * default/page.styl
+ * page
+ * 手机投注
+ */
+.app-download
+    &-content
+        &__mobile-phone
+            background $styleUrl('images/app/mobile-phone.png') 0 0 no-repeat
+            background-size 100%
+
+/**
+ * common.styl
+ * 彩种选单
+ */
+.q-popover
+    .lottery-entry
+        &__wrap
+            .lottery-entry-btn
+                &:hover
+                    $bgGradient-v($toolbar2,$toolbar1)
+                    background-origin border-box
+                    border-color transparent

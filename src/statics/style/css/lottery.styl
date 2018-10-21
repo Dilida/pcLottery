@@ -1,0 +1,217 @@
+/**
+ * 投注页header
+ * 对应components/lottery/lotteryLogo.vue
+ */
+.lottery-header
+    padding 0
+.lottery-logo
+.lottery-countdown
+.lottery-award-history
+    padding 0
+    min-height 116px
+    margin 0
+.lottery-logo
+    // background-color $gray-white-1
+    text-align center
+    width 166px
+    .lottery-title
+        &__icon
+            width 55px
+            margin 40px auto 0
+        &__name
+            font-size 20px
+            letter-spacing 2px
+            position absolute
+            left 0
+            right 0
+            top 5px
+.lottery-countdown
+    width 252px
+    padding 5px 15px
+    .lottery-countdown-date
+        display block
+        font-size $text-lg
+        margin-right 10px
+        .text-negative
+            display inline-block
+            min-width 16px
+            text-align center
+    .lottery-countdown-closed
+        margin 10px 0
+        > span
+            display inline-block
+            vertical-align middle
+            &:first-child
+                width 80px
+.lottery-award-history
+    width 300px
+    padding 5px 15px
+    padding-right 0
+    .bead-pastview
+        margin $smallGap 0
+
+.double-row
+    &__item
+        width 27px
+        border-radius 2px
+        
+/* 区块高度 */
+.pastview-blockchain
+    display inline-block
+
+/**
+ * 玩法选单
+ */
+.play-kinds
+    &__chip
+        top -3px
+        right -3px
+        z-index 11
+/**
+ * 主要区块
+ */
+.lottery-bet-section
+    margin-top 20px
+    position relative
+
+/**
+ * 玩法选单
+ */
+.lottery-bet-tags
+    margin-bottom 0
+    position relative
+    width 441px
+.btn-group-control
+    position absolute
+    bottom 5px
+    right -46px
+    .q-btn
+        margin-right 3px
+        &.swiper-button-disabled
+            opacity 0
+.btn-group-flat
+    position relative
+    .swiper-slide
+        text-align center
+        height 31px
+        padding-top 5px
+        box-sizing border-box
+        cursor pointer
+        font-size 13px
+    .q-btn
+        padding 0
+        min-width 61px
+        height 31px
+        margin-right 2px
+        font-size 13px
+.bet-play-tab
+    .btn-group-flat
+        padding 10px 5px
+        .q-btn
+            font-size 12px
+            border-radius 3px
+            padding 2px
+            margin-right 5px
+/**
+ * 玩法说明按钮列
+ */
+.lottery-button-area
+    width auto
+    position absolute
+    top -10px
+    right 0
+    .q-btn
+        width 82px
+        height 30px
+        padding 0
+
+/**
+ * 投注区块
+ */
+.play-tabs
+    width 676px
+.lottery-bet-area
+    position relative
+    z-index 12
+
+/**
+ * 投注项目群组，一个玩法区块
+ * .bet-item-group > .bet-item-wrap > .bet-item
+ */
+// /* 包住bet-item的框框，颜色底 */
+// .bet-item-wrap
+//     margin 0 2px 15px
+//     background-color $gray-white-1
+
+/**
+ * 投注资讯与按钮
+ */
+.play-bet
+    display flex
+    padding 10px
+    flex-direction row
+    margin-bottom 10px
+    align-items center
+    &__info
+        flex 0 0 450px
+        max-width 450px
+    &__input
+        flex-wrap nowrap
+        min-width 230px
+    &__btn
+        flex 0 0 200px
+        max-width 200px
+    &__count
+        min-width 170px
+        align-items center
+        line-height 30px
+        border-radius 3px
+        margin-right 15px
+        padding 0 10px
+        white-space nowrap
+
+/**
+ * 双面长龙
+ */
+.dslong-item
+    .dslong-title
+        margin-top 10px
+
+/**
+ * 路珠
+ */
+.road-tabs
+    width 630px
+    position relative
+.road-content
+    position relative
+    z-index 10
+/**
+ * 投注纪录状态
+ */
+.record-status
+    font-size 12px
+
+/**
+ * 投注左侧标题
+ */
+//预设隐藏
+.lottery-bet-section
+.lottery-road-bead
+    display flex
+    .lottery-subtitle
+        display flex
+        flex 0 0 42px
+        max-width 42px
+        border 1px solid #E4E4E4
+        padding 88px 10px
+        text-align center
+        color #9B9B9B
+        background $imgUrl('images/lottery-subtitle.png') no-repeat bottom left #F6F6F6
+        background-size 37px auto
+        margin-top 3px
+    .lottery-right-main
+        display flex
+        flex 0 0 676px
+        max-width 676px
+        flex-direction column

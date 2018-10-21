@@ -1,0 +1,36 @@
+/* table-normal 用在个人消息、往期开奖 */
+.table-normal
+    width 100%
+    border-collapse collapse
+    border-radius 3px 3px 0 0
+    overflow hidden
+    box-shadow none
+    border 1px solid #e9e9e9
+    th
+    td
+        padding 6px 5px
+    tbody
+        // border 1px solid $gray-white-2 //会导致table产生卷轴
+        tr
+            &:nth-child(even)
+                background-color $gray-white-1
+            &:nth-child(odd)
+                background-color $white
+            td
+                font-size $text-xsm
+                height auto
+                border-top 0
+                border-right 1px dashed #e9e9e9
+                border-bottom 1px dashed #e9e9e9
+                &:last-child
+                    border-right none
+    thead
+        color $white
+        background-color $primary
+        tr
+            height 44px
+            th
+                color $white
+                .account-notification &
+                    color $tertiary
+                    font-weight 500

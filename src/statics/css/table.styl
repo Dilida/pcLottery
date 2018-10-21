@@ -1,0 +1,61 @@
+/**
+ * TABLE组件
+ */
+/* table（表格不含标题列）*/
+.table-group
+    width 100%
+.table-header
+    height 42px
+    color $white
+    border-radius 3px 3px 0 0
+    background-color $primary
+    display flex
+    justify-content space-around
+    align-items center
+.table
+    width 100%
+    border-collapse collapse
+    border 1px solid $gray-white-2
+    th
+    td
+        padding 11px 10px
+    tbody
+        tr
+            td
+                font-size $text-xsm
+            &:nth-child(even)
+                background-color $gray-white-1
+            &:nth-child(odd)
+                background-color $white
+    thead
+    tfoot
+        th
+        td
+            background-color $primary-vivid-1
+            font-weight normal
+            color $secondary
+            text-align left
+    tfoot
+        td
+            font-size $text-xsm
+/* table-normal 用在个人消息、往期开奖 */
+.table-normal
+    width 100%
+    border-collapse collapse
+    border-radius 3px 3px 0 0
+    overflow hidden
+    th
+    td
+        padding 11px 5px
+    tbody
+        // border 1px solid $gray-white-2 //会导致table产生卷轴
+        tr
+            &:nth-child(odd)
+                background-color $gray-white-1
+            &:nth-child(even)
+                background-color $white
+            td
+                font-size $text-xsm
+    thead
+        color $white
+        background-color $primary

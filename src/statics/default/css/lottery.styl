@@ -1,0 +1,292 @@
+/**
+ * 投注页header
+ * 对应components/lottery/lotteryLogo.vue
+ */
+.lottery-header
+    padding 15px 0
+    // height 180px
+    background-color #f8f8f8
+    border 1px solid #f1f1f1
+    > div
+        border-right 1px dotted #d6d6d6
+        &:last-child
+            border none
+    .text-strong
+        color $tertiary
+    .text-important
+        color $primary
+.lottery-logo
+.lottery-countdown
+.lottery-award-history
+    padding 0
+    min-height 116px
+    margin 0
+    .bead-pastview
+        margin 15px 10px
+    .pastview-blockchain
+        font-size 14px
+        margin-top -12px
+.lottery-logo
+    // background-color $gray-white-1
+    text-align center
+    width 145px
+    .lottery-title
+        position relative
+        &__icon
+            width 55px
+            margin 0 auto 0
+        &__name
+            font-size 20px
+            letter-spacing 2px
+            position absolute
+            left 50%
+            bottom -38px
+            width 100%
+            transform translateX(-50%)
+.lottery-countdown
+    width 245px
+    padding 5px 0
+    text-align center
+    &-date
+        display block
+        font-size $text-lg
+        margin-right 10px
+        .text-negative
+            display inline-block
+            min-width 16px
+            text-align center
+    &-closed
+        margin 15px 0
+        & + &
+            margin 0
+        > span
+            display inline-block
+            vertical-align middle
+            &:first-child
+                width 80px
+    &-tag
+        display none
+.lottery-award-history
+    width 309px
+    text-align center
+    font-size $text-xlg
+// .bead-pastview
+//     &__item
+.double-row
+    &__item
+        border-radius 2px
+
+/**
+ * 投注项目群组，一个玩法区块
+ * .bet-item-group > .bet-item-wrap > .bet-item
+ */
+.bet-item-group
+    margin-bottom 0
+    &__header
+        color $primary
+    &__payoff
+        margin-left 0
+        margin-right 0
+/* 包住bet-item的框框，颜色底 */
+.bet-item-wrap
+    margin 0 2px 15px
+    .bet-group-1170000 &
+        border-left 1px solid #ececec
+        border-top 1px solid #ececec
+.play-tabs
+    width 702px
+/* 投注项目 */
+.bet-item
+    background-color $gray-white-1
+    border 1px solid #ECECEC
+    [active=true] &
+    .isActive &
+    &[active=true]
+    &.active
+        background-color $primary
+        color $white
+    /* 自选不中 */
+    &.bet-item-column--10
+        width calc(10% - 0.01rem)
+        margin 0
+        padding 10px
+        background-color transparent
+        border 0
+        border-right 1px solid #ececec
+        border-bottom 1px solid #ececec
+    &.bet-item-round
+        [active=true] &
+        .isActive &
+        &[active=true]
+        &.active
+            background-color transparent
+            color $white
+    &.disable-item
+        opacity 0.3
+    &__input
+        input
+            color $primary
+/**
+ * 投注页右侧选单
+ */
+.site-panel
+    &__header
+        background-color $gray-light-4
+        color $gray-medium
+        border 1px solid $gray-light
+        letter-spacing 0.2em
+    &__tag
+        border 1px solid $gray-light
+        border-bottom 0
+        &-item
+            background-color $gray-light-4
+
+/**
+ * 投注资讯与按钮
+ */
+.play-bet
+    display flex
+    padding 0px
+    flex-direction row
+    margin-bottom 0px
+    align-items center
+    overflow hidden
+    &__info
+        flex 0 0 490px
+        max-width 490px
+        margin-bottom 0
+    &__input
+        flex-wrap nowrap
+        .col-3
+            max-width 30%
+            flex 0 0 30%
+            font-weight bold
+    &__btn
+        flex 0 0 215px
+        max-width 215px
+        margin-bottom 0
+    &__count
+        min-width 130px
+        align-items center
+        line-height 30px
+        border-radius 3px
+        margin-right 15px
+        padding 0 10px
+        white-space nowrap
+    .text-gray
+        color $gray-light-3
+        padding 0 5px
+
+.lottery-bet-area //製造tab底線
+.road-content
+    position relative
+    &:before
+        content ''
+        width 100%
+        height 4px
+        background-color $gray-white-1
+        position absolute
+        z-index -1
+        top -18px
+        left 0
+
+.lottery-main-bet-area
+    margin-bottom 0
+    border-bottom 1px dotted #e6e6e6
+
+/**
+ * 玩法选单
+ */
+.road-tabs
+.bet-tags-wrap
+    position relative
+.lottery-bet-tags
+    width 66%
+.btn-group-control
+    button
+        padding 8px
+        position absolute
+        bottom 18px
+        z-index 1
+        &:first-child
+            left 0
+            &:before
+                content ""
+                width 0
+                height 0
+                border-style solid
+                border-width 8px 10px 8px 0
+                border-color transparent $primary transparent transparent
+            &.swiper-button-disabled
+                &:before
+                    border-color transparent #d7d7d7 transparent transparent
+        &:last-child
+            right 0
+            &:before
+                content ""
+                width 0
+                height 0
+                border-style solid
+                border-width 8px 0 8px 10px
+                border-color transparent transparent transparent $primary
+            &.swiper-button-disabled
+                &:before
+                    border-color transparent transparent transparent #d7d7d7
+        .q-focus-helper
+        .q-ripple-container
+            display none
+        &.swiper-button-disabled
+            cursor default
+
+.bet-play-tab
+    .btn-group-flat
+        border 1px solid #ececec
+        button
+            border-right 1px solid #ECECEC
+            padding 4px 12px
+            &:last-child
+                border-right 0
+            &.text-primary
+                background-color $primary
+                color $white!important
+
+
+/**
+ * 玩法说明按钮列
+ */
+.lottery-button-area
+    width 34%
+    margin-bottom 15px
+    margin-top 8px
+    text-align right
+    float right
+
+.sheng-xiao
+    padding 0
+    border-radius 0
+    background-color $white
+    .q-item
+        border 1px solid #ECECEC
+        border-right 0
+        &:last-child
+            border-right 1px solid #ECECEC
+        padding 4px 5px
+
+.road-bead-tag
+    color $primary
+
+/**
+ * 玩法说明按钮列
+ */
+.playing-doc
+    h3
+        color $primary
+
+/**
+ * 双面长龙
+ */
+.dslong-item
+    .dslong-title
+        color $primary
+    .dslong-play
+        color $primary

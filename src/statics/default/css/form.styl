@@ -1,0 +1,123 @@
+/**
+ * text field
+ */
+
+.field-normal
+    .q-field-label
+        color $tertiary
+        max-width 70px
+        .help-block &
+            max-width 83px
+        .q-field-label-inner
+            min-height 35px
+            font-size 12px
+            justify-content flex-start
+    .q-field-content
+        max-width calc(100% - 120px)
+        .q-input
+            box-shadow 0 1px 5px rgba(0,0,0,0.2) inset
+            background-color $gray-white
+            &.q-if-disabled
+                background-color transparent
+            border-radius 3px
+            height 35px
+            input
+                line-height 35px
+                height 35px
+                &::-webkit-input-placeholder
+                &::-moz-placeholder
+                &:-ms-input-placeholder
+                &::placeholder
+                    font-size $text-xsm
+            .q-if-control
+                font-size $text-lg
+
+
+/**
+ * login bar field
+ */
+.field-bar
+    .q-field-content
+        .q-input
+            box-shadow 0 1px 2px #929292 inset
+            min-height auto !important
+            &.input-account
+            &.input-password
+                width 97px
+            &.input-code
+                width 59px
+            input
+                line-height 20px
+                height 20px
+                font-size 12px
+                padding 0 5px
+            .q-icon
+                font-size 14px
+                line-height 20px
+            .q-if-inner
+                min-height auto !important
+                height 22px
+    &-code
+        .q-field-content
+            display inline-flex
+            .q-input
+                display flex
+        &__img
+            display flex
+            width 35px
+            height 22px
+
+/**
+ * 下注item input
+ */
+// .input-bet-item
+
+/**
+ * 下注input
+ */
+.bet-input
+    box-shadow 0 1px 5px $gray-light-2 inset
+    background-color $white
+    margin-right 10px
+    width 140px
+    input
+        box-shadow 0 1px 5px rgba(0,0,0,0.2) inset
+        background-color $gray-white
+        border-radius 3px
+        line-height 30px
+        height 30px
+        font-size $text-xlg
+        color $primary
+        padding 0 5px
+        &::-webkit-input-placeholder
+        &::-moz-placeholder
+        &:-ms-input-placeholder
+        &::placeholder
+            font-size $text-xsm
+    .q-if-control
+        align-self center
+        font-size $text-lg
+
+/**
+ * 复杂的下拉选单
+ */
+.q-datetime-input
+.q-select
+    background-image $imgUrl('images/btn-cut/btn-select.png'),$imgUrl('images/btn-cut/btn-left.png'),$imgUrl('images/btn-cut/btn-center.png')
+    background-repeat no-repeat
+    background-position right center, left center, center center
+    background-size auto 100%, 5px 100%, 100% 100%
+    min-width 150px
+    max-width 300px
+    height 35px
+    padding-left 5px
+    padding-right 5px
+    align-items center
+    border-radius 4px
+    //$btnShadow()
+    .q-icon
+        display none
+
+.form-content
+    width 340px
+    margin 0 auto

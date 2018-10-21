@@ -1,0 +1,377 @@
+/**
+ * 投注页header
+ * 对应components/lottery/lotteryLogo.vue
+ */
+.lottery-header
+    padding-left $basicGap
+    padding-top $basicGap
+.lottery-logo
+.lottery-countdown
+.lottery-award-history
+    margin-right $basicGap
+    padding 20px 0
+    min-height 160px
+.lottery-countdown
+    &--mmc
+        background $imgUrl('images/lottery-mmc.png') no-repeat center center
+        background-size auto 100%
+.lottery-award-history
+    .bead-pastview
+        margin 10px $basicGap
+.double-row
+    white-space nowrap
+    &__item
+        display inline-block
+        border 1px solid $tertiary
+        font-size $text-xsm
+        margin 0 3px
+        height 20px
+        line-height 20px
+        width 30px
+        text-align center
+/* 区块高度 */
+.pastview-blockchain
+    font-size $text-md
+
+/**
+ * 玩法选单
+ */
+.lottery-bet-tags
+    width 100%
+    margin-bottom 15px
+.play-kinds__chip
+    top 2px
+    right 2px
+    padding 0
+    width 14px
+    height 14px
+    border-radius 10px
+    .q-chip-main
+        transform scale(0.8)
+        width 100%
+        text-align center
+
+/**
+ * 玩法说明按钮列
+ */
+.lottery-button-area
+    width 100%
+    margin-bottom 15px
+    text-align right
+    .q-btn
+        margin-left 5px
+
+/**
+ * 玩法说明按钮列
+ */
+.playing-doc
+    h3
+        color $secondary
+        margin 5px 0
+    h4
+        color $warning
+        margin 5px 0
+
+/**
+ * 生肖
+ */
+.sheng-xiao
+    margin 5px 0 $basicGap
+    background-color $gray-white-1
+    border-radius 4px
+    padding 11px $basicGap
+    color $gray-medium
+    &__list
+        .text-faded
+            color inherit !important
+
+
+/**
+ * 投注区块
+ */
+.lottery-bet-area
+    position relative
+    .q-inner-loading
+        background-color $mask
+        color $white
+.lottery-main-bet-area
+    width 100%
+    margin-bottom $basicGap
+.play-tabs
+    width 687px
+
+/**
+ * 投注项目群组，一个玩法区块
+ * .bet-item-group > .bet-item-wrap > .bet-item
+ */
+.bet-item-group
+    margin 15px 0
+    &__header
+        text-align center
+        color $secondary
+    &__title
+        font-size $text-lg
+        margin-bottom $smallGap
+    &__payoff
+        padding $smallGap $basicGap
+        background-color $gray-white-1
+        border-radius 3px
+        text-align left
+        margin 5px // 六合彩自选不中、合肖要离边
+        span
+            color $negative
+
+    /* column只单纯做分隔容器，不作其他样式，尤其禁止横向margin */
+    &__column
+        width 100%
+        margin-bottom $smallGap
+        &--10
+            width 10%
+        &--5
+            width 20%
+        &--4
+            width 25%
+        &--3
+            width 33.333333%
+        &--2
+            width 50%
+/* 直排处理 */
+.bet-group-21000 // 时时彩两面
+.bet-group-22000 // 时时彩1-5球
+.bet-group-42000 // 11选5 1-5球
+    &:nth-of-type(1)
+    &:nth-of-type(2)
+    &:nth-of-type(3)
+    &:nth-of-type(4)
+    &:nth-of-type(5)
+        width 20%
+        .bet-item
+            width 100%
+.bet-group-41000 // 11选5两面
+    &:nth-of-type(2)
+    &:nth-of-type(3)
+    &:nth-of-type(4)
+    &:nth-of-type(5)
+    &:nth-of-type(6)
+        width 20%
+        .bet-item
+            width 100%
+.bet-group-81000 // PK10两面
+    &:nth-of-type(2)
+    &:nth-of-type(3)
+    &:nth-of-type(4)
+    &:nth-of-type(5)
+    &:nth-of-type(6)
+    &:nth-of-type(7)
+    &:nth-of-type(8)
+    &:nth-of-type(9)
+    &:nth-of-type(10)
+    &:nth-of-type(11)
+        width 20%
+        .bet-item
+            width 100%
+.bet-group-83000 // PK10 1-5名
+.bet-group-84000 // PK10 6-10名
+    &:nth-of-type(1)
+    &:nth-of-type(2)
+    &:nth-of-type(3)
+    &:nth-of-type(4)
+    &:nth-of-type(5)
+    &:nth-of-type(6)
+    &:nth-of-type(7)
+    &:nth-of-type(8)
+    &:nth-of-type(9)
+    &:nth-of-type(10)
+        width 20%
+        .bet-item
+            width 100%
+
+/* 包住bet-item的框框，颜色底 */
+.bet-item-wrap
+    display flex
+    flex-wrap wrap
+    width 100%
+/* 投注项目 */
+.bet-item
+    margin 5px
+    padding 5px
+    cursor pointer
+    &__text
+        display flex
+        flex-wrap nowrap
+        justify-content space-between
+        padding 0 5px 3px
+    &__name
+        display flex
+        flex 0 0 auto
+        text-align left
+        align-self center
+    &__payoff
+        display flex
+        flex 0 0 auto
+        text-align right
+        align-self center
+    &__input
+        input
+            width 100%
+            text-align center
+            color $secondary
+    .active &
+    .isActive &
+    [active=true] &
+    &isActive
+    &[active=true]
+    &.active
+        background-color #ccc
+        color $white
+    /* 自选不中 */
+    &.bet-item-round
+        .bet-item__text
+            justify-content center
+            [class*="num_"]
+                width 40px
+                height 40px
+                line-height 40px
+                font-size 24px
+    /* 六合彩特码五行 */
+    &--lhc-tmwx
+        width calc(50% - 10px)
+        .bet-item__text
+            display block
+            &:after
+                content ''
+                display table
+                clear both
+        .bet-item__name
+            display block
+            &:first-child
+                float left
+                width 30px
+            &:last-child
+                float right
+                width 210px
+                text-align right
+                span
+                    margin-bottom 5px
+        .bet-item__payoff
+            float left
+            width 50px
+
+    /* column只单纯做分隔容器，不作其他样式，尤其禁止横向margin */
+    &-column
+        width calc(100% - 10px)
+        &--10
+            width calc(10% - 10px)
+        &--5
+            width calc(20% - 10px)
+        &--4
+            width calc(25% - 10px)
+        &--3
+            width calc(33.333333% - 10px)
+        &--2
+            width calc(50% - 70px)
+            margin-left 30px
+            margin-right 30px
+        &--1
+            width calc(100% - 10px)
+
+/**
+ * 投注资讯与按钮
+ */
+.play-bet
+    margin-bottom 30px
+    &__input
+        flex-wrap nowrap
+    &__info
+        margin-bottom $basicGap
+    &__btn
+        margin-bottom $basicGap
+        .q-btn
+            margin-left $smallGap
+
+/**
+ * 路珠
+ */
+.lottery-road-bead
+    border-top 1px solid $gray-white-2
+    padding-top 30px
+.road-content
+    margin-top $basicGap
+    background-color $gray-white-1
+    padding $basicGap
+    &__list
+        width 100%
+        overflow-y scroll
+.road-column
+    // width 40px //ie兼容调整
+    padding-top 20px
+    margin-right 10px
+    &:last-child
+        position relative
+        &:before
+            content 'New'
+            position absolute
+            top 0
+            right 0
+            left 0
+            height 20px
+            color $negative
+            text-align center
+.road-bead-tag
+    width 100%
+/**
+ * 双面长龙
+ */
+.color-dslong-1
+    color $dslong-1
+.color-dslong-2
+    color $dslong-2
+.color-dslong-3
+    color $dslong-3
+.color-dslong-4
+    color $dslong-4
+.color-dslong-5
+    color $dslong-5
+.dslong-item
+    &:first-child
+        border-right 1px solid $gray-light-2
+    .dslong-title
+        color $secondary
+        text-align center
+        font-size $text-lg
+        width 100%
+        margin-bottom 10px
+    .dslong-row
+        justify-content space-between
+        padding 7px $basicGap
+    // .dslong-name
+    .dslong-play
+        color $secondary
+        text-align center
+    .dslong-count
+        text-align right
+
+/**
+ * 投注纪录状态
+ */
+.record-status
+    text-align center
+    align-self center
+    min-width 56px
+    .q-icon
+        font-size 18px
+        display block
+    &.status-success
+        color $positive
+    &.status-error
+        color $negative
+    &.status-default
+    &.status-waiting
+        color $tertiary
+
+/**
+ * 投注左侧标题
+ */
+//预设隐藏
+.lottery-subtitle
+    display none

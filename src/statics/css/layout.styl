@@ -1,0 +1,66 @@
+/**
+ * 鎖定最大寬容器，禁止加入其他样式
+ */
+.layout-width
+    display flex
+    width 990px
+    min-width 990px //防止視窗過小時跑版
+    margin 0 auto
+
+
+
+/**
+ * 页面主要内容框
+ */
+.layout-header
+    padding $basicGap $basicGap 0 $basicGap
+.layout-main
+    flex 0 0 72.5%
+    max-width 72.5%
+    padding $basicGap
+.layout-side
+    flex 0 0 27.5%
+    max-width 27.5%
+    padding $basicGap $basicGap $basicGap 0
+.layout-full
+    width 100%
+    padding $basicGap
+.layout-carousel
+    width 100%
+    &__side
+    &__block
+        img
+            display block
+            width 100%
+.layout-copyright
+    text-align center
+
+/**
+ * 內页编排
+ */
+.layout-page
+    height 100%
+.layout-page-side
+    flex 0 0 20%
+    max-width 20%
+    padding-left $basicGap
+.layout-page-main
+    flex 0 0 80%
+    max-width 80%
+.layout-page-btn
+    text-align center
+    display flex
+    flex 0 0 100%
+    max-width 100%
+    margin-top $basicGap
+    justify-content center
+
+.layout-page-content
+    padding $basicGap
+.layout-page-footer
+    text-align center
+    padding-bottom 50px
+
+
+
+

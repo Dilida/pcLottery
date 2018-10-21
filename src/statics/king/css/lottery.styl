@@ -1,0 +1,328 @@
+/**
+ * 投注页header
+ * 对应components/lottery/lotteryLogo.vue
+ */
+.lottery
+    background $imgUrl('/images/lottery-bg-1.png')
+    background-size 20px 20px
+    .page-bg
+        background-color #F2F3F7
+        position relative
+        &:before
+            content ''
+            display block
+            position absolute
+            top -5px
+            left 0
+            width 100%
+            height 5px
+            background $imgUrl('/images/lottery-bg.png') no-repeat
+            background-size 100%
+.lottery-toolbar
+    background-color $primary
+    /* 在线客服按钮要还回去 */
+    .top-btns-account
+        .layout-btn-group
+            &:nth-child(2)
+            &:last-child
+                .q-btn
+                    background-color $white
+                    color $tertiary
+
+.lottery-header
+    padding 0
+    border-bottom 1px dashed #D5D5D5
+.lottery-logo
+.lottery-countdown
+.lottery-award-history
+    padding 0
+    min-height 116px
+    margin 0
+.lottery-logo
+.lottery-countdown
+    position relative
+    &:after
+        content ''
+        position absolute
+        right 0
+        top 0
+        height 110px
+        width 1px
+        border-right 1px dashed #D5D5D5
+.lottery-logo
+    text-align center
+    width 166px
+    .lottery-title
+        &__icon
+            width 55px
+            margin 40px auto 0
+        &__name
+            font-size 20px
+            letter-spacing 2px
+            position absolute
+            left 0
+            right 0
+            top 5px
+            color $secondary
+.lottery-countdown
+    width 252px
+    padding 5px 15px
+    .lottery-countdown-date
+        display block
+        font-size $text-lg
+        margin-right 10px
+        .text-negative
+            display inline-block
+            min-width 16px
+            text-align center
+    .lottery-countdown-closed
+        margin 10px 0
+        > span
+            display inline-block
+            vertical-align middle
+            &:first-child
+                width 80px
+.lottery-award-history
+    width 300px
+    padding 5px 15px
+    padding-right 0
+    .bead-pastview
+        margin $smallGap 0
+
+.double-row
+    &__item
+        width 27px
+        border-radius 2px
+        
+/* 区块高度 */
+.pastview-blockchain
+    display inline-block
+
+/**
+ * 主要区块
+ */
+.lottery-bet-section
+    margin-top 20px
+    position relative
+
+/**
+ * 玩法选单
+ */
+.play-kinds
+    &__chip
+        top -3px
+        right -3px
+        z-index 11
+.lottery-bet-tags
+    margin-bottom 0
+    position relative
+    width 441px
+.btn-group-control
+    position absolute
+    bottom 5px
+    right -46px
+    .q-btn
+        margin-right 3px
+        &.swiper-button-disabled
+            opacity 0
+            cursor default
+.btn-group-flat
+    position relative
+    &.swiper-container
+        padding-top 3px
+    .swiper-slide
+        text-align center
+        height 31px
+        padding-top 5px
+        box-sizing border-box
+        cursor pointer
+        font-size 13px
+    .q-btn
+        padding 0
+        min-width 61px
+        height 31px
+        margin-right 2px
+        font-size 13px
+    .swiper-slide
+    .q-btn
+        border 1px solid #E4E4E4
+        background-color #F6F6F6
+        color #9B9B9B
+        &[active=true]
+        &.active
+            background-color $white
+            border none
+            color $primary
+            box-shadow 1px 0 3px rgba(#3E3E3E, 0.5)
+            &:after
+                content ''
+                position absolute
+                top 0
+                right 0
+                left 0
+                height 3px
+                background-color $primary
+.bet-play-tab
+    .btn-group-flat
+        padding 10px 5px
+        .q-btn
+            font-size 12px
+            border-radius 3px
+            padding 2px
+            margin-right 5px
+            border 0
+            background-color transparent
+            color $tertiary
+        .text-primary
+            color $white !important
+            background-color $primary
+/**
+ * 玩法说明按钮列
+ */
+.lottery-button-area
+    width auto
+    position absolute
+    top -10px
+    right 0
+    .q-btn
+        width 82px
+        height 30px
+        padding 0
+        color transparent
+        background-color transparent
+        background-size 100% 100%
+        border none
+        &:first-child
+            background-image $imgUrl('images/btn-trend-lottery.png')
+        &:last-child
+            background-image $imgUrl('images/btn-playintro.png')
+
+/**
+ * 生肖
+ */
+.sheng-xiao
+    background-color transparent
+    border-radius 0
+    border-top 1px solid #F0F0F0
+    border-bottom 1px solid #F0F0F0
+
+/**
+ * 投注区块
+ */
+.play-tabs
+    width 676px
+.lottery-bet-area
+    position relative
+    z-index 12
+    background-color $white
+
+/**
+ * 投注项目群组，一个玩法区块
+ * .bet-item-group > .bet-item-wrap > .bet-item
+ */
+/* 投注项目 */
+.bet-item
+    background-color #F6F6F6
+    border-radius 3px
+    border 1px solid #E4E4E4
+    [active=true] &
+    .isActive &
+    &[active=true]
+    &.active
+        background-color $primary
+        color $white
+        border-color $primary
+        input
+            border-color #CECECE
+    /* 自选不中 */
+    &.bet-item-round
+        [active=true] &
+        .isActive &
+        &[active=true]
+        &.active
+            background-color transparent
+            color $white
+    &.disable-item
+        opacity 0.3
+    &__input
+        input
+            color $primary
+            border 1px solid #E4E4E4
+            box-shadow 0 1px 3px rgba(#ccc, 0.5) inset
+
+
+/**
+ * 投注资讯与按钮
+ */
+.play-bet
+    display flex
+    padding 10px
+    flex-direction row
+    margin-bottom 10px
+    align-items center
+    &__info
+        flex 0 0 450px
+        max-width 450px
+    &__input
+        min-width 230px
+        flex-wrap nowrap
+    &__btn
+        flex 0 0 200px
+        max-width 200px
+    &__count
+        min-width 170px
+        align-items center
+        line-height 30px
+        border-radius 3px
+        margin-right 15px
+        padding 0 10px
+        white-space nowrap
+        background-color #F6F6F6
+
+/**
+ * 双面长龙
+ */
+.dslong-item
+    .dslong-title
+        margin-top 10px
+
+/**
+ * 路珠
+ */
+.road-tabs
+    width 630px
+    position relative
+.road-content
+    position relative
+    z-index 10
+    margin-top 0
+    background-color $white
+/**
+ * 投注纪录状态
+ */
+.record-status
+    font-size 12px
+
+/**
+ * 投注左侧标题
+ */
+//预设隐藏
+.lottery-bet-section
+.lottery-road-bead
+    display flex
+    .lottery-subtitle
+        display flex
+        flex 0 0 42px
+        max-width 42px
+        border 1px solid #E4E4E4
+        padding 88px 10px
+        text-align center
+        color #9B9B9B
+        background $imgUrl('images/lottery-subtitle.png') no-repeat bottom left #F6F6F6
+        background-size 37px auto
+        margin-top 3px
+    .lottery-right-main
+        display flex
+        flex 0 0 676px
+        max-width 676px
+        flex-direction column

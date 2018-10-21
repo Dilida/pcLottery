@@ -1,0 +1,69 @@
+/**
+ * 众筹假tab列
+ */
+.crowdfunding-tabs
+    padding-bottom 0
+    background-color transparent
+    border-bottom 1px solid #ddd
+    &__group
+        margin-bottom -1px
+    &__btn
+        border 1px solid #ECEEEF
+        border-bottom-color #ddd
+        border-radius 4px 4px 0 0
+        margin 10px 3px 0
+        padding 6px 35px
+        font-size 14px
+        height auto
+        position relative
+        &.active
+            border 1px solid #ddd
+            background-color transparent
+            border-bottom-color $white
+        &:first-child
+            margin-left 20px
+
+/**
+ * 众筹筛选列
+ */
+.crowdfunding-filter
+    background-color transparent
+    padding 15px 0
+    display flex
+    .q-select
+        height 32px
+        $btnShadow()
+    .q-btn
+        height 32px
+        padding 0 24px
+        border-radius 2px
+        border none
+        min-height 32px
+        margin-left 3px
+        margin-right 0
+        color $tertiary
+        font-size $text-xsm
+        min-width 58px
+        $btnCut()
+        $btnShadow()
+    &.active
+        color $primary
+        border-color transparent
+        background-color transparent
+    .fas
+        top 10px
+
+/**
+ * 众筹彩票资讯component
+ */
+.crowdfunding-lottery
+    &__name
+        color $primary
+
+/**
+ * 众筹彩列表component
+ */
+.crowdfunding-footer
+    padding $basicGap
+    &__count
+        color $primary

@@ -1,0 +1,475 @@
+/**
+ * 目標是在這裡放color、圖片等會變化的東西
+ */
+.text-strong
+    color $secondary
+    .lobby-recommend &
+    .lobby-pastview &
+    .lobby-promo &
+        color $primary
+/**
+ * style/basic.styl
+ */
+
+/**
+ * 共用独立样式
+ */
+/* 钱钱钱！ */
+.user-purse
+    .user-purse-amt
+        color #FFA526
+
+/**
+ * 让个人中心的内容贴齐底部
+ */
+.layout-page-content
+    height calc(100% - 43px)
+.bread-crumbs
+    height 33px
+
+/**
+ * tabs
+ */
+.tabs
+    >.q-tabs-head
+        background $styleUrl('images/table-header.png') !important
+        background-size auto 100% !important
+        .q-tab
+            &.active
+                background-color rgba(#000,0.4)
+    >.q-tabs-panes
+        background-color $white
+        border-color #E5E5E5
+/* 个人中心用的tab */
+.account-passward-manage
+.deposit
+.account-manage
+    .tabs
+        background-color transparent
+        >.q-tabs-head
+            background none !important
+            .q-tab
+                background-color #F8F8F8
+                &.active
+                    background-color transparent
+                    color $secondary !important
+                    border-bottom-color $white
+        >.q-tabs-panes
+            padding 0
+            margin 15px
+            border-radius 0
+            background $styleUrl('images/bg-block.jpg')
+    .tabs-sub.q-tabs-position-top
+        margin 15px
+        >.q-tabs-head
+            .q-tab
+                &.active
+                    color $secondary !important
+        >.q-tabs-panes
+            border none
+            .deposit-wrap-bg
+                margin 0
+    .deposit-wrap-bg
+        background-color rgba($white, 0.3)
+        margin 15px
+.withdrawals
+.withdrawals-bind
+    .q-list
+        background $styleUrl('images/bg-block.jpg')
+        padding 15px
+/* panel */
+.panel
+    &__header
+        background $styleUrl('images/table-header.png')
+        background-size auto 100%
+        color $white
+    &__table
+        border-color #E5E5E5
+.panel-table
+    thead
+        tr
+            background-color $white
+            th
+                color #9EA0A5
+    tbody
+        tr
+            border-top-color #E5E5E5
+            &:nth-child(odd)
+                background-color #F5F5F5
+            .icon-ranking
+                background-color $primary
+                color $white
+            &:nth-child(1)
+            &:nth-child(2)
+            &:nth-child(3)
+                color $negative
+                .icon-ranking
+                    background-color $negative
+
+/**
+ * style/btn.styl
+ */
+
+/**
+ * button
+ */
+/* 通用型 */
+.btn-primary
+.btn-cancel
+    // background-color $secondary
+    background-image $styleUrl('images/btn/normal-left.png'), $styleUrl('images/btn/normal-right.png'), $styleUrl('images/btn/normal-center.png')
+    background-repeat no-repeat, no-repeat, repeat-x
+    background-position left, right, center
+    background-size auto 100%
+    border-radius 20px
+    color $secondary
+.btn-logout
+    color $white
+    background-color $primary
+.btn-demoplay
+    color #5E5F62
+    // .q-btn-inner
+    //     border-bottom 1px solid #5E5F62
+.btn-bg
+    background-image $styleUrl('images/btn/normal-left.png'), $styleUrl('images/btn/normal-right.png'), $styleUrl('images/btn/normal-center.png')
+    background-repeat no-repeat, no-repeat, repeat-x
+    background-position left, right, center
+    background-size auto 100%
+    border-radius 20px
+    color $secondary
+    width 10rem
+/**
+ * 特殊型：特殊型独立使用，不适合再加其他效果
+ */
+/* 大厅号码走势 */
+.btn-go-bet
+    background $styleUrl('images/btn-go-bet.png')
+    background-size 100% 100%
+    color transparent
+/* 大厅立即投注 */
+.btn-trend
+    background $styleUrl('images/btn-trend.png')
+    background-size 100% 100%
+    color transparent
+/* 用在表格标题 */
+.btn-table-filter
+    &.active
+        border 1px solid $primary
+/* 下注 */
+.btn-bet
+    color $secondary
+/* 登入按鈕 */
+.btn-login
+    border-radius 0
+    background $primary
+    color $white
+/* 註冊按鈕 */
+.btn-reg
+    border-radius 0
+    background $secondary
+    color $white
+/* 免費試玩按鈕 */
+.btn-demoplay
+    border-radius 0
+    background $negative
+    color $white
+    height 30px
+
+/* 支付 */
+.btn-pay
+    &.active
+        background-color rgba(#fff, 0.6)
+        color $secondary
+
+/**
+ * style/footer.styl
+ */
+
+/**
+ * 底部导航列
+ */
+.q-layout-footer
+    background-color #4E4E4E
+    color $white
+.footer-nav
+    background-color #935732
+    color #DEA785
+    &__list
+        &:after
+            background #CECECE
+    &__title
+        color $white
+        small
+            color #DEA785
+.footer-link
+    .layout-btn-group
+        .q-btn
+            &:after
+                background-color $white
+
+/**
+ * style/form.styl
+ */
+
+/**
+ * login bar field
+ */
+.field-bar
+    .q-field-content
+        .q-input
+            border-color #C8C8C8
+            background-color $white
+
+/**
+ * style/header.styl
+ */
+.q-layout-header
+    background-color rgba($white, 0.5)
+/**
+ * 此版隐藏物 & 巫术
+ */
+/* 顶部我的帐户, 顶部个人资料、余额, 顶部登入按钮 */
+.default-toolbar
+    .q-btn
+        color $tertiary
+/**
+ * 顶部左侧按钮
+ */
+.top-btns-help
+    .layout-btn-group
+        .q-btn
+            color $white
+            &:after
+                background-color $white
+        &:last-child .q-btn:after
+            display none
+/**
+ * 顶部右侧按钮
+ */
+.top-btns-account
+    .layout-btn-group
+        &:nth-child(1)
+        &:nth-child(2)
+            .q-btn
+                background-color $white
+        &:nth-child(3)
+            .q-btn
+                background-color $primary
+                color $white
+/**
+ * 登入列
+ */
+.login-bar-loged
+    .user-name
+        .q-btn
+            color #FFA526
+    .user-purse
+        &__balance
+            background-color transparent
+
+/**
+ * nav
+ */
+.navbar
+    background $styleUrl('images/table-header.png')
+    background-size auto 100%
+    color $white
+.btn-nav-group
+    .q-btn
+        &.active
+            background-color rgba(#000, 0.4)
+        .q-chip
+            background-color #B41C18
+            color $white
+            &:after
+                border-color #B41C18 transparent transparent
+.all-game-title
+    background-color rgba(#000,0.15)
+
+
+/**
+ * style/lobby.styl
+ */
+/**
+ * 大厅全部彩種
+ */
+.lobby-hot-game
+    background-color $white
+    border-color #E5E5E5
+    &__item
+        border-bottom-color #DADBDD
+    &__name
+        color $secondary
+        .q-chip
+            background-color #FFA526
+            color $white
+            &:after
+                border-color #FFA526 transparent transparent
+    &__periods
+        color $primary
+        position absolute
+        right 1rem
+
+/**
+ * 大厅轮播和跑马灯
+ */
+
+.lobby-marquee
+    border-color #E5E5E5
+    background-color $white
+    &__label
+        color #D57C00
+
+/**
+ * 推荐彩种(有倒计时)
+ */
+.lobby-recommend
+    &__bottom
+        border-top-color #E5E5E5
+
+    /* flip-clock */
+    // .card
+    //     .card__top
+    //     .card__bottom
+    //     .card__back::before
+    //     .card__back::after
+    //         background #333
+    //         color #ccc
+
+/**
+ * 往期开奖
+ */
+.lobby-pastview
+    .lottery-item-group
+        border-bottom-color #E5E5E5
+
+/* 单行tabs */
+.tabs-panel
+    background $styleUrl('images/table-header.png')
+    background-size auto 100%
+    &__title
+        background-color rgba(#000,0.4)
+        color $white
+    .q-btn
+        color $white
+    &__content
+        background-color $white
+        border-color #E5E5E5
+
+/**
+ * 推荐彩种(三个一组)
+ */
+.lobby-promo
+    .lottery-item-group
+        border-right-color #E5E5E5
+
+
+/**
+ * 首頁、投注页sidebar
+ */
+.site-panel
+    &__header
+        background $styleUrl('images/table-header.png')
+        background-size auto 100%
+        color $white
+    &__body
+        border 1px solid #E5E5E5
+    &__tag-item
+        background-color white
+        color #4A4A4A
+        height auto
+        line-height unset
+        padding 5px 10px
+        &:first-child
+            text-align left
+    &__record-amount
+        color #FF5617
+
+/**
+ * TABLE组件
+ */
+/* table（表格不含标题列）*/
+.table
+    &.winner-list
+        border-color #E5E5E5
+        thead
+            th
+                background-color $white
+                color #9EA0A5
+        tbody
+            .icon-ranking
+                background-color $primary
+                color $white
+            tr
+                border-color #E5E5E5
+                &:nth-child(1)
+                &:nth-child(2)
+                &:nth-child(3)
+                    color #C02728
+                    .icon-ranking
+                        background-color #c02728
+                &:nth-child(odd)
+                    background-color #F5F5F5
+                &:nth-child(even)
+                    background-color $white
+    &.last-award //往期開獎
+        border 1px solid #ebebeb
+        thead
+            th
+                background-color $white
+                color #4A4A4A
+        tbody
+            tr
+                border-top 1px solid #ebebeb
+                &:nth-child(odd)
+                    background-color #f5f5f5
+                &:nth-child(even)
+                    background-color $white
+            td:first-child
+                border-right 1px solid #ebebeb
+            .pastview-win-number
+                color #D0021B
+.table-normal
+    .history &
+    .crowdfunding &
+        thead
+            background $styleUrl('images/table-header.png')
+            background-size auto 100%
+
+/**
+ * 众筹假tab列
+ */
+.crowdfunding-tabs
+    &__group
+        .q-btn
+            &.btn-primary
+                color $secondary
+
+/**
+ * page
+ * 个人中心
+ */
+.account-manage-label
+    color #935732
+
+/**
+ * page共用
+ * 页码
+ */
+/* 自订页码 */
+.pagination
+    .pager-btn
+        .q-btn
+            &.active
+                background $primary
+
+/**
+ * page withdrawals-bind
+ * 个人中心-充值
+ */
+.withdrawals-bind
+    .account-manage-header
+        margin-bottom 15px
+        border 1px solid #ECD2B2
+        background #EFE4D6
+        color #BC0000

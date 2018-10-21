@@ -1,0 +1,247 @@
+/**
+ * 投注页header
+ * 对应components/lottery/lotteryLogo.vue
+ */
+.lottery-logo
+    background $styleUrl('images/bg-block.jpg')
+    background-size 350px
+    text-align center
+    .lottery-title
+        &__icon
+            width 90px
+            margin 0 auto
+        &__name
+            font-size 22px
+            letter-spacing 3px
+            color $secondary
+.lottery-countdown
+    background $styleUrl('images/lottery-mmc.png')
+    background-size 100% 100%
+    padding 20px 45px
+    font-size $text-xlg
+    .lottery-countdown-date
+        display block
+        font-size $text-lg
+        margin-right 10px
+        .text-negative
+            display inline-block
+            min-width 16px
+            text-align center
+    .lottery-countdown-closed
+        margin 11px 0
+        > span
+            display inline-block
+            vertical-align middle
+            &:first-child
+                width 80px
+.lottery-award-history
+    background $styleUrl('images/bg-block.jpg')
+    background-size 350px
+    text-align center
+    font-size $text-xlg
+    .double-row
+        &__item
+            background-color $secondary
+            color $primary
+            border-radius 10px
+            border none
+            box-shadow 0 1px 3px rgba(#271600,0.76) inset
+
+/**
+ * main
+ */
+.lottery-bet-section
+    background $styleUrl('images/bg-block.jpg')
+    background-size 350px
+
+/**
+ * 玩法选单
+ */
+// .lottery-bet-tags
+.lottery-button-area
+    padding-right 4px
+
+
+/**
+ * 生肖
+ */
+.sheng-xiao
+    background-color rgba(#000,0.06)
+    color $secondary
+    .q-option-inner
+        &.active
+            color #59A406 !important
+            + .q-option-label
+                color #407403
+
+
+/**
+ * 投注区块
+ */
+.lottery-bet-area
+    padding 0 3px
+.play-tabs
+    width 681px
+.bet-play-tab
+    .btn-group-flat
+        background-color rgba(#000,0.06)
+        .q-btn-item
+            color $tertiary
+        .q-btn.text-primary
+            background-color $secondary !important
+            &.active
+                background-color $secondary !important
+
+
+/**
+ * 投注项目群组，一个玩法区块
+ * .bet-item-group > .bet-item-wrap > .bet-item
+ */
+/* 包住bet-item的框框，颜色底 */
+.bet-item-wrap
+    background-color rgba(#000,0.06)
+/* 直排处理 */
+.bet-group-21000 // 时时彩两面
+.bet-group-22000 // 时时彩1-5球
+.bet-group-42000 // 11选5 1-5球
+    &:nth-of-type(1)
+    &:nth-of-type(2)
+    &:nth-of-type(3)
+    &:nth-of-type(4)
+    &:nth-of-type(5)
+        border 2px solid transparent
+    &:nth-of-type(2n)
+        .bet-item-wrap
+            background-color rgba(#000,0.06)
+.bet-group-41000 // 11选5两面
+    &:nth-of-type(2)
+    &:nth-of-type(3)
+    &:nth-of-type(4)
+    &:nth-of-type(5)
+    &:nth-of-type(6)
+        border 2px solid transparent
+    &:nth-of-type(2n+1)
+        .bet-item-wrap
+            background-color rgba(#000,0.06)
+.bet-group-81000 // PK10两面
+    &:nth-of-type(2)
+    &:nth-of-type(3)
+    &:nth-of-type(4)
+    &:nth-of-type(5)
+    &:nth-of-type(6)
+    &:nth-of-type(7)
+    &:nth-of-type(8)
+    &:nth-of-type(9)
+    &:nth-of-type(10)
+    &:nth-of-type(11)
+        border 2px solid transparent
+    &:nth-of-type(2n+1)
+        .bet-item-wrap
+            background-color rgba(#000,0.06)
+.bet-group-83000 // PK10 1-5名
+.bet-group-84000 // PK10 6-10名
+    &:nth-of-type(1)
+    &:nth-of-type(2)
+    &:nth-of-type(3)
+    &:nth-of-type(4)
+    &:nth-of-type(5)
+    &:nth-of-type(6)
+    &:nth-of-type(7)
+    &:nth-of-type(8)
+    &:nth-of-type(9)
+    &:nth-of-type(10)
+        border 2px solid transparent
+    &:nth-of-type(2n)
+        .bet-item-wrap
+            background-color rgba(#000,0.06)
+
+/**
+ * 投注资讯与按钮
+ */
+.play-bet
+    &__info
+        margin $basicGap
+        margin-top 0
+        .text-strong
+            color $primary
+    &__btn
+        margin $basicGap
+        margin-top 0
+
+/* 投注项目 */
+.bet-item
+    [active=true] &
+    .isActive &
+    &[active=true]
+    &.active
+        background-color $secondary
+        color $white
+    &__input
+        input
+            color $primary
+    /* 自选不中 */
+    &.bet-item-round
+        [active=true] &
+        .isActive &
+        &[active=true]
+        &.active
+            background-color transparent
+            color $white
+    &.disable-item
+        opacity 0.3
+
+
+/**
+ * 路珠
+ */
+.lottery-road-bead
+    border-top none
+    background $styleUrl('images/bg-road.jpg') repeat-y
+    background-size 100%
+    border-radius 4px
+    padding-top 0
+    margin-top 30px
+.road-content
+    background none
+    margin-top 0
+    padding $basicGap
+    // &__list
+.road-column
+    background-color rgba(#000, 0.3)
+    border-radius 3px
+    padding 5px 0
+    margin-top $basicGap
+    &:last-child
+        &:before
+            top -18px
+.road-bead-tag
+    color $primary-vivid-2
+
+/**
+ * 双面长龙
+ */
+.dslong-item
+    color $white
+    background-color rgba(#000,0.22)
+    border-radius 4px
+    padding $basicGap 0
+    &.col-6
+        flex 0 0 313px
+    &:first-child
+        border-right none
+        margin-right $basicGap
+        position relative
+        &:after
+            content ''
+            position absolute
+            width 1px
+            top 0px
+            bottom 0px
+            right -15px
+            background-color rgba(#000,0.22)
+    &:last-child
+        margin-left $basicGap
+    .dslong-title
+        color $primary-vivid-2
+    .dslong-play
+        color $primary-vivid-2

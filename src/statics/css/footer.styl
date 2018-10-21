@@ -1,0 +1,39 @@
+/**
+ * 底部导航列
+ */
+.footer-nav
+    background-color $gray-white
+    &__wrap
+        height 200px
+        align-items center
+    &__list
+        padding $basicGap
+    &__item-group
+        text-align center
+    // &__item
+    &__title
+        font-size $text-lg
+        margin-bottom 10px
+        small
+            margin-left 5px
+            color $gray-medium
+            font-size $text-xs
+/* 底部连结 */
+.footer-link
+    margin-top 10px
+    .layout-btn-group
+        .q-btn
+            &:after
+                content ''
+                position absolute
+                top 6px
+                right 0
+                width 1px
+                height 16px
+                background-color $tertiary
+        &:last-child
+            .q-btn:after
+                display none
+.footer-copyright
+    color $gray-medium
+    font-size $text-xsm

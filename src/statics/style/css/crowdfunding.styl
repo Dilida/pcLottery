@@ -1,0 +1,76 @@
+
+.crowdfunding
+.crowdfunding-myinfo
+    margin 10px 0
+    background-color $white
+    border 1px solid #E3E3E3
+
+/**
+ * 众筹假tab列
+ */
+.crowdfunding-tabs
+    margin 0 -15px
+    position relative
+    flex 0 0 990px
+    max-width 990px
+    background none
+    padding 0 15px
+    &:after
+        content ''
+        position absolute
+        bottom 0
+        left 0
+        right 0
+        z-index 8
+        height 1px
+        background-color #E5E5E5
+    &__btn
+        padding 0 20px
+        height 30px
+        font-size 14px
+        color #737373
+        border 1px solid #E5E5E5
+        border-radius 8px 8px 0 0
+        margin-right 10px
+        position relative
+        z-index 10
+        background-color #F8F8F8
+        &.active
+            color $secondary
+            background-color transparent
+            border-color #E5E5E5
+            border-bottom-color $white
+    &__group
+        .q-btn
+            margin-left 10px
+            margin-right 0
+            background-image $styleUrl('images/btn-playintro.png')
+            background-size 82px 30px
+            border none
+            color transparent
+            padding 0
+            width 82px
+            &.btn-primary
+                background-image $styleUrl('images/btn-bet.png')
+                background-color transparent
+                background-size 100% 100%
+                height 34px
+                width 120px
+                color $white
+        &:last-child
+            position absolute
+            bottom -45px
+            right 15px
+
+/**
+ * 众筹筛选列
+ */
+.crowdfunding-filter
+    background-color transparent
+    padding 15px 0
+    display flex
+    .q-select
+        margin-right 10px
+        width 120px
+
+

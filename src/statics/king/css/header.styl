@@ -1,0 +1,163 @@
+/**
+ * 此版隐藏物 & 巫术
+ */
+/* 顶部我的帐户, 顶部个人资料、余额, 顶部登入按钮 */
+.header-account
+// .q-toolbar-title
+.header-login-btn
+    display none
+.q-toolbar
+    .q-toolbar-title
+        display none
+.q-toolbar
+    .layout-width
+        position relative
+        height 30px
+    .q-btn
+        font-size 12px
+.default-toolbar
+    .q-btn
+        color $tertiary
+
+/**
+ * 顶部左侧按钮
+ */
+.top-btns-help
+    position absolute
+    left 0
+    .layout-btn-group
+        position relative
+        &:after
+            background-color $tertiary
+            .lottery-toolbar &
+                background-color $white
+        &:last-child:after
+            display none
+        .q-btn
+            height 24px
+            padding 0 5px
+            margin 3px 5px
+            font-size 12px
+        &:nth-child(1)
+        &:nth-child(2)
+            &:after
+                content ''
+                width 1px
+                height 14px
+                position absolute
+                top 8px
+                right 0
+
+/**
+ * 顶部中间
+ */
+.q-toolbar-title
+    padding-left 230px
+    .lottery-toolbar &
+        display flex
+        padding-left 180px
+        /* 隐藏个人消息 */
+        .top-notice
+            display none
+/**
+ * 顶部右侧按钮
+ */
+.top-btns-account
+    position absolute
+    right 0
+    .layout-btn-group
+        .q-btn
+            border-radius 20px
+            height 24px
+            padding 0 10px
+            margin 3px 5px
+            font-size 12px
+        &:nth-child(1)
+            .q-btn
+                color $negative
+        &:nth-child(1)
+        &:nth-child(2)
+            .q-btn
+                background-color $white
+        &:nth-child(3)
+            .q-btn
+                background-color $primary
+                color $white
+
+
+/**
+ * 登入列
+ */
+.login-bar
+    display flex
+    align-items center
+.login-bar-wrap
+    > .q-item
+        margin-right 5px
+        .q-btn:not(.btn-demoplay)
+            margin-right 5px
+.login-bar-loged
+    > .q-item
+        margin-left 10px
+    .q-icon
+        margin-right 3px
+    .user-name
+        .q-btn
+            font-size 12px
+            padding 0px 10px
+            color $primary
+            .q-btn-inner
+                > div:before
+                    content '欢迎会员'
+                    color $tertiary
+                    margin-right 10px
+
+/**
+ * nav
+ */
+.navbar
+    background-color $primary
+    color $white
+    .q-btn-dropdown-arrow
+        display none
+.btn-nav-group
+    .q-btn
+        width auto
+        height 37px
+        padding 4px 13px
+        max-width 170px
+        &.active
+            background-color $primary-active
+        .q-icon
+            margin-right 5px
+        .q-chip
+            border none
+            position absolute
+            transform scale(0.8)
+            animation jump-chip 1s infinite
+            background-color #FD9502
+            color $white
+            &:after
+                content " "
+                border-style solid
+                border-width 4px 4px 0 0
+                height 0
+                width 0
+                left 4px
+                bottom -4px
+                position absolute
+                border-color #FD9502 transparent transparent
+.all-game-title
+    width 236px
+    padding 6px 10px 5px
+    background-color $primary-active
+
+@keyframes jump-chip
+    0%
+        top -10px
+    40%
+        top -12px
+    80%
+        top -10px
+    100%
+        top -10px

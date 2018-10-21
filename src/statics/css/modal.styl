@@ -1,0 +1,107 @@
+/**
+ * 预设modal
+ */
+.modal
+    .modal-content
+        border-radius 6px
+    &__header
+        height 60px
+        padding $basicGap
+        border-bottom 1px solid $gray-white-2
+        &-title
+            color $primary
+            font-size 18px
+            padding-right 30px
+            line-height 30px
+    &__close
+        position absolute
+        padding 0
+        color $gray-medium
+        top 17px
+        right $basicGap
+        width w = 21px
+        height w
+        line-height w
+        font-size 20px
+        .q-icon
+            font-size 1em
+    &__body
+        padding $basicGap
+        word-break break-all
+        max-height calc(80vh - 137px) // header+footer
+        overflow auto
+    &__footer
+        padding $basicGap
+        text-align center
+        .q-btn + .q-btn
+            margin-left 10px
+    &.modal-bet
+        .modal__body
+            min-width 300px
+        .modal-bet__body__count
+            color $negative
+            margin-top 10px
+            margin-bottom 0
+/**
+ * 弹窗尺寸（只规定尺寸）
+ */
+.modal
+    &--lg
+        .modal-content
+            width 800px
+    &--md
+        .modal-content
+            width 550px
+    &--sm
+        .modal-content
+            width 350px
+    // 提示讯息弹窗
+    &--free
+        .modal-content
+            max-width 800px
+            min-width 350px
+    // 登入弹窗
+    &--login
+        .modal-content
+            min-width 550px
+            min-height 380px
+    // 平台公告
+    &--lobbypop
+        .modal-content
+            width 800px
+            height 580px
+    // 代理注册协议
+    &--agent
+        .modal-content
+            max-height 80vh
+    // nav 彩票下拉选单
+    &--lottery-entry
+        .modal-content
+            width 700px
+            min-height 70vh
+
+/**
+ * 登入弹窗
+ */
+.login
+    .login-wrap
+        padding 10px 50px
+    &__check-item
+        justify-content center
+        margin-bottom $basicGap
+        margin-top $basicGap
+    &__btn
+        justify-content center
+        margin-bottom 20px
+    &__btn-group
+        .q-btn
+            font-size $text-xsm
+            line-height $text-xsm
+            padding 0 20px
+            border-right 1px solid $tertiary
+            &:hover
+                color $primary
+                .q-focus-helper
+                    display none
+            &:last-child
+                border-right none

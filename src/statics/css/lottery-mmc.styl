@@ -1,0 +1,174 @@
+/**
+ * 秒秒彩
+ */
+/* 重庆秒秒彩开奖 */
+.mmc-tool
+    font-size 50px
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+    z-index 9999
+    background $imgUrl('images/mmc/bg.png') $mask
+    background-size 100% 100%
+.mmc-tool_machine
+    background $imgUrl('images/mmc/machine.png') no-repeat top center
+    background-size 10em
+    height 11.45em
+    width 10em
+    position fixed
+    top 50%
+    left 50%
+    margin-left -5em
+    margin-top -7em
+.mmc-tool_number
+    position absolute
+    top 5.5em
+    left 50%
+    width 8.024em
+    height 2.11em
+    margin-left -3.95em
+    border-radius 0.2em
+    box-shadow 0 0 0.4em 0.1em  $lightPurple inset
+.cqmmc_num
+    width 1.6em
+    height 2.11em
+    background $imgUrl('images/mmc/mmc_num.png') repeat-y top center
+    background-size 1.29em 21.1em
+    float left
+.pk10mmc_num
+    width 1.6em
+    height 2.11em
+    background $imgUrl('images/mmc/pk10_num.png') repeat-y top center
+    background-size 1.29em 21.1em
+    float left
+    margin-bottom 0.5em
+.mmc-tool_btn
+    position absolute
+    bottom 1em
+    z-index 11
+    text-align center
+    width 10em
+    a
+        display inline-block
+        width 2.718em
+        height 0.871em
+        margin 0 0.5em
+.btn_replay
+    background $imgUrl('images/mmc/btn_replay.png') no-repeat center center
+    background-size 100% 100%
+    &.disable
+        background-image $imgUrl('images/mmc/btn_replay_disable.png')
+.btn_reset
+    background $imgUrl('images/mmc/btn_reset.png') no-repeat center center
+    background-size 100% 100%
+    &.disable
+        background-image $imgUrl('images/mmc/btn_reset_disable.png')
+.mmc-tool_draw
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    z-index 10
+    background $imgUrl('images/mmc/mask.png') no-repeat center center
+    background-size 100% 100%
+.mmc-tool_title
+    width 8.056em
+    height 1.734em
+    margin 4.6em auto 0
+.mmc-tool_title-win
+    background $imgUrl('images/mmc/title_win.png') no-repeat center top
+    background-size 8.056em
+    p
+        color $white
+        padding-top 36px
+        text-align center
+        font-size 14px
+        span
+            font-size 24px
+            color #fdea74
+            margin 0px 5px
+            display inline-block
+            vertical-align baseline
+            margin-bottom -0.1em
+.mmc-tool_title-lose
+    background $imgUrl('images/mmc/title_lose.png') no-repeat center top
+    background-size 8.056em
+.mmc-tool_list
+    width 8em
+    height 1.935em
+    background-color #2c2c2c
+    margin 0px auto
+    overflow-y scroll
+    -webkit-overflow-scrolling touch
+    ul
+        color $white
+        text-align left
+        padding 0.2em
+        margin 0
+    li
+        font-size 16px
+        padding 0.1em 0
+        span
+            float right
+            &.status-win
+                color #fdea74
+
+/* 赛车秒秒彩开奖 */
+.pk10-mmc-tool
+    background $imgUrl('images/mmc/pk10_bg.png') $mask
+    background-size 100% 100%
+    .mmc-tool_machine
+        background $imgUrl('images/mmc/pk10_machine.png') no-repeat top center
+        background-size 10em
+        height 11.67em
+    .mmc-tool_number
+        top 3.3em
+        box-shadow none
+    .mmc-tool_draw
+        background $imgUrl('images/mmc/pk10_mask.png') no-repeat center center transparent
+        background-size 100% 100%
+    .mmc-tool_title
+        margin-top 2.5em
+    .mmc-tool_list
+        background-color transparent
+        height 3.7em
+        ul
+            padding 0.2em 0
+        li
+            margin-bottom 0.1em
+
+.pk10-mmc_marquee
+    position absolute
+    top -0.94em
+    left 0.3em
+    span
+        display none
+        background $imgUrl('images/mmc/pk10_nun_sprite.png') no-repeat
+        background-size 0.6532em 5em
+        color $white
+        width 0.6532em
+        height 0.45em
+        line-height 0.45em
+        margin-left -0.15em
+        for i in (0..9)
+            .num_{i+1}
+                $backgroundPosition(0, 0, (i), -0.5)
+
+.pk10-mmc-tool
+    .mmc-tool_btn a
+        width 2.879em
+        height 1.016em
+        margin 0 0.3em
+    .btn_replay
+        background-image $imgUrl('images/mmc/pk10_btn_replay.png')
+        background-size 100% 100%
+        &.disable
+            background-image $imgUrl('images/mmc/pk10_btn_replay_disable.png')
+    .btn_reset
+        background-image $imgUrl('images/mmc/pk10_btn_reset.png')
+        background-size 100% 100%
+        &.disable
+            background-image $imgUrl('images/mmc/pk10_btn_reset_disable.png')

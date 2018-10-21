@@ -1,0 +1,96 @@
+body
+    font-size 14px
+    font-family 'Microsoft YaHei', 'PingFangSC-Regular', 'Microsoft JhengHei', Helvetica, sans-serif
+    font-weight normal
+    line-height 1.5em
+h1
+h2
+h3
+h4
+h5
+h6
+    margin 0
+    line-height 1.5em
+h1
+h2
+h3
+    font-size $text-xlg
+h4
+    font-size $text-lg
+h5
+    font-size $text-md
+h6
+    font-size $text-sm
+img
+    max-width 100%
+    max-height 100%
+
+input
+    border none
+    &:focus
+        outline none
+a
+    color $primary
+    text-decoration none
+    &:hover
+        color $secondary
+
+/**
+ * 覆蓋quasar 預样式
+ */
+.q-btn
+    min-height auto
+    text-transform initial
+.q-list
+    padding 0
+    border none
+.q-item
+    padding 0
+    min-height auto
+    font-size $text-md
+.q-item-link:hover
+    background-color transparent
+.q-list-header
+    padding 0
+    min-height auto
+.q-layout-header
+    background-color #fff
+.q-tab
+    text-transform unset
+.q-tab-pane
+    border none
+.q-item-side
+    min-width auto
+.q-layout-page
+    width 100%
+
+.q-focus-helper
+    opacity 0.05
+
+.layout-padding
+    padding 0
+
+/* 收合列表（手风琴） */
+.q-collapsible
+    background-color $white
+    > .q-collapsible-inner
+        > .q-item
+            padding 10px
+        .q-collapsible-sub-item
+            padding 10px
+
+.q-popover
+    z-index 5000
+    .q-list
+        padding 0
+    .q-item
+        padding 10px 15px
+        &:hover
+        &.q-select-highlight
+            background-color $primary !important //有些下拉选单得这样盖
+            color $white !important //有些下拉选单得这样盖
+    button
+        width 100%
+        padding 10px
+        & + div
+            padding 10px

@@ -1,0 +1,32 @@
+/**
+ * 复盖 layout
+ * 这个layout是没有留边边的
+ */
+// .page-bg
+//     background-color $white
+
+.q-layout-page
+    margin-top 10px
+    &.lottery
+        margin-top 0
+.layout-full
+    margin-top 10px
+    padding $basicGap
+    box-shadow 0 0 6px rgba(#CFCFCF,0.5)
+.layout-page
+    box-shadow 0 0 6px rgba(#CFCFCF,0.5)
+.layout-page-side
+    padding-left 0
+    flex 0 0 17%
+    max-width 17%
+.layout-page-main
+    flex 0 0 83%
+    max-width 83%
+.layout-page-content
+    padding-right 0
+    .bread-crumbs + &
+        padding-right $basicGap
+.layout-side
+    padding-right 0
+.layout-main
+    padding-left 0

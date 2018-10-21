@@ -1,0 +1,642 @@
+.lobby
+    .row
+        align-items flex-start
+        display flex
+            .lobby-titlebar
+                display none
+        .layout-side-left
+            max-width 230px
+            border 2px solid $primary
+            border-top none
+            margin -10px 10px 15px 0
+        .index-main
+            flex 0 0 750px
+            max-width 750px
+        .swiper-slide
+            height 156px !important
+
+.lobby-marquee + .layout-main
+    padding 15px 10px 15px 0
+
+
+/**
+ * 大厅轮播和跑马灯
+ */
+/* 跑马灯 */
+.layout-carousel
+    width 100%
+    overflow hidden
+    height 146px //CTO说要定死轮播图高
+    // &__side
+    &__block
+        img
+            display block
+            width 490px
+            height 146px
+.lobby-marquee
+    color $tertiary
+    height 32px
+    z-index 100
+    font-size $text-lg
+    border 1px solid $warning
+    background-color $warning-bg
+    width 100%
+    &__label
+        color $warning
+        position relative
+        padding 0 10px
+        flex none
+        font-size $text-md
+        vertical-align center
+        span
+            padding-top 5px
+            display inline-block
+    &__content
+        color $tertiary
+        flex: 0 0 85%
+        &-text
+            display block
+            font-size 14px
+
+
+/**
+ * 大厅奖池(中間欄)
+ */
+
+/**
+ * 今日最大
+ */
+/*
+.jackpot
+    border 1px solid $gray-light-5
+    margin 10px 0 0 0
+    background-size 100%
+    &__header
+        text-align center
+        color $white
+        background-color $primary
+        font-size $text-md
+        letter-spacing 0.1em
+        padding 5px 0
+        margin-bottom 10px
+.jackpot-wrap
+    padding 10px
+    overflow hidden
+    position relative
+    &:first-child
+        margin 0
+    .jackpot-item__img
+        position static
+        float left
+        width 55px
+        margin-right 10px
+    .jackpot-label
+        font-size $text-xsm
+    .lobby-primary-text
+        color $primary
+        margin  0
+        font-size $text-xsm
+    &:first-child
+        .jackpot-item
+            .jackpot-label
+                padding-left 130px
+            &__img
+                position static
+        .jackpot-money
+            padding-left 50px
+            margin-top 20px
+    &:last-child
+        .jackpot-item
+            .jackpot-label
+                padding-left 110px
+        .jackpot-money
+            margin-top 0px
+            font-size $text-xsm
+    button
+        position absolute
+        bottom 15px
+        right 15px
+    // &__img
+    // &__label
+
+*/
+/**
+ * 大厅推广区块
+ */
+
+// 合購
+.promo-primary
+    &__item
+        padding 0 0 0 100px
+        position relative
+        margin-top 10px
+        background $gray-light-4
+        border 1px solid $gray-light-5
+        height 32px
+        .jackpot-label
+            display inline-bolck
+    &__icon
+        width 20px
+        height 20px
+        display inline-block
+        vertical-align middle
+        margin 5px
+        .logo-crowdfunding
+            background $imgUrl('images/crowdfunding.png') no-repeat
+            background-size 100% 100%
+            width 20px
+            height 20px
+    &__label
+        background $styleUrl('images/mark.png') 0 0 no-repeat
+        background-size contain
+        color $white
+        width 100px
+        height 43px
+        line-height 33px
+        padding-left 25px
+        right auto
+        left -1px
+        top -1px
+        font-size $text-xsm
+        text-shadow 0 0 4px rgba($primary, 0.5)
+        letter-spacing 0.1em
+    &__label + span
+        padding-left 10px
+        color $body-color
+        letter-spacing 0.1em
+    .jackpot-money
+        padding-left 10px
+        display inline-block
+        color $money
+        font-size $text-md
+        font-weight bold
+        line-height 1.2em
+        letter-spacing 0.1em
+    &__btn
+        right 15px
+        top 4px
+        button
+            font-size $text-xsm
+            color $white
+            $yelloBgGradient-v4()
+            border-radius 3px
+            padding 0 4px
+
+/* 大厅tab */
+.lobby-recommend
+.lobby-promo
+    .tabs
+        .q-tabs-head
+            min-height auto
+            height 30px
+            padding 0 7px
+            &.bg-primary
+                background-color transparent !important
+            &.text-white
+                color #9B9B9B !important
+        .q-tab
+            min-height auto
+            height 30px
+            width 90px
+            padding 0
+            font-size 12px
+            position relative
+            &:after
+                content ''
+                display block
+                position absolute
+                left -1px
+                top 7px
+                width 1px
+                height 16px
+                background-color #9B9B9B
+            &.active
+                border-top 3px solid $primary
+                border-left 1px solid $primary
+                border-right 1px solid $primary
+                background-color $white
+                color $tertiary
+                z-index 10
+                &:after
+                    display none
+        .q-tabs-bar
+            display none
+        .q-tabs-panes
+            border-top 1px solid $primary
+    //隐藏号码走势按钮
+    .btn-trend
+        display none
+    .lottery-item-pdate
+        font-size 12px
+
+/**
+ * 推荐彩种(有倒计时)
+ */
+.lobby-recommend
+    border 1px solid #E5E5E5
+    border-bottom 0
+    border-top 0
+    padding-top 10px
+    .q-tab-pane
+        display flex
+    &__top
+        flex 0 0 300px
+        max-width 300px
+        align-items flex-start
+    &__bottom
+        flex 0 0 150px
+        max-width 150px
+        padding-left 15px
+        border-left 1px dotted #E5E5E5
+        margin-left 15px
+    &__header
+        width 100%
+    &__main.row
+        align-items center
+    .lobby-bead
+        margin-left 8px
+        text-align right
+    .lottery-item-history
+        .double-row__item
+            margin 0 0 0 2px
+            width 20px
+            height 16px
+            line-height 16px
+    .promo-secondary__time-label
+        display none
+
+    /* flip-clock */
+    .card
+        font-size 24px
+    .flip-clock
+        min-width 36px
+        .card__top
+        .card__bottom
+        .card__back::before
+        .card__back::after
+            color $primary
+    .promo-secondary__time
+        margin 5px 0 10px
+    .promo-secondary__time-gap
+        display inline-block
+        font-size 24px
+        padding 5px
+        vertical-align middle
+.lottery-item-icon
+    width 55px
+    img
+        display block
+/**
+ * 推荐彩种(三个一组)
+ */
+.lobby-promo
+    border 1px solid #E5E5E5
+    border-top 0
+    .lottery-item-group
+        flex 0 0 50%
+        max-width 50%
+        .q-item
+            font-size 12px
+        &:first-child
+            border-right 1px dotted #E5E5E5
+            padding-right 10px
+        &:nth-child(2)
+            padding-left 10px
+        &:last-child
+            border-right 0
+            display none
+    .lottery-item-wrap
+        flex-direction column
+    .lobby-bead
+        width 100%
+        height 60px
+        text-align center
+    &__icon
+        img
+            width 80px
+    // &__name
+    .lottery-item-btns
+        width 100%
+        text-align right
+/**
+ * 大厅热门游戏区块
+ */
+.lobby-hot-game
+    &__list
+        border 1px solid $gray-light
+        padding 0
+    &__item
+        width 100%
+        padding 5px 8px
+        margin 0
+        border-top 1px dotted $gray-light
+        &:hover
+            background-color $primary-pale
+            cursor pointer
+    &__icon
+        float left
+        margin-right 10px
+        line-height 0
+        width 32px
+        height 32px
+        img
+            width 32px
+        &.logo-crowdfunding
+            background $imgUrl('images/crowdfunding.png')
+            background-size 100%
+    &__name
+        line-height 32px
+        .after-chip
+            display none
+    &__periods
+        color $negative
+        font-size $text-xsm
+        position absolute
+        left 150px
+    &__people
+        color $negative
+        padding 0 5px
+
+.lobby-hot-game + .row
+    .lobby-titlebar
+        display none
+
+/**
+ * 大厅左右選單 (標題部分)
+ */
+.collapsible
+    &__header
+        color $primary
+    .icon-lottery
+            color $primary
+    .q-item-side
+    &__title
+        color $gray-medium
+        font-size $text-xsm
+        background-color $gray-light-4
+        height 32px
+    .icon-tool
+        font-size 20px
+    .q-item-side-right
+        .icon-tool
+            font-size 24px
+.site-panel
+    &__header
+        background-color $gray-light-4
+        color $gray-medium
+        border 1px solid $gray-light-5
+    &__title
+        color $gray-medium
+        font-size $text-xsm
+        background-color $gray-light-4
+        height 32px
+        border solid 1px $gray-light-5
+    .icon-tool
+        font-size 20px
+    .q-item-side-right
+        .icon-tool
+            font-size 24px
+
+
+
+
+/**
+ * 右選單
+ */
+
+.tabs-panel
+    &__content
+        border-left 1px solid $gray-light-5
+        border-bottom 1px solid $gray-light-5
+        border-right 1px solid $gray-light-5
+    .icon-tool
+        font-size 20px
+        padding-right 5px
+    &__header
+        border solid 1px $gray-light-5
+        background-color $gray-light-4
+        color $gray-medium
+        font-size $text-xsm
+        height 32px
+    .relative-position.q-btn
+        font-size $text-xsm
+        display none
+    &__content.slidesToShow2
+        .swiper-container
+            height 156px
+            width 100%
+
+
+.site-panel
+    &__header
+        height 32px
+        display flex
+        align-content center
+        align-self center
+        font-size $text-xsm
+        line-height 32px
+    .table
+        font-family 'MicrosoftYaHei'
+        font-size $text-xsm
+        border-top none
+        border-left 1px solid $gray-light-5
+        border-bottom:  1px solid $gray-light-5
+        border-right 1px solid $gray-light-5
+        tbody
+            tr
+                border-bottom 1px solid $gray-light-5
+        tr
+            &:nth-list-child()
+                border none
+            th, td
+                padding 5px 10px
+
+
+// 右側投注鈕
+.lobby-pastview
+    margin-bottom 15px
+    position relative
+.layout-side-right
+    padding-top 15px
+    .tabs-panel
+        &__content
+            .q-list
+                padding 0 10px
+                border-bottom 1px solid $gray-light
+                box-sizing border-box
+                min-height 77px
+                &:last-child
+                    border-bottom none
+            .lottery-item-btns
+                position absolute
+                right 0
+                // color $white
+                // border-radius 3px
+                // $bgGradient-v4($color1,$color2,$color3,$color4)
+                // border 1px solid $primary-bright
+                // font-size $text-xsm
+                button.q-btn
+                    padding 0px 5px
+                    .items-center
+                        font-size: 12px
+                        align-items baseline
+            .q-item
+                width 100%
+                padding-top 5px
+                .lottery-item-name, .lottery-item-padate
+                    font-size $text-xsm
+                .lobby-bead
+                    width calc( 100% - 18px ) //从15改为18，快乐8的时候会被按钮压到
+            .q-item + .q-item
+                padding-top 0px
+        &__title
+            height 32px
+            display flex
+            align-content center
+            align-self center
+            font-size $text-xsm
+            line-height 32px
+            letter-spacing 0.2em
+
+
+.lobby-winner__tag
+    .q-btn
+        width 50%
+        background $gray-light-5
+        color $gray-medium
+    .q-btn.tag
+        background $primary
+        color $white
+
+/**
+ * 大厅左選單
+ */
+.lobby-game-block
+    border-top 1px solid $gray-light-5
+    >.collapsible
+        border none
+        width 100%
+        line-height 32px
+        padding 0px 16px
+        position relative
+        transition all 0.3s ease-out
+        margin 0
+        i
+            display inline
+            padding-right 2px
+            background none
+            transition color 0.3s ease-out
+        i.fa-chevron-right
+            position absolute
+            right 7px
+            top 7px
+            font-size 18px
+            color $gray-medium
+            transition color 0.3s ease-out
+        .lobby-game-box
+            overflow hidden
+            position absolute
+            width 202px
+            background $primary
+            right -202px
+            top 0
+            z-index 2001
+            color #fff
+            display none
+            opacity 0
+            transition opacity 0.3s ease-out
+        .lobby-game-item
+            width 50%
+            .q-btn
+                margin 0
+                border-radius 0
+                border none
+                font-size $text-xsm
+                min-height 32px
+                padding 0px 12px
+                .q-focus-helper
+                    display none
+                .q-btn-inner
+                    height 19px
+                    line-height 1.6em
+                img
+                    display none
+                &:hover
+                    .q-btn-inner
+                        border-bottom 1px solid $white
+    &:hover
+        background $primary
+        color $white
+        i
+            color $white
+        .lobby-game-box
+            display block
+            opacity 1
+        i.fa-chevron-right
+            opacity 0
+.q-collapsible
+    .q-collapsible-inner
+        .q-collapsible-sub-item
+            padding 5px 10px
+
+.lobby-activity
+    margin-top 10px
+    border 1px solid $gray-light-5
+    padding 0 10px
+    //banner强制宽高
+    &__img
+        width 468px
+        height 78px
+
+.lobby-titlebar
+    background $gray-light-4
+    padding-left 10px
+    margin 0 -10px 10px -10px
+    border-bottom 1px solid $gray-light-5
+    width calc(100% + 20px)
+    &__text small, button
+        display none
+    &__text
+        height 32px
+        display flex
+        align-content center
+        align-self center
+        font-size $text-xsm
+        line-height 32px
+        color $gray-medium
+    &__icon
+        padding-right 10px
+        width 24px
+        height 32px
+        line-height 32px
+        i::before
+            color $gray-medium
+            font-size 24px
+
+
+// 左側選單標題大小
+.q-collapsible
+    .q-collapsible-inner
+        .q-item.collapsible__header
+            padding 3px 10px
+
+// QRcode
+.lobby-qrcode
+    &-content
+        height 125px
+        background url("/statics/default/images/lobby-qrcodebg.jpg") center bottom no-repeat
+        background-size 66%
+        p
+            color $bead-red
+            padding 0 80px
+            margin 0
+            >span
+                display inline-block
+                width 50%
+            >span:last-child
+                text-align right
+        .app-download-elements__qrcode
+            width 100%
+            padding 10px 81px 0 82px
+            img
+                height:78px

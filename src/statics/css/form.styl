@@ -1,0 +1,45 @@
+/**
+ * text field
+ */
+.field-normal
+    width 100%
+    margin-bottom $smallGap
+    .q-field-label
+        flex 0 0 100px
+        max-width 100px
+        .q-field-label-inner
+            justify-content flex-end
+    .q-field-content
+        flex 0 0 auto
+        max-width calc( 100% - 100px )
+        .q-input
+            padding 0 5px
+            .q-if-control
+                align-self center
+    /* 验证码排法 */
+    &.field-code
+        .q-field-content
+            .q-input
+                display inline-flex
+                width calc( 100% - 82px )
+                margin-right 5px
+                vertical-align middle
+            .field-code__img
+                display inline-flex
+                width 77px
+                vertical-align middle
+                img
+                    width 77px
+                    height 30px
+                    display block
+            /* 错误讯息 */
+            .q-field-bottom
+                flex 0 0 100%
+                max-width 100%
+
+/**
+ * 约束表单宽度
+ */
+.form-content
+    width 340px
+    margin 0 auto

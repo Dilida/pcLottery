@@ -1,0 +1,67 @@
+/**
+ * header-1.styl
+ * nav 导航列
+ */
+.btn-nav-group
+    .q-btn
+        &.text-primary
+        &:hover
+        &.active
+            color $secondary
+
+/**
+ * lobby.styl
+ * 大厅轮播和跑马灯
+ */
+.lobby-marquee
+    background-color $primary-dark
+    &__label
+        color $white
+        &:after
+            background-color $white
+
+/**
+ * lobby.styl
+ * 大厅全部彩种
+ */
+.collapsible
+    &__header
+        color $primary
+        .icon-lottery
+            color $primary
+.lobby-game-item
+    .q-btn
+        &:active
+        &:hover
+            background-color $primary-vivid-1
+            color inherit
+            border-color transparent
+/**
+ * king/lobby.styl
+ * 右側面板
+ * NOTE:待与投注页右侧面版整合
+ */
+.panel
+    &__header
+        background $styleUrl('images/side-panel.png') 0 0 no-repeat
+        background-size 100% 100%
+    &__table-header
+        .col
+            background-color $primary-vivid-1
+/**
+ * page.styl
+ * page
+ * 优惠活动
+ */
+.activity-item
+    &__header
+        color $secondary
+
+/**
+ * lottery.styl
+ * 投注页右侧选单
+ */
+.site-panel
+    &__header
+        background $styleUrl('images/side-panel.png')
+        background-size 100% 100%

@@ -1,0 +1,335 @@
+/**
+ * layout
+ */
+.index-main
+    margin-bottom 8px
+.layout-side
+    flex 0 0 236px
+    max-width 236px
+    align-self stretch
+    padding 0
+.layout-main
+    margin-left 8px
+    flex 0 0 746px
+    max-width 746px
+    padding 0
+.layout-page-side
+    padding-left 0
+    flex 0 0 150px
+    max-width 150px
+.layout-page-main
+    flex 0 0 830px
+    max-width 830px
+    margin-left 10px
+// .layout-page-content
+//     padding 0
+.lottery
+    padding-top 20px
+    .page-bg
+        padding 6px
+    .layout-side
+        flex 0 0 250px
+        max-width 250px
+    .layout-main
+        margin-left 0px
+        margin-right 10px
+        flex 0 0 718px
+        max-width 718px
+// .page-bg
+//     background-color $white
+//     box-shadow 0 0 6px $gray-light-3
+
+/**
+ * 共用独立样式
+ */
+/* 钱钱钱！ */
+.user-purse
+    font-size 12px
+    line-height 14px
+    &__label
+        margin-left 5px
+        display inline-block
+        vertical-align middle
+    &__balance
+        margin 3px
+        padding 3px 10px
+        height 24px
+        .user-purse-amt
+            margin-left 10px
+            vertical-align middle
+            min-width auto
+.user-name
+    height 26px
+.user-name-popover
+    padding 8px
+    .q-btn
+        width 100%
+        margin-bottom 8px
+.all-game-title
+    display none
+    .page-index &
+        display block
+// /*
+//  * 倒计时底框
+//  */
+// .countdown-number
+//     background $imgUrl('images/time.png') no-repeat center center
+//     background-size 100%
+
+// /**
+//  * 底部导航列
+//  */
+// .footer-nav
+//     &__wrap
+//         background $imgUrl('images/footer/line.png') no-repeat center center
+//         background-size 100%
+
+// /* 大厅奖池标签 */
+// .jackpot-label
+//     font-size $text-xlg
+// /* 大厅奖池强调颜色 */
+// .lobby-primary-text
+//     color $warning
+// /* 面包屑 */
+// .bread-crumbs
+//     padding 10px $basicGap
+//     border-bottom 1px solid $gray-white-2
+//     color $gray-medium
+//     font-size $text-xsm
+
+
+/**
+ * 内页左侧选单（个人中心、帮助中心）
+ */
+.member-side-bar
+.help-center-side-bar
+    background-color $white
+    border 1px solid #D8D8D8
+    padding 10px
+.sub-nav
+    &__item
+        border-bottom 1px dashed #DDDDDD
+        padding 5px 0
+    &__item-tilte
+        border none
+        font-size 14px
+        padding 5px
+        min-height auto
+    &__child-link
+        border-bottom none
+        font-size 12px
+        padding 5px 21px
+        min-height auto
+        &.router-link-active
+            background-color transparent
+            color $primary
+
+// /**
+//  * TABLE组件
+//  */
+// /* table（表格不含标题列）*/
+// .table-header
+//     background $styleUrl('images/table-header.png') no-repeat
+//     background-size 100% 100%
+// /* table-normal 用在个人消息、往期开奖 */
+// .table-normal
+//     thead
+//         background $styleUrl('images/table-header.png') no-repeat
+//         background-size 100% 100%
+
+/**
+ * tabs
+ */
+.tabs
+    border-radius 4px
+    overflow hidden
+    >.q-tabs-head
+        min-height auto
+        position relative
+        .q-tab
+            min-height auto
+            height 37px
+            padding 4px 15px
+            // &.active
+            .q-tab-label
+                max-width 110px
+                overflow hidden
+                text-align left
+                opacity 1
+        .q-tabs-bar
+        .q-tabs-global-bar-container
+            display none
+    >.q-tabs-panes
+        border-radius 0 0 4px 4px
+        .q-tab-pane
+            padding 0
+    .deposit-wrap-bg
+        background-color #f8f8f8
+/* tab 中的 tab （充值-钱包支付） */
+.tabs-sub.q-tabs-position-top
+    >.q-tabs-head
+        .q-tab
+            padding 5px 10px
+            &.active
+                color $primary !important
+    >.q-tabs-panes
+        border 1px solid #E3E3E3
+
+
+/* 个人中心用的tab */
+.account-passward-manage
+.deposit
+.account-manage
+    .tabs
+        margin 0 -15px
+        >.q-tabs-head
+            position relative
+            z-index 11
+            font-size 14px
+            padding 0 5px
+            .q-tab
+                border-radius 8px 8px 0 0
+                border 1px solid #E3E3E3
+                margin 0 5px
+                height 30px
+                position relative
+                z-index 9
+                font-size 12px
+            &:after
+                content ''
+                position absolute
+                bottom 0
+                left 0
+                right 0
+                z-index 8
+                height 1px
+                background-color #E5E5E5
+        >.q-tabs-panes
+            border none
+            position relative
+            z-index 10
+            top -1px
+            padding 20px
+
+/**
+ * 首頁、投注页sidebar
+ */
+.site-panel
+    margin-bottom $basicGap
+    &__header
+        height 37px
+        display flex
+        justify-content space-between
+        align-content center
+        padding 0 $smallGap
+        border-radius 4px 4px 0 0
+        .q-icon
+            margin 0
+    &__header-title
+        align-self center
+        font-size $text-lg
+    &__header-btn
+        align-self center
+    &__body
+        background-color $white
+    &__item
+        border-top 1px solid $gray-light
+        justify-content space-between
+        &:nth-child(odd)
+            background-color $gray-white-2
+        &-date
+            display flex
+            flex 0 0 100%
+            width 100%
+            justify-content space-between
+            margin-bottom 5px
+            font-size $text-xsm
+        &-bead
+            width 100%
+            text-align center
+            span
+                margin 0 2px
+    &__item-content
+        padding 5px
+        word-break break-all
+    &__tag
+        &-item
+            font-size 12px
+            height 50px
+            line-height 50px
+            color $secondary
+            text-align center
+            background-color $gray-light
+            &:first-child
+                border-right 1px solid $white
+    &__record-play
+        color $secondary
+    &__record-date
+        font-size $text-xsm
+    &__record-amount
+        font-size $text-xsm
+        color $negative
+/**
+ * TABLE组件
+ */
+/* table（表格不含标题列）*/
+.table-group
+    margin 0 -15px
+    width auto
+.table-header
+    height auto
+    padding 20px 10px
+    background-color #F3F3F3
+    border-top 1px solid #E3E3E3
+    border-bottom 1px solid #E3E3E3
+    border-radius 0
+    color $tertiary
+.table
+    font-size 13px
+    td
+    th
+        padding 5px
+    &.winner-list
+        td
+        th
+            padding 7px 8px
+            &:first-child
+                width 50px
+        thead
+            th
+                height 40px
+        tbody
+            .icon-ranking
+                display inline-block
+                width 17px
+                height 17px
+                line-height 17px
+                border-radius 3px
+                text-align center
+            tr
+                border-top 1px solid #E5E5E5
+    &.last-award
+        font-size 12px
+        border 1px solid #ebebeb
+        thead
+            th
+                height 24px
+                &:first-child
+                    width 108px
+        tbody
+            tr
+                border-top 1px solid #ebebeb
+            td
+                padding 5px
+            td:first-child
+                border-right 1px solid #ebebeb
+            .pastview-win-number
+                letter-spacing -1px
+                &:after
+                    content ','
+                    margin 0 -2px
+                &:last-child
+                    &:after
+                        display none
+            .lhc-beads:nth-child(6):after
+                display none

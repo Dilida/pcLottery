@@ -1,0 +1,64 @@
+{
+  "name": "h5-pc",
+  "version": "1.0.0",
+  "description": "h5-pc",
+  "productName": "h5-pc",
+  "cordovaId": "org.cordova.quasar.app",
+  "author": "mandy.lin <mandylin@kingbay.com>",
+  "private": true,
+  "scripts": {
+    "dev": "quasar dev",
+    "dev:test": "quasar dev -u test",
+    "test": "quasar build -d -s king -n 1",
+    "lint": "eslint --ext .js,.vue src",
+    "dev:king": "quasar dev -u test -H pc.kingbaytest.com -p 3002 -s king -n 1",
+    "dev:style": "quasar dev -u test -H pc.kingbaytest.com -p 3002 -s style -n 901",
+    "double": "quasar dev -u test -H pc.kingbaytest.com -p 3002 -s default -n 1"
+  },
+  "dependencies": {
+    "@xkeshi/vue-countdown": "^0.6.0",
+    "axios": "^0.18.0",
+    "flipclock": "^0.8.2",
+    "gsap": "^2.0.2",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.5",
+    "moment": "^2.22.1",
+    "protobufjs": "^6.8.8",
+    "qs": "^6.5.2",
+    "reset-css": "^3.0.0",
+    "rollup": "^0.58.0",
+    "scss": "^0.2.4",
+    "socket.io-client": "^2.1.0",
+    "stylus-reset": "0.0.1",
+    "vue-async-computed": "^3.3.1",
+    "vue-awesome-swiper": "^3.1.3",
+    "vue-clipboard2": "^0.2.0",
+    "vue-i18n": "^7.3.3",
+    "vue-meta-info": "^0.1.6",
+    "vue-socket.io": "^2.1.1-b",
+    "vuelidate": "^0.7.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "node-sass": "^4.9.3",
+    "quasar-cli": "^0.16.4",
+    "sass-loader": "^7.1.0"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}

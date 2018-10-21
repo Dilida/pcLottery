@@ -1,0 +1,136 @@
+/**
+ * icon font
+ * 引入 fonts/style.css
+ * 使用 https://icomoon.io/製作icon-font，原始ai檔案放在nas/前端/icon-font//h5-pc/king
+ */
+
+/* 头像 */
+.icon-avatar
+    display inline-block
+    width 28px
+    height 26px
+    background $imgUrl('images/avatar.png') 0 center no-repeat
+    background-size 100% 100%
+
+/* 導航icon */
+.icon-nav
+    font-size 24px
+    vertical-align middle
+
+/* 單色icon */
+.icon-tool
+    font-size 24px
+    vertical-align middle
+    &.active:after
+        background-color $notice
+
+/* page icon */
+.icon-page
+    font-size 50px
+    vertical-align middle
+
+/* pay icon */
+.icon-pay
+    width w = 50px
+    height w
+    border-radius 60px
+    background $imgUrl('images/icon/icon-pay.png')
+    background-size 100% 100%
+    &-14 // 支付宝付款码
+        background $imgUrl('images/icon/icon-pay-14.png')
+        background-size 100% 100%
+    &-13 // 微信付款码
+        background $imgUrl('images/icon/icon-pay-13.png')
+        background-size 100% 100%
+    &-8 // 银联扫码
+        background $imgUrl('images/icon/icon-pay-8.png')
+        background-size 100% 100%
+    &-4 // 京东支付
+        background $imgUrl('images/icon/icon-pay-4.png')
+        background-size 100% 100%
+    &-3 // QQ钱包
+        background $imgUrl('images/icon/icon-pay-3.png')
+        background-size 100% 100%
+    &-2 // 支付宝支付
+        background $imgUrl('images/icon/icon-pay-2.png')
+        background-size 100% 100%
+    &-1 // 微信支付
+        background $imgUrl('images/icon/icon-pay-1.png')
+        background-size 100% 100%
+
+/**
+ * 取代fa预设icon
+ */
+.icon-fa
+    font-family 'icomoon' !important
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+.fa-caret-down
+    @extend .icon-fa
+    &:before
+        content '\e903'
+.fa-chevron-left
+    @extend .icon-fa
+    &:before
+        content '\e904'
+.fa-chevron-right
+    @extend .icon-fa
+    &:before
+        content '\e905'
+
+/**
+ * 自订icon
+ */
+/* footer icon */
+.icon-footer
+    display inline-block
+    width 64px
+    height 64px
+    background-size 100%
+    background-position center center
+    background-repeat no-repeat
+    /* 银联支付 */
+    &-unionpay
+        background-image $imgUrl('images/footer/unionpay.png')
+    /* 微信支付 */
+    &-wechatpay
+        background-image $imgUrl('images/footer/wechatpay.png')
+    /* 支付宝 */
+    &-alipay
+        background-image $imgUrl('images/footer/alipay.png')
+    /* android */
+    &-android
+        background-image $imgUrl('images/footer/android.png')
+    /* ios */
+    &-ios
+        background-image $imgUrl('images/footer/ios.png')
+    /* agent */
+    &-agent
+        background-image $imgUrl('images/footer/agent.png')
+    /* agent-money */
+    &-agent-money
+        background-image $imgUrl('images/footer/agent-money.png')
+    /* agent-reg */
+    &-agent-reg
+        background-image $imgUrl('images/footer/agent-reg.png')
+    /* skype */
+    &-skype
+        background-image $imgUrl('images/footer/skype.png')
+    /* QQ */
+    &-qq
+        background-image $imgUrl('images/footer/qq.png')
+    /* mail */
+    &-mail
+        background-image $imgUrl('images/footer/mail.png')
+    /* service */
+    &-service
+        background-image $imgUrl('images/footer/service.png')
+
+/*無icon btn*/
+.icon-check
+    display none

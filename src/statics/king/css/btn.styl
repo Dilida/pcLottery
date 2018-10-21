@@ -1,0 +1,171 @@
+/**
+ * button
+ */
+/* 通用型 */
+.btn-primary
+.btn-secondary
+.btn-logout
+.btn-reg
+    min-height 30px
+    border-radius 4px
+.btn-primary
+.btn-logout
+    color $white
+    background-color $primary
+.btn-demoplay
+.btn-reg
+    color #5E5F62
+    padding 0px 5px
+    .q-btn-inner
+        border-bottom 1px solid #5E5F62
+.btn-secondary
+    border 1px solid $primary
+    color $primary
+    border-radius 4px
+    &.active
+        background-color $primary
+        color $white
+.btn-warning
+    color $white
+    background-color $warning
+    border-radius $btn-border-radius
+
+.btn-more
+    height 26px
+    line-height 26px
+    padding 0 5px
+    color $white
+    border-radius $btn-border-radius
+
+
+/**
+ * size
+ */
+.btn-lg
+    min-height 40px
+    min-width 200px
+.btn-md
+    min-width 120px
+.btn-sm
+    min-height 30px
+
+
+
+/**
+ * 特殊型：特殊型独立使用，不适合再加其他效果
+ */
+/* 余额显示隐藏 */
+.btn-balance-show
+    color #8d8d8d
+    border 1px solid currentColor
+    border-radius 3px
+    font-size 12px
+    line-height 12px
+    padding 2px 3px
+    margin-left 5px
+/* 大厅号码走势 */
+.btn-go-bet
+    width 103px
+    height 36px
+    min-height auto
+    background $styleUrl('images/btn-go-bet.png')
+    background-size 100% 100%
+    color transparent
+    .q-btn-inner
+        display none
+/* 大厅立即投注 */
+.btn-trend
+    width 103px
+    height 36px
+    min-height auto
+    background $imgUrl('images/btn-trend.png')
+    background-size 100% 100%
+    color transparent
+    .q-btn-inner
+        display none
+/* 向右滚动箭头 */
+.btn-right
+    width 16px
+    height 16px
+    padding 0
+    background-image $styleUrl('images/btn-right.png')
+    background-size 100% 100%
+/* 向左滚动箭头 */
+.btn-left
+    width 16px
+    height 16px
+    padding 0
+    background-image $styleUrl('images/btn-left.png')
+    background-size 100% 100%
+
+/* 用在表格标题 */
+.btn-table-filter
+    height 25px
+    padding 0 10px
+    color $tertiary
+    border 1px solid #E3E3E3
+    background-color $white
+    font-size 12px
+    min-height 25px
+    margin-right 5px
+    &.active
+        border 1px solid $primary
+
+// /* 首页立即投注-普通 */
+// .btn-action
+//     width 88px
+//     height 30px
+//     color $white
+//     background $imgUrl('images/btn_normal.png')
+//     background-size 100% 100%
+//     border-radius $btn-border-radius
+//     &:hover
+//         background $imgUrl('images/btn_normal-hover.png')
+//         background-size 100% 100%
+
+// /* 首页立即投注-强调 */
+// .btn-strong
+//     width 88px
+//     height 30px
+//     color $white
+//     background $imgUrl('images/btn_strong.png')
+//     background-size 100% 100%
+//     border-radius $btn-border-radius
+//     &:hover
+//         background $imgUrl('images/btn_strong-hover.png')
+//         background-size 100% 100%
+
+/* 下注 */
+.btn-bet
+    width 120px
+    height 30px
+    font-size 14px
+    color $white
+    background $styleUrl('images/btn-bet.png')
+    background-size 120px 30px
+    .q-icon
+        margin-right 5px
+
+
+/* 复制 */
+.btn-copy
+    padding 0 5px
+    color $primary
+    border 1px solid currentColor
+    border-radius 3px
+    min-height 22px
+    font-size $text-xsm
+
+/* 支付 */
+.btn-pay
+    width 150px
+    padding $smallGap
+    color #9B9B9B
+    border 1px solid currentColor
+    border-radius 4px
+    background-color $white
+    .q-btn-inner
+        justify-content flex-start
+    &.active
+        background-color rgba($primary, 0.2)
+        color $primary

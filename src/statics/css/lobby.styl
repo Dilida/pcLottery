@@ -1,0 +1,295 @@
+/**
+ * lobbyKingNav 导航列
+ */
+.btn-nav-group
+    display flex
+    align-items stretch
+    .layout-btn-group
+        display flex
+        align-items stretch
+    .q-btn
+        width 115px
+        .icon-nav
+            // width 100%
+            text-align center
+.logo
+    .brand-logo
+        // height 80px
+        height 50px
+        display block
+        margin 10px 0
+        // @media only screen and (max-width $notebook)
+        //     height 50px
+
+
+/**
+ * 大厅title列
+ */
+.lobby-titlebar
+    margin 10px 0
+    width 100%
+    display flex
+    align-items center
+    position relative
+    &__icon
+        display inline-block
+        width 62px
+        height 40px
+        line-height 40px
+        text-align center
+        .icon-tool
+            font-size 36px
+    &__text
+        display inline-block
+        margin-left 10px
+        font-size $text-lg
+        color $secondary
+        letter-spacing 3px
+        small
+            margin-left 5px
+            font-size 12px
+            opacity 0.24
+            letter-spacing 1px
+    &__more
+        position absolute
+        right 0
+
+.top-notice
+    .q-icon
+        font-size 36px
+        &:after
+            top 5px
+
+/**
+ * 大厅轮播和跑马灯
+ */
+.lobby-ad
+    position relative
+    .q-carousel-quick-nav
+        bottom 50px
+.lobby-marquee
+    display flex
+    align-items center
+    &__label
+        flex 0 0 13%
+        .icon-tool
+            margin-right 5px
+    &__content
+        flex 0 0 87%
+        overflow hidden
+        &-text
+            display flex
+
+/**
+ * 大厅奖池
+ */
+.jackpot
+    margin $basicGap
+    margin-bottom 0
+/* 与众筹合买人数共用 */
+.jackpot-wrap
+    &:first-child
+        margin-right $basicGap
+/* 与众筹合买人数共用 */
+.jackpot-item
+    position relative
+    width 100%
+    padding-left 150px
+    height 140px
+    &__img
+        position absolute
+        left 40px
+        top 20px
+        width 100px
+/**
+ * 大厅推广区块
+ */
+.promo-primary
+.promo-secondary
+    position relative
+    &__item
+        padding $basicGap
+    &__icon
+        width 80px
+        img
+            width 80px
+            display block
+            margin 0 auto
+        .logo-crowdfunding
+            display inline-block
+            width 80px
+            height 80px
+    &__label
+        position absolute
+        right 0
+        top 0
+    &__btn
+        position absolute
+        bottom $basicGap
+        right $basicGap
+
+/**
+ * 大厅热门游戏区块
+ */
+.lobby-hot-game
+    text-align center
+    &__list
+        padding 5px 3px
+    &__item
+        margin 0 2px
+        padding 10px 0
+    // &__icon
+    // &__name
+
+/**
+ * 大厅全部彩种
+ */
+.collapsible
+    border 1px solid $gray-light
+    margin-top -1px
+    &__header
+        color $secondary
+        background-color $gray-white-1
+        .icon-lottery
+            color $secondary
+        & + div
+            border-top 1px solid $gray-light
+.q-collapsible-sub-item
+    &:after
+        content ''
+        display table
+        clear both
+.lobby-game-item
+    width 25%
+    float left
+    text-align center
+    &:nth-child(4n)
+        margin-right 0
+    .q-btn
+        padding 4px 8px
+        min-height 40px
+        width 100%
+        margin 5px
+        border 1px solid $gray-light
+        border-radius $btn-border-radius
+        &:active
+        &:hover
+            background-color $primary
+            color $white
+            border-color $primary
+        .q-btn-inner
+            justify-content flex-start
+        img
+            width 32px
+            height 32px
+            margin-right 5px
+.lobby-activity
+    &__block
+        cursor pointer
+        margin-bottom $smallGap
+    &__img
+        img
+            display block
+            width 100%
+
+
+/**
+ * 大厅平台公告
+ */
+.lobby-post
+    .modal__body
+        height 500px
+        background-color $gray-white
+        margin 10px
+        padding 10px 0
+        overflow hidden
+        border-radius 0 0 $card-border-radius $card-border-radius
+        position relative
+        .lobby-pop__nav
+            padding 0 10px 10px 10px
+            overflow scroll
+            &-item
+                display block
+                width 100%
+            .q-btn
+                margin-bottom 10px
+                border 1px solid $primary
+                border-radius 0
+                font-size $text-md
+                padding 10px 5px
+                color $primary
+                background-color $white
+                .q-btn-inner
+                    display block
+                    text-align left
+                    width 100%
+                    white-space nowrap
+                    overflow hidden
+                    text-overflow ellipsis
+                    word-break break-all
+                &.active
+                    background-color $primary
+                    color $white
+        .lobby-pop__content
+            height 100%
+            word-break break-all
+            img
+                max-width 100%
+
+/**
+ * 浮动广告
+ */
+.float-ad-left
+.float-ad-right
+    position fixed
+    width 130px
+    top 50%
+    margin-top -270px
+    z-index 2001
+    a
+    img
+        width 130px
+        display block
+.float-ad-wrap
+    max-height 520px
+    overflow hidden
+.float-ad-left
+    left 0
+    transition left 300ms ease
+    &.hide
+        left -130px
+        transition left 300ms ease
+.float-ad-right
+    right 0
+    &.hide
+        right -130px
+        transition right 300ms ease
+.float-ad-close
+    position relative
+    top -1px
+    height 22px
+    padding 0
+    margin-right 4px
+
+/* 大厅按钮hover动画 */
+.btn-trend
+.btn-go-bet
+    &:hover
+        animation hover-animate 300ms
+        animation-fill-mode forwards
+
+@keyframes hover-animate
+    0%
+        transform scale(1)
+    40%
+        transform scale(1.1)
+    60%
+        transform scale(1.04)
+    75%
+        transform scale(1.08)
+    85%
+        transform scale(1.06)
+    95%
+        transform scale(1.09)
+    100%
+        transform scale(1.1)

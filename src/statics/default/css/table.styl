@@ -1,0 +1,35 @@
+/**
+ * TABLE组件
+ */
+
+.account-info .table
+.bet-record .table
+.table-normal
+    thead
+        background-color #ededed
+        color #9B9B9B
+        font-weight bolder
+        th
+            border 1px solid $white
+            text-align center
+    tbody
+        border none
+        tr
+            &:nth-child(odd)
+                background-color $white
+            &:nth-child(even)
+                background-color $gray-white-1
+        td
+            padding 10px 5px
+            border 1px solid #ececec
+            &:nth-child(even)
+                text-align center
+    tfoot
+        td
+            background-color #FEDADB
+
+.table
+    tfoot
+        th
+        td
+            color $primary

@@ -1,0 +1,33 @@
+/**
+ * 覆蓋quasar預設變數（顏色為主）
+ * 注意：勿更改或刪除變數名稱，僅更改值
+ * https://quasar-framework.org/components/stylus-variables.html
+ */
+$primary   = #E3AA59
+$secondary = #42220D
+
+/**
+ * 自訂king版顏色
+ */
+
+$primary-vivid = $primary
+$primary-vivid-1 = rgba($primary,0.2) // 表头
+$primary-vivid-2 = #D59559 // 路珠大小/单双
+$primary-bright = rgba($secondary,0.38) // top充值按钮背景色
+$primary-strong = rgba($secondary,0.79) // top提款按钮背景色
+$primary-deep = $secondary // top在线客服按钮背景色
+$primary-pale = rgba($primary, 0.17)
+
+/* 双面长龙 */
+$dslong-1 = #7ED321
+$dslong-2 = #FFB900
+$dslong-3 = #50ACDE
+$dslong-4 = #FF5617
+$dslong-5 = #DC5C9F
+
+/**
+ * 共用圖片路徑
+ */
+$styleFolder = $path + 'statics/king/king901/'
+$styleUrl(v)
+    url($styleFolder + (v))

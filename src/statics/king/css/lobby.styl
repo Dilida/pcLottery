@@ -1,0 +1,253 @@
+/**
+ * 大厅title列
+ */
+.lobby-titlebar
+    display none
+
+/**
+ * 大厅热门彩种
+ */
+.lobby-hot-game
+    border 1px solid #E5E5E5
+    border-top none
+    display flex
+    align-items stretch
+    flex-direction column
+    border-radius 0 0 4px 4px
+    height 100%
+    background-color $white
+    &__item
+        font-size 12px
+        margin 0
+        padding 5px
+        border-bottom 1px dashed #DADBDD
+        cursor pointer
+        height 46px
+        &:last-child
+            border-bottom none
+            border-radius 0 0 4px 4px
+        &:hover
+            .lobby-hot-game__icon
+                animation rotate-icon 1s infinite
+                transform scale(1.1)
+    &__icon
+        width 35px
+        height 35px
+        margin-right 5px
+        img
+            width 100%
+        &.logo-crowdfunding
+            background $imgUrl('images/crowdfunding.png')
+            background-size 100%
+    &__name
+        min-width 100px
+        .q-chip
+            border none
+            position relative
+            color $white
+            transform scale(0.8) translate(0, -12px)
+            background-color $warning
+            color $white
+            &:after
+                content " "
+                border-style solid
+                border-width 4px 4px 0 0
+                height 0
+                width 0
+                left 4px
+                bottom -4px
+                position absolute
+                border-color $warning transparent transparent
+    &__people
+        position absolute
+        right 1rem
+        span
+            color $negative
+    &__periods
+        color $secondary
+        position absolute
+        right 1rem
+
+/**
+ * 大厅轮播和跑马灯
+ */
+/* 跑马灯 */
+.layout-carousel
+    width 100%
+    margin-top 8px
+    border-radius 4px
+    overflow hidden
+    // &__side
+    &__block
+        width 746px //CTO说要定死轮播图高
+        height 223px //CTO说要定死轮播图高
+        img
+            display block
+            width 746px
+            height 223px
+.lobby-marquee
+    margin-top 8px
+    font-size $text-lg
+    border-radius 4px
+    border 1px solid #E5E5E5
+    padding 5px
+    background-color $white
+    &__label
+        flex 0 0 110px
+        color $primary
+        span
+            display inline-block
+            vertical-align middle
+        &:after
+            content '：'
+            display inline-block
+            vertical-align middle
+    &__content
+        flex 0 0 629px
+
+
+/**
+ * 大厅推广区块
+ */
+.lobby-promo-wrap
+    margin-top 8px
+/* 彩种名称、奖期、奖号、按钮，群组 */
+.lottery-item-group
+    padding 10px
+    box-sizing border-box
+    > .q-item
+        width 100%
+    .lottery-item-wrap
+        margin-top 5px
+    .lottery-item-btns
+        .q-btn
+            width 71px
+            height 26px
+/**
+ * 推荐彩种(有倒计时)
+ */
+.lobby-recommend
+    flex 0 0 448px
+    &__top
+        height 120px
+        align-items flex-start
+    &__bottom
+        border-top 1px solid #E5E5E5
+        .q-btn
+            margin-left 5px
+    // &__header
+    &__main
+        margin-top 8px
+    .lobby-bead
+        margin-left 8px
+        width 353px
+        text-align right
+    .q-tabs-panes
+        height 234px
+        border 1px solid #E5E5E5
+    .lottery-item-history
+        .double-row__item
+            margin 0 0 0 5px
+    .promo-secondary__time-label
+        display none
+
+    /* flip-clock */
+    .card
+        font-size 36px
+    .flip-clock
+        min-width 51px
+    .promo-secondary__time-gap
+        display inline-block
+        font-size 36px
+        padding 5px
+        vertical-align middle
+.lottery-item-icon
+    width 65px
+    img
+        display block
+/**
+ * 往期开奖
+ */
+.lobby-pastview
+    margin-left 8px
+    flex 0 0 290px
+    border-radius 4px
+    overflow hidden
+    .lottery-item-group
+        border-bottom 1px solid #E5E5E5
+        height 78px
+    .lottery-item-wrap
+        justify-content space-between
+        .lobby-bead
+            width 190px
+
+/* 单行tabs */
+.tabs-panel
+    display flex
+    justify-content space-between
+    align-items stretch
+    background-color $primary
+    &__title
+        min-height 37px
+        padding 8px 25px
+        background-color $primary-active
+        color $white
+    .q-btn
+        color $white
+    &__content
+        border 1px solid #E5E5E5
+        border-top 0
+        height 234px
+        border-radius 0 0 4px 4px
+        position relative
+        background-color $white
+
+/**
+ * 推荐彩种(三个一组)
+ */
+.lobby-promo
+    height 174px
+    .lottery-item-group
+        border-right 1px dashed #E5E5E5
+        &:last-child
+            border-right 0
+    .lottery-item-wrap
+        flex-direction column
+    .lobby-bead
+        width 100%
+        height 60px
+        text-align center
+        &:hover
+            background-color $primary-pale
+    .lottery-item-btns
+        width 100%
+        margin-top 5px
+        text-align right
+        .q-btn
+            margin-left 5px
+    .q-tabs-panes
+        border 1px solid #E5E5E5
+
+/**
+ * 大厅优惠活动
+ */
+.lobby-activity
+    margin-top 8px
+    &__block
+        margin-bottom 0
+    &__img
+        margin-bottom 8px
+        img
+            border-radius 4px
+            height 124px
+
+
+@keyframes rotate-icon
+    0%
+        transform scale( 1, 1 )
+    40%
+        transform scale( 1.1, 0.9) translate(0, 2px) rotateY(0deg)
+    70%
+        transform scale( 0.9, 1.1) translate(0, -4px) rotateY(360deg)
+    100%
+        transform scale( 1, 1) translate(0, 0) rotateY(0deg)

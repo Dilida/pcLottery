@@ -1,0 +1,316 @@
+/**
+ * 备注：彩种id变数群组、球号变数群组，在最底层var.styl档里
+ */
+
+/**
+ * 时时彩、11选5
+ */
+for ssc in $bead-ssc
+    .bead-lottery-{ssc}
+        for i in (0..11)
+            &.num_{i}
+            &.num_0{i}
+                display inline-block
+                width 30px
+                height 30px
+                text-align center
+                line-height 30px
+        .bead-pastview &
+            margin 2px
+        /* 大厅推荐彩种（有倒计时） */
+        .lobby-recommend &
+            width 52px
+            height 52px
+            line-height 52px
+            font-size 36px
+            margin-left 14px
+        /* 大厅开奖公告 */
+        .lobby-pastview &
+            margin-right 3px
+            font-size 18px
+        /* 大厅推荐彩种（三个一排） */
+        .lobby-promo &
+            width 36px
+            height 36px
+            line-height 36px
+            font-size 24px
+            margin 8px 3px
+
+
+/**
+ * 快乐8
+ */
+for kl8 in $bead-kl8
+    .bead-lottery-{kl8}
+        for i in (0..80)
+            &.num_{i}
+            &.num_0{i}
+                display inline-block
+                width 30px
+                height 30px
+                text-align center
+                line-height 30px
+        .bead-pastview &
+            width 25px
+            height 25px
+            line-height 25px
+            font-size 16px
+            margin 1px
+        .lottery-last-award &
+            width 20px
+            height 20px
+            line-height 20px
+            font-size 12px
+            margin 1px
+        /* 大厅推荐彩种（有倒计时） */
+        .lobby-recommend &
+            margin 2px
+        /* 大厅开奖公告 */
+        .lobby-pastview &
+            width 18px
+            height 18px
+            line-height 18px
+            font-size 12px
+            transform scale(0.9) translate(0, -5px)
+        /* 大厅推荐彩种（三个一排） */
+        .lobby-promo &
+            font-size 12px
+            width w = 20px
+            height w
+            line-height w
+            margin 3px 1px
+/**
+ * 快十
+ */
+for k10 in $bead-k10
+    .bead-lottery-{k10}
+        for i in (0..21)
+            &.num_{i}
+            &.num_0{i}
+                display inline-block
+                width 30px
+                height 30px
+                text-align center
+                line-height 30px
+        .bead-pastview &
+            margin 2px
+        .lottery-last-award &
+            width 26px
+            height 26px
+            line-height 26px
+            font-size 16px
+            margin 1px
+        /* 大厅推荐彩种（有倒计时） */
+        .lobby-recommend &
+            width 38px
+            height 38px
+            line-height 38px
+            margin-left 5px
+            font-size 24px
+        /* 大厅开奖公告 */
+        .lobby-pastview &
+            width 22px
+            height 22px
+            line-height 22px
+            font-size 13px
+            margin-right 1px
+        /* 大厅推荐彩种（三个一排） */
+        .lobby-promo &
+            font-size 15px
+            width w = 26px
+            height w
+            line-height w
+            margin 12px 1px
+
+/**
+ * 广西快十
+ */
+for gxk10 in $bead-gxk10
+    .bead-lottery-{gxk10}
+        for i in (0..21)
+            &.num_{i}
+            &.num_0{i}
+                display inline-block
+                width 30px
+                height 30px
+                text-align center
+                line-height 30px
+        .bead-pastview &
+            margin 0 2px
+        /* 大厅推荐彩种（有倒计时） */
+        .lobby-recommend &
+            width w = 52px
+            height w
+            line-height w
+            font-size 36px
+            margin-left 14px
+        /* 大厅开奖公告 */
+        .lobby-pastview &
+            margin-right 3px
+            font-size 18px
+        /* 大厅推荐彩种（三个一排） */
+        .lobby-promo &
+            width w = 36px
+            height w
+            line-height w
+            font-size 24px
+            margin 8px 3px
+
+/**
+ * 快3
+ */
+for k3 in $bead-k3
+    .bead-lottery-{k3}
+        for i in (1..6)
+            &.num_{i}
+                display inline-block
+                width 30px
+                height 30px
+                text-align center
+                line-height 30px
+        .bet-item__name &
+            margin 0 2px
+        .bead-pastview &
+            margin 0 2px
+        /* 大厅推荐彩种（有倒计时） */
+        .lobby-recommend &
+            width 42px
+            height 42px
+            margin-left 10px
+        /* 大厅开奖公告 */
+        .lobby-pastview &
+            margin-right 5px
+        /* 大厅推荐彩种（三个一排） */
+        .lobby-promo &
+            width 42px
+            height 42px
+            margin 7px 5px
+
+/**
+ * PK10
+ */
+for pk10 in $bead-pk10
+    .bead-lottery-{pk10}
+        for i in (1..10)
+            &.num_{i}
+            &.num_0{i}
+                display inline-block
+                width 30px
+                height 30px
+                text-align center
+                line-height 30px
+        .bead-pastview &
+            margin 0 2px
+            width 24px
+            height 24px
+            line-height 24px
+        .lottery-last-award &
+            margin 1px
+            width 21px
+            height 21px
+            line-height 21px
+        /* 大厅推荐彩种（有倒计时） */
+        .lobby-recommend &
+            font-size 24px
+            margin-left 5px
+        /* 大厅开奖公告 */
+        .lobby-pastview &
+            width 18px
+            height 18px
+            line-height 18px
+            margin-right 1px
+        /* 大厅推荐彩种（三个一排） */
+        .lobby-promo &
+            width 20px
+            height 20px
+            line-height 20px
+            margin 17px 1px
+
+/**
+ * 六合彩
+ */
+for lhc in $bead-lhc
+    .bead-lottery-{lhc}
+        for i in (1..49)
+            &.num_{i}
+            &.num_0{i}
+                display inline-block
+                width 30px
+                height 30px
+                text-align center
+                line-height 30px
+        .bet-item__name &
+            margin 0 2px
+        .bead-pastview &
+            margin 2px
+        .lottery-last-award &
+            margin 1px
+            width 28px
+            height 28px
+            line-height 28px
+        /* 大厅推荐彩种（有倒计时） */
+        .lobby-recommend &
+            width 40px
+            height 40px
+            line-height 40px
+            font-size 24px
+            margin-left 5px
+        /* 大厅开奖公告 */
+        .lobby-pastview &
+            width 22px
+            height 22px
+            line-height 22px
+            margin-right 2px
+        /* 大厅推荐彩种（三个一排） */
+        .lobby-promo &
+            font-size 16px
+            vertical-align middle
+            width 28px
+            height 28px
+            line-height 28px
+            margin 12px 1px
+
+/**
+ * 幸运28
+ */
+for xy28 in $bead-xy28
+    .bead-lottery-{xy28}
+        for i in (0..28)
+            &.num_{i}
+            &.num_0{i}
+                display inline-block
+                width 30px
+                height 30px
+                text-align center
+                line-height 30px
+        .bead-pastview &
+            margin 0 2px
+        /* 大厅推荐彩种（有倒计时） */
+        .lobby-recommend &
+            width 52px
+            height 52px
+            line-height 52px
+            font-size 36px
+            margin-left 14px
+        /* 大厅开奖公告 */
+        .lobby-pastview &
+            margin-right 3px
+        /* 大厅推荐彩种（三个一排） */
+        .lobby-promo &
+            font-size 18px
+            vertical-align middle
+            width 34px
+            height 34px
+            line-height 34px
+            margin 10px 1px
+
+/**
+ * 路珠
+ */
+.bead-road
+    width w = 36px
+    height w
+    line-height w
+    border-radius w
+    display block
+    text-align center

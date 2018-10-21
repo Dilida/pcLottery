@@ -1,0 +1,22 @@
+/**
+ * 底部导航列
+ */
+.footer-nav
+    background-color #EAEAEA
+    &__list
+        padding 10px
+        position relative
+        &:after
+            content ''
+            position absolute
+            top 50%
+            right 0
+            width 1px
+            height 40px
+            margin-top -20px
+            background #CECECE
+        &:last-child:after
+            display none
+    &__title
+        small
+            color #A5A3A3

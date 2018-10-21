@@ -1,0 +1,147 @@
+
+/**
+ * 众筹假tab列
+ */
+.crowdfunding-tabs
+    background-color $gray-light
+    display flex
+    flex 0 0 100%
+    max-width 100%
+    justify-content space-between
+    &__group
+        display flex
+        align-items center
+        .q-btn
+            margin-right $basicGap
+    &__btn
+        display flex
+        padding $basicGap 20px
+        height 60px
+        align-items center
+        cursor pointer
+        font-size $text-lg
+        border-top 3px solid transparent
+        color $gray-medium
+        &.active
+            color $primary
+            border-color $primary
+            background-color $gray-white-1
+
+/**
+ * 众筹筛选列
+ */
+.crowdfunding-filter
+    background-color $gray-white-1
+    padding $basicGap
+    .q-btn
+        margin-right $smallGap
+        position relative
+        .fas
+            position absolute
+            opacity 0.3
+            right 10px
+            top 8px
+            &.active
+                opacity 1
+        .crowdfunding-filter__icon
+            margin-left 8px
+
+
+/**
+ * 发起众筹弹窗（选择彩种）
+ */
+.crowdfunding-popup-list
+    // &__title
+    &__list
+        height 430px
+        overflow-y scroll
+        text-align center
+    &__item
+        margin $basicGap 0
+        a
+            color $tertiary
+    &__icon
+        img
+            width 80px
+            height 80px
+
+/**
+ * 众筹玩法说明
+ */
+// .crowdfunding-game-description
+//     height 430px
+//     overflow-y scroll
+
+/**
+ * 众筹彩票资讯component
+ */
+.crowdfunding-lottery
+    margin-bottom $basicGap
+    padding-bottom $basicGap
+    border-bottom 1px solid $gray-white-1
+    &__name
+        text-align center
+        color $secondary
+        font-size $text-lg
+    img
+        width 80px
+        height 80px
+    &__date
+        padding $basicGap
+        border-bottom 1px solid $gray-white-1
+    &__info
+        padding $basicGap
+
+/**
+ * 众筹彩列表component
+ */
+.crowdfunding-list
+    max-height 300px
+    overflow scroll
+    &__title
+        padding $basicGap
+        border-bottom 1px solid $gray-white-1
+    &__item
+        border-bottom 1px solid $gray-white-1
+        padding $basicGap
+    // &__item-name
+    &__right
+        .btn-cancel
+            display inline-block
+            vertical-align middle
+            color $gray-medium
+            border 1px solid $gray-medium
+            border-radius 4px
+            width 24px
+            min-height 24px
+            text-align center
+            font-size 18px
+            i
+                line-height 22px
+    &__pair
+        display inline-block
+        vertical-align middle
+        padding 0 $basicGap
+        min-width 80px
+        text-align center
+.crowdfunding-footer
+    padding $basicGap
+    &__count
+        color $secondary
+        font-size $text-lg
+        margin-bottom $basicGap
+    &__right
+        text-align right
+
+/**
+ * 众筹彩下注清单
+ */
+.crowdfundin-bet-list
+    max-height 140px
+    overflow auto
+    padding $smallGap 0
+    &__row
+        padding 5px 0
+    &__count
+        padding 5px 0
+        border-top 1px solid $gray-white-1

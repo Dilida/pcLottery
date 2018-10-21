@@ -1,0 +1,279 @@
+/**
+ * icon-tool
+ */
+/* 導航icon */
+.icon-nav
+    display inline-block
+    width 26px
+    height 26px
+    vertical-align middle
+    background-repeat no-repeat
+    background-position center center
+.icon-nav-home
+    background-image $styleUrl('images/icon/icon-nav-home.png')
+    background-size 21px 20px
+.icon-nav-dice
+    background-image $styleUrl('images/icon/icon-nav-dice.png')
+    background-size 26px 26px
+.icon-nav-tag
+    background-image $styleUrl('images/icon/icon-nav-tag.png')
+    background-size 20px 26px
+.icon-nav-personal
+    background-image $styleUrl('images/icon/icon-nav-personal.png')
+    background-size 20px 26px
+
+
+/* 單色icon */
+.icon-tool
+    vertical-align middle
+
+/* page icon */
+.icon-page
+    vertical-align middle
+
+/* pay icon */
+.icon-pay
+    display inline-block
+    width w = 30px
+    height w
+    border-radius 30px
+    vertical-align middle
+    margin-right $smallGap
+    background $imgUrl('images/icon/icon-pay.png')
+    background-size 100% 100%
+    &-14 // 支付宝付款码
+        background $imgUrl('images/icon/icon-pay-14.png')
+        background-size 100% 100%
+    &-13 // 微信付款码
+        background $imgUrl('images/icon/icon-pay-13.png')
+        background-size 100% 100%
+    &-8 // 银联扫码
+        background $imgUrl('images/icon/icon-pay-8.png')
+        background-size 100% 100%
+    &-4 // 京东支付
+        background $imgUrl('images/icon/icon-pay-4.png')
+        background-size 100% 100%
+    &-3 // QQ钱包
+        background $imgUrl('images/icon/icon-pay-3.png')
+        background-size 100% 100%
+    &-2 // 支付宝支付
+        background $imgUrl('images/icon/icon-pay-2.png')
+        background-size 100% 100%
+    &-1 // 微信支付
+        background $imgUrl('images/icon/icon-pay-1.png')
+        background-size 100% 100%
+
+
+/**
+ * 自订icon
+ */
+/* 顶部充值 */
+.icon-top-deposit
+.icon-top-withdrawals
+.icon-top-service
+    display inline-block
+    width 24px
+    height 24px
+    background-repeat no-repeat
+    background-position center center
+    transform scale(0.8)
+.icon-top-deposit
+    background-image $styleUrl('images/icon/icon-top-deposit.png')
+    background-size 12px 17px
+.icon-top-withdrawals
+    background-image $styleUrl('images/icon/icon-top-withdrawals.png')
+    background-size 21px 18px
+.icon-top-service
+    background-image $styleUrl('images/icon/icon-top-service.png')
+    background-size 19px 20px
+    .lottery-toolbar &
+        background-image $styleUrl('images/icon/icon-top-service.png')
+        background-size 19px 20px
+
+/* 顶部使用者资讯（登入后） */
+.icon-avatar
+    display inline-block
+    width 20px
+    height 22px
+    background $styleUrl('images/icon/icon-avatar-white.png') 0 center no-repeat
+    background-size auto 22px
+    .login-bar-loged &
+        background-image $styleUrl('images/icon/icon-avatar.png')
+.icon-money
+    display inline-block
+    width 18px
+    height 18px
+    background $styleUrl('images/icon/icon-wallet.png') 0 center no-repeat
+    background-size 18px 18px
+
+/* 全部彩种 */
+.icon-lottery
+    display inline-block
+    width 26px
+    height 26px
+    vertical-align middle
+    background-repeat no-repeat
+    background-position center center
+    background-image $styleUrl('images/icon/icon-nav-dice.png')
+    background-size 26px 26px
+    .lottery-entry-group &
+        background-image $styleUrl('images/icon/icon-lottery.png')
+/* 大厅跑马灯 */
+.icon-louder
+    display inline-block
+    width 24px
+    height 24px
+    vertical-align middle
+    background-position center center
+    background-repeat no-repeat
+    background-image $styleUrl('images/icon/icon-louder.png')
+    background-size 23px 24px
+/* 大厅富豪榜 */
+.icon-badge
+    display inline-block
+    width 24px
+    height 24px
+    vertical-align middle
+    background-position center center
+    background-repeat no-repeat
+    background-image $styleUrl('images/icon/icon-badge.png')
+    background-size 23px 23px
+
+/* 投注 */
+.icon-bet
+    width 16px
+    height 16px
+    background $styleUrl('images/icon/icon-bet.png') no-repeat
+    background-size 100%
+
+/* check icon */
+.icon-check
+    width 17px
+    height 17px
+    background $styleUrl('images/icon/icon-check.png') no-repeat
+    background-size 100%
+    background-position center
+
+/* 关闭 */
+.icon-close
+    width 21px
+    height 21px
+    background $styleUrl('images/icon/icon-close.png') no-repeat
+    background-size 21px 21px
+/* footer icon */
+.icon-footer
+    display inline-block
+    width 64px
+    height 64px
+    background-size 100%
+    background-position center center
+    background-repeat no-repeat
+    /* 银联支付 */
+    &-unionpay
+        background-image $imgUrl('images/footer/unionpay.png')
+    /* 微信支付 */
+    &-wechatpay
+        background-image $imgUrl('images/footer/wechatpay.png')
+    /* 支付宝 */
+    &-alipay
+        background-image $imgUrl('images/footer/alipay.png')
+    /* android */
+    &-android
+        background-image $imgUrl('images/footer/android.png')
+    /* ios */
+    &-ios
+        background-image $imgUrl('images/footer/ios.png')
+    /* agent */
+    &-agent
+        background-image $imgUrl('images/footer/agent.png')
+    /* agent-money */
+    &-agent-money
+        background-image $imgUrl('images/footer/agent-money.png')
+    /* agent-reg */
+    &-agent-reg
+        background-image $imgUrl('images/footer/agent-reg.png')
+    /* skype */
+    &-skype
+        background-image $imgUrl('images/footer/skype.png')
+    /* QQ */
+    &-qq
+        background-image $imgUrl('images/footer/qq.png')
+    /* mail */
+    &-mail
+        background-image $imgUrl('images/footer/mail.png')
+    /* service */
+    &-service
+        background-image $imgUrl('images/footer/service.png')
+
+
+/* 个人中心左侧选单 */
+[class^="icon-leftnav"], [class*=" icon-leftnav"]
+    display inline-block
+    width 16px
+    height 16px
+    background-position center center
+    background-repeat no-repeat
+.icon-leftnav-account
+    background-image $styleUrl('images/icon/icon-leftnav-account.png')
+    background-size 10px 12px
+.icon-leftnav-bet
+    background-image $styleUrl('images/icon/icon-leftnav-bet.png')
+    background-size 10px 14px
+.icon-leftnav-funding
+    background-image $styleUrl('images/icon/icon-leftnav-funding.png')
+    background-size 12px 12px
+.icon-leftnav-message
+    background-image $styleUrl('images/icon/icon-leftnav-message.png')
+    background-size 11px 8px
+.icon-leftnav-help
+    background-image $styleUrl('images/icon/icon-leftnav-help.png')
+    background-size 11px 13px
+.icon-leftnav-aboutus
+    background-image $styleUrl('images/icon/icon-leftnav-aboutus.png')
+    background-size 15px 11px
+
+.icon-deposit-light
+    width 18px
+    height 18px
+    background $styleUrl('images/icon/icon-deposit-light.png') no-repeat
+    background-size 100%
+
+/* 註冊頁面 */
+.icon-page-reg
+    background-image $styleUrl('images/icon/icon-reg.png')
+    background-repeat no-repeat
+    background-size 50%
+    background-position bottom center
+
+/* 众筹彩 */
+.icon-plus
+    display inline-block
+    width 16px
+    height 16px
+    background-image $styleUrl('images/icon/icon-plus.png')
+    background-size 16px 16px
+    margin-right 5px
+
+/* 投注記錄panel */
+.icon-waiting
+.icon-default
+    height 20px
+    background-repeat no-repeat
+    background-size 20px
+    background-position center
+    background-image $styleUrl('images/icon/icon-waiting.png')
+.icon-error
+    height 20px
+    background-repeat no-repeat
+    background-size 20px
+    background-position center
+    background-image $styleUrl('images/icon/icon-error.png')
+
+/* 银行卡绑定 */
+.icon-bind-card
+    display inline-block
+    width 14px
+    height 14px
+    vertical-align middle
+    background-image $styleUrl('images/icon/icon-bind-card.png')
+    background-size 14px 14px

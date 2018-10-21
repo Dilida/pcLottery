@@ -1,0 +1,268 @@
+/**
+ * button
+ */
+/* 通用型 */
+.btn-primary
+    color $white
+    background-color $primary
+    border-radius $btn-border-radius
+    min-height 36px
+    .icon-bet
+        display none
+.btn-cancel
+    color $gray-medium
+    border 1px solid $gray-medium
+    border-radius $btn-border-radius
+    min-height 36px
+.btn-secondary
+    color $primary
+    border 1px solid $primary
+    border-radius $btn-border-radius
+    min-height 36px
+    &.active
+        color $white
+        background-color $primary
+.btn-warning
+    color $white
+    $yelloBgGradient-v4()
+    border-radius $btn-border-radius
+
+.btn-more
+    height 26px
+    line-height 26px
+    padding 0 10px
+    color $tertiary
+    // &:after
+
+
+/**
+ * size
+ */
+.btn-lg
+    min-height 40px
+    // min-width 200px
+    min-width 108px
+.btn-md
+    min-width 120px
+.btn-sm
+    min-height 30px
+
+/**
+ * 按钮组
+ */
+/* tabs按钮组 */
+.swiper-container
+    width 90%
+.btn-group-flat
+    .swiper-slide
+        border-bottom 4px solid transparent
+        padding 12px 0
+        text-align center
+        cursor pointer
+        &[active="true"]
+        &.active
+            border-bottom 4px solid $primary
+
+/* 线条钮组 */
+.btn-group-tab
+    width 100%
+    overflow hidden
+    > .q-btn-item
+        min-height 44px
+        border-bottom 3px solid transparent
+        &.active
+        &[active=true]
+            border-bottom-color $primary
+            color $primary
+
+/* 箭头按钮组 */
+.btn-top-group
+    .q-btn
+        padding 0 10px
+        font-size $text-xsm
+        height 30px
+        .q-focus-helper
+            display none
+        .q-btn-inner:before
+            content ''
+            display inline-block
+            width 0
+            height 0
+            border-style solid
+            border-width 3.5px 0 3.5px 4px
+            border-color transparent transparent transparent $tertiary
+            margin-right 5px
+        &:hover
+            color $primary
+            .q-btn-inner:before
+                border-color transparent transparent transparent $primary
+/**
+ * 特殊型：特殊型独立使用，不适合再加其他效果
+ */
+/* 余额显示隐藏 */
+/* 充值按鈕 */
+.btn-balance-show
+.btn-warning
+    $yelloBgGradient-v4()
+    border-radius 3px
+    padding 2px 8px
+    color $white
+    font-size $text-xsm
+    transform scale(0.7)
+    margin -2px -3px -2px 0
+.btn-warning
+    padding 12px 24px
+    font-size 21px
+    border-radius 4px
+/* 大厅号码走势 */
+.btn-go-bet
+    color $white
+    border-radius 3px
+    $bgGradient-v4($color1,$color2,$color3,$color4)
+    border 1px solid $primary-bright
+    font-size $text-xsm
+    padding 0 5px
+/* 登入 注册 */
+.btn-login
+.btn-reg
+    $yelloBgGradient-v4()
+    border-radius 3px
+    padding 2px 8px
+    color $white
+    font-size $text-xsm
+    transform scale(0.9)
+/* 免费试玩 */
+.btn-demoplay
+    padding 0
+    font-size $text-xsm
+
+/* 用在表格标题 */
+.btn-table-filter
+    height 35px
+    padding 0 8px
+    border-radius 2px
+    min-height 35px
+    margin-left 5px
+    color $tertiary
+    font-size $text-xsm
+    min-width 58px
+    $btnCut()
+    $btnShadow()
+    &.active
+        color $primary
+
+/* 首页立即投注-普通 */
+.btn-action
+    padding 0 4px
+    color $white
+    //$yelloBgGradient-v4()
+    $bgGradient-v4($color1,$color2,$color3,$color4)
+    border 1px solid $toolbar1
+    font-size $text-xsm
+    border-radius 3px
+
+/* 首页立即投注-强调 */
+.btn-strong
+    width 88px
+    height 30px
+    color $white
+    background $imgUrl('images/btn_strong.png')
+    background-size 100% 100%
+    border-radius $btn-border-radius
+    &:hover
+        background $imgUrl('images/btn_strong-hover.png')
+        background-size 100% 100%
+
+/* 下注 */
+.btn-bet
+    width 138px
+    height 58px
+    font-size 20px
+    color $white
+    background-color $primary
+    border-radius 0
+    .q-icon
+        display none
+
+/* 重置 */
+.btn-reset
+    border 1px solid #E1E1E1
+    padding 6px 13px
+//     width 125px
+//     height 48px
+//     font-size 20px
+//     color $white
+//     background-color $gray-light-3
+//     border-radius $btn-border-radius
+
+/* 复制 */
+.btn-copy
+    width 48px
+    height 27px
+    padding 0 5px
+    color $tertiary
+    border-radius 2px
+    min-height 22px
+    font-size $text-xsm
+    $btnCut()
+    $btnShadow()
+
+/* 支付 */
+.btn-pay
+    width 90px
+    padding 6px 0
+    font-size 13px
+    color $gray-medium
+    box-shadow 0 0 6px rgba(207, 207, 207, 0.5)
+    border-radius $btn-border-radius
+    background-color $white
+    border 1px solid transparent
+    .q-btn-inner
+        flex-direction column
+    &.active
+        background-color transparent
+        color $primary
+        border-color $primary
+
+/* 优惠活动 */
+.btn-activity
+    position relative
+    padding 0 10px 0 15px
+    color #fff
+    clip-path polygon(15% 0, 100% 0, 100% 100%, 0% 100%)
+    $bgGradient-v4($color2,$color2,$color4,$color4)
+    border 1px solid $color2
+    border-radius 0px
+    &:hover
+        $bgGradient-v4($color4,$color4,$color4,$color4)
+        border 1px solid $color2
+
+
+/**
+ * 登出按鈕
+ */
+.q-popover:not(.lottery-entry-wrap) //加上not排除導航全部彩種下拉選單
+    .q-list
+        &-link
+            .q-item
+                text-align center
+                border-bottom 1px solid #EAEAEA
+        &.logout-button
+            padding 8px
+            text-align center
+            button
+                background-color $primary
+                color $white
+                display inline-block
+                width 50%
+
+/**
+ * 彩种选单
+ */
+.q-popover
+    .lottery-entry
+        &__title
+            color $primary
+
+
+

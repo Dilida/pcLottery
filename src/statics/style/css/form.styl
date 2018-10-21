@@ -1,0 +1,116 @@
+/**
+ * text field
+ */
+
+.field-normal
+    font-size 12px
+    .q-field-label
+        color $tertiary
+    .q-field-content
+        .q-input
+            // box-shadow 0 0px 1px 1px #E0E0E0 inset
+            border 1px solid #E0E0E0
+            background-color $white
+            input
+                line-height 30px
+                height 30px
+            //     &::-webkit-input-placeholder
+            //     &::-moz-placeholder
+            //     &:-ms-input-placeholder
+            //     &::placeholder
+            //         font-size $text-xsm
+            // .q-if-control
+            //     font-size $text-lg
+    &.disable
+        .q-field-content
+            .q-input
+                border none
+                background-color transparent
+
+/**
+ * 下拉选单
+ */
+.q-datetime-input
+.q-select
+    border 1px solid #E0E0E0
+    background-color $white
+    align-items center
+    padding 0 5px
+    min-width 150px
+    .q-if-inner
+        line-height 30px
+        height 30px
+    .q-if-control
+        align-self center
+
+/**
+ * login bar field
+ */
+.field-bar
+    width 104px
+    .q-field-content
+        .q-input
+            border 1px solid #C8C8C8
+            &.input-account
+            &.input-password
+                width 104px
+            &.input-code
+                width 71px
+            input
+                line-height 28px
+                height 28px
+                padding 0 5px
+                // &::-webkit-input-placeholder
+                // &::-moz-placeholder
+                // &:-ms-input-placeholder
+                // &::placeholder
+            .q-icon
+                font-size 14px
+                line-height 28px
+    &-code
+        width 71px
+        .q-field-content
+            .q-input
+                flex 0 0 auto
+                flex-direction row
+        &__img
+            display none
+            width 71px
+            height 20px
+            position absolute
+            left 0
+            top 30px
+            z-index 100
+            img
+                width 71px
+                height 20px
+        &:hover
+            .field-bar-code__img
+                display block
+        .q-if-focused
+            position relative
+            + .field-bar-code__img
+                display block
+// /**
+//  * 下注item input
+//  */
+// // .input-bet-item
+
+/**
+ * 下注input
+ */
+.bet-input
+    box-shadow 0 0 1px 1px #E0E0E0 inset
+    border-radius 3px
+    margin 0 10px
+    min-width 120px
+    input
+        text-align right
+        line-height 30px
+        height 30px
+        padding 0 5px
+        // &::-webkit-input-placeholder
+        // &::-moz-placeholder
+        // &:-ms-input-placeholder
+        // &::placeholder
+        //     font-size $text-xsm

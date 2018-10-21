@@ -1,0 +1,86 @@
+/**
+ * 覆蓋quasar預設變數
+ * https://quasar-framework.org/components/stylus-variables.html
+ */
+
+$item-active-color = transparent
+
+/* 轮播 */
+$carousel-padding = 0
+$carousel-quick-nav-background = transparent
+
+/* 收合(手風琴) */
+$collapsible-padding = 0
+
+/* 按鈕 */
+$generic-border-radius = 0
+$button-border-radius = $generic-border-radius
+$button-padding = 4px 16px
+$button-shadow = none
+
+/* toolbar */
+$toolbar-min-height = auto
+$toolbar-padding = 0
+$toolbar-title-font-size = 1em
+$toolbar-subtitle-font-size = 1em
+$toolbar-title-font-weight = normal
+$toolbar-title-padding = 0
+
+
+/* 双色横向渐层公式 */
+$bgGradient(a,b)
+    background (a)
+    background -moz-linear-gradient(left, (a) 0%, (b) 100%)
+    background -webkit-linear-gradient(left, (a) 0%, (b) 100%)
+    background linear-gradient(to right, (a) 0%, (b) 100%)
+
+/* 双色直向渐层公式 */
+$bgGradient-v(a,b)
+    background (a)
+    background -moz-linear-gradient(top, (a) 0%, (b) 100%)
+    background -webkit-linear-gradient(top, (a) 0%, (b) 100%)
+    background linear-gradient(to bottom, (a) 0%, (b) 100%)
+
+/**
+ * 彩种id变数群组、球号变数群组
+ */
+/* 时时彩、11选5 */
+$bead-ssc = '2' '4' '12' '14' '16' '18' '26' '28' '32' '36' '48' '50' '52' '102' '104' '112' '114' '116' '120'
+
+/* 快乐8 */
+$bead-kl8 = '34' '42' '44'
+
+/* 快十 */
+$bead-k10 = '40' '46'
+
+/* 广西快十 */
+$bead-gxk10 = '38'
+
+/* 快3 */
+$bead-k3 = '6' '20' '22' '106'
+
+/* pk10 */
+$bead-pk10 = '8' '24' '108' '118'
+
+/* 六合彩 */
+$bead-lhc = '10' '110'
+$bead-lhc-red = '1' '2' '7' '8' '01' '02' '07' '08' '12' '13' '18' '19' '23' '24' '29' '30' '34' '35' '40' '45' '46'
+$bead-lhc-blue = '3' '4' '9' '03' '04' '09' '10' '14' '15' '20' '25' '26' '31' '36' '37' '41' '42' '47' '48'
+$bead-lhc-green ='5' '6' '05' '06' '11' '16' '17' '21' '22' '27' '28' '32' '33' '38' '39' '43' '44' '49'
+
+/* 幸运28 */
+$bead-xy28 = '30'
+$bead-xy28-gray = '0' '13' '14' '27'
+$bead-xy28-green = '1' '4' '7' '10' '16' '19' '22' '25'
+$bead-xy28-red = '3' '6' '9' '12' '15' '18' '21' '24'
+$bead-xy28-blue = '2' '5' '8' '11' '17' '20' '23' '26'
+
+/* 笔电尺寸 */
+$notebook = 1280px
+
+/**
+ * 共用圖片路徑
+ */
+$commonFolder = $path + 'statics/'
+$commonUrl(v)
+    url($commonFolder + (v))

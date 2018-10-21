@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width<% if (htmlWebpackPlugin.options.ctx.mode.cordova) { %>, viewport-fit=cover<% } %>">
+  </head>
+  <body>
+    <noscript>
+      This is your fallback content in case JavaScript fails to load.
+    </noscript>
+
+    <!-- DO NOT touch the following <div> -->
+    <div id="q-app"></div>
+
+    <!-- built files will be auto injected here -->
+  </body>
+  <script
+    type="text/javascript"
+    src="<%=`${typeof(window)!=='undefined'&&window.location.protocol==='https:'?process.env.API_URL.java:process.env.API_URL_HTTP.java}config/v1/cnzz`%>">
+  </script>
+</html>

@@ -1,0 +1,48 @@
+body
+    color $tertiary
+
+/**
+ * 覆蓋quasar 預設样式
+ */
+.q-layout-header
+.q-layout-footer
+    background-color $white
+    box-shadow 0 0 6px rgba(#ABABAB,0.5)
+
+.q-table
+    color inherit
+    thead
+        border none
+        tr
+            height auto
+    th
+    td
+        border inherit
+        color inherit
+        font-size inherit
+        &.sorted
+            color $white
+    th
+        &.sortable
+            cursor default
+            &:hover
+                color $white
+.q-table-container
+    box-shadow none
+    background-color $white
+.q-table-bottom
+    border-top none
+    font-size $text-xsm
+
+/**
+ * 自订toolbar颜色设置（不可更改），如果要改色至var改 $toolbar 值
+ */
+.bg-toolbar
+    background $imgUrl('images/bg.png')
+    background-size auto 30px
+    &.text-white
+        color $tertiary !important
+
+a
+    &:hover
+        color $primary

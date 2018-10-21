@@ -1,0 +1,110 @@
+/**
+ * 覆蓋quasar預設變數（顏色為主）
+ * 注意：勿更改或刪除變數名稱，僅更改值
+ * https://quasar-framework.org/components/stylus-variables.html
+ */
+$tertiary  = #4A4A4A
+
+$positive  = #7ed321
+$negative  = #FF4949
+$info      = #31CCEC
+$warning   = #F5A623
+$warning-bg   = #fff7eb
+$white = #fff
+
+
+$body-color = #000
+$body-background = #fff
+
+
+$modal-body-color = rgba(#000, 0.8)
+
+/**
+ * 自訂default版顏色
+ */
+$mask = rgba(#000, 0.7) //跑马灯背景
+$gray-white = #F9F9F9 //footer-bg
+$gray-white-1 = #F7F7F7 //accr-bg 左侧选单背景整合F6F6F6
+$gray-white-2 = #F3F3F3 //line 整合F2F2F2
+$gray-light = #EDEDED // 手風琴表頭 表格線ECECEC tab列背景EFEFEF 按鈕邊框
+$gray-light-1 = #E9E9E9 // 左侧选单选中
+$gray-light-2 = #E5E5E5 // 左侧选单分隔线
+$gray-light-3 = #BCBCBC //重置按鈕
+$gray-light-4 = #f8f8f8 // 首頁title被景色
+$gray-light-5 = #ededed
+$gray-medium = #9B9B9B // 次要字
+
+/* 双面长龙 */
+$dslong-1 = #00bbc9
+$dslong-2 = #ce83fe
+$dslong-3 = #5a76ff
+$dslong-4 = #4acc9d
+$dslong-5 = #ff73a9
+
+/* 号球 */
+$bead-round = $tertiary
+$bead-round-active = #E65160
+$bead-round-pastview = #F59800
+$bead-red = #C02728
+$bead-blue = #0099FF
+$bead-green = #71C341
+$bead-gray = $tertiary
+
+/* 路珠 */
+$road-big = #FF6950
+$road-small = #0099FF
+$road-mid = #71C341
+
+
+/* 黃色水晶按鈕BG */
+$yelloBgGradient-v4()
+    background #ffa700
+    background -moz-linear-gradient(top,#ff8800 0%, #fc8f00 50%, #fe7b16 51%, #f57c23 100%)
+    background -webkit-linear-gradient(top,#ff8800 0%,#fc8f00 50%,#fe7b16 51%,#f57c23 100%)
+    background linear-gradient(to bottom,#ff8800 0%,#fc8f00 50%,#fe7b16 51%,#f57c23 100%)
+    border 1px solid #f57c23
+
+/**
+ * 自訂样式
+ */
+
+ /* 文字 */
+$text-xlg = 18px
+$text-lg = 16px
+$text-md = 14px
+$text-sm = 13px
+$text-xsm = 12px
+
+ /* 圆角 */
+$card-border-radius = 6px
+$btn-border-radius = 4px // 按鈕
+$panel-border-radius = 3px // 右側面板
+
+/* 间距 */
+$basicGap = 15px
+$smallGap = 10px
+
+
+/* 四色垂直渐层 */
+$bgGradient-v4(a,b,c,d)
+    background (a)
+    background -moz-linear-gradient(top, (a) 0%, (b) 50%, (c) 51%, (d) 100%)
+    background -webkit-linear-gradient(top, (a) 0%,(b) 50%,(c) 51%,(d) 100%)
+    background linear-gradient(to bottom, (a) 0%,(b) 50%,(c) 51%,(d) 100%)
+
+/* 图片按钮组合 */
+$btnCut()
+    background-image $imgUrl('images/btn-cut/btn-right.png'),$imgUrl('images/btn-cut/btn-left.png'),$imgUrl('images/btn-cut/btn-center.png')
+    background-repeat no-repeat
+    background-position right center, left center, center center
+    background-size auto 100%, 5px 100%, 100% 100%
+
+$btnShadow()
+    box-shadow 0 4px 10px rgba(0,0,0,0.1), 0 3px 0px rgba(0,0,0,0.03)
+
+/**
+ * 共用圖片路徑
+ */
+$imgFolder = $path + 'statics/default/'
+$imgUrl(v)
+    url($imgFolder + (v))

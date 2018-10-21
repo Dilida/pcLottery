@@ -1,0 +1,247 @@
+/**
+ * 小元件样式
+ */
+.icon-tool
+    position relative
+    &.active:after
+        content ''
+        position absolute
+        top 0
+        right 0
+        width 10px
+        height 10px
+        border-radius 5px
+        background-color $negative
+/* 钱钱钱！ */
+.user-purse
+    &__balance
+        background-color $white
+        color $tertiary
+        border-radius 1em
+        padding 2px
+        align-items center
+        margin 4px
+        .user-purse-amt
+            display inline-block
+            min-width 100px
+            text-align right
+        .balance-hide
+            line-height 24px
+            color $tertiary
+            text-align center
+            cursor pointer
+        .icon-eye
+            cursor pointer
+
+
+/* 单纯做文字不断行处理 */
+.text-nowrap
+    white-space nowrap
+
+/* 短文字颜色变换 */
+.text-strong
+    color $secondary
+.text-normal
+    color $tertiary
+.text-important
+    color $negative
+
+/* 面包屑 */
+.bread-crumbs
+    padding 10px $basicGap
+
+/*
+ * 倒计时底框
+ */
+.countdown-number
+    display inline-block
+    vertical-align middle
+    width w = 40px
+    height w
+    line-height w
+    text-align center
+    color $white
+    font-size 24px
+    &--half
+        height 20px
+        background-position top
+        position absolute
+        z-index 8
+.countdown-number-digit
+    display inline-block
+    vertical-align middle
+    width w = 40px
+    height w
+    line-height w
+    text-align center
+    color $white
+    font-size 24px
+    position absolute
+    z-index 10
+
+/**
+ * 内页左侧选单（个人中心、帮助中心）
+ */
+.member-side-bar
+.help-center-side-bar
+    height 100%
+    border-right 1px solid $gray-white-2
+.sub-nav
+    // &__item
+    &__item-tilte
+        padding 10px $basicGap
+        color $secondary
+        min-height 42px
+        border-bottom 1px solid $gray-light-2
+        font-size $text-lg
+    &__child
+        .q-icon
+            font-size 18px
+    &__child-link
+        padding 10px 30px
+        color $tertiary
+        display block
+        min-height 42px
+        border-bottom 1px solid $gray-light-2
+        cursor pointer
+        &.router-link-active
+            background-color rgba($primary,0.1)
+            color $primary
+
+/**
+ * 内页右侧横向选单tab
+ */
+.tabs
+    background-color $gray-white-1
+    &.q-tabs-position-top
+        > .q-tabs-panes
+            border-top none
+    > .q-tabs-head
+        padding 0
+        background-color $gray-light
+        .q-tabs-bar
+            top 0
+            bottom auto
+            border-bottom-width 3px
+    &__tab
+        color $gray-medium !important
+        &.active
+            color $primary !important
+            background-color $gray-white-1
+    // &__content
+.tabs-sub
+    &.q-tabs-position-top
+        > .q-tabs-panes
+            border-top none
+    > .q-tabs-head
+        background-color transparent
+        .q-tabs-bar
+            border-bottom-width 3px
+    &__tab
+        color $gray-medium !important
+        &.active
+            color $primary !important
+
+/**
+ * 彩种选单
+ */
+.lottery-entry-wrap
+    left 50%!important
+    margin-left -425px
+    width 850px
+    box-shadow 0 2px 5px rgba(#000,0.2)
+.lottery-entry-group
+    padding $basicGap !important
+.q-popover
+    .lottery-entry
+        padding 0
+        &.q-item
+            cursor default
+            padding 0
+            &:hover
+                background-color transparent !important
+                color inherit !important
+        &__title
+            color $secondary
+            background-color $gray-white-1
+            border 1px solid $gray-light
+            padding 5px 10px
+        &__wrap
+            display flex
+            flex-wrap wrap
+            padding 10px 0
+            .q-item
+                flex 0 0 19%
+                max-width 19%
+                padding 5px 0
+                cursor default
+                margin-right 1.25%
+                &:nth-child(5n)
+                    margin-right 0
+                &:hover
+                    background-color transparent !important
+                    color inherit !important
+            .lottery-entry-btn
+                border 1px solid $gray-light
+                border-radius $btn-border-radius
+                padding 5px 8px
+                width 100%
+                &:hover
+                    background-color $primary
+                    color $white
+                    border-color $primary
+                .q-btn-inner
+                    justify-content flex-start
+            img
+                width 32px
+                height 32px
+                margin-right 5px
+
+/**
+ * 平台问题申诉
+ */
+.appeal
+    position fixed
+    right -138px
+    bottom 10px
+    z-index 2001
+    width 242px
+    height 100px
+    padding-left 105px
+    padding-top 27px
+    background $commonUrl('images/appeal.png') left no-repeat
+    background-size auto 100px
+    transition right 100ms ease-out
+    cursor pointer
+    > div
+        display none
+    &__title
+        letter-spacing 3px
+        font-size $text-xlg
+        text-shadow 1px 1px 1px rgba(#000, 0.6)
+    &__content
+        font-size $text-sm
+        text-shadow 1px 1px 1px rgba(#000, 0.6)
+    &:hover
+        right 0
+        transition right 300ms ease-in
+        > div
+            display block
+            color $white
+.modal__footer--appeal
+    .q-btn
+        a
+            color $white
+.appeal-item-name
+    margin $basicGap 0
+.icon-appeal
+    display inline-block
+    width 64px
+    height 64px
+    background-size 100%
+    background-position center center
+    background-repeat no-repeat
+    &-qq
+        background-image $commonUrl('images/qq.png')
+    &-mail
+        background-image $commonUrl('images/mail.png')
